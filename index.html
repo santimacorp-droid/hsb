@@ -1244,76 +1244,6 @@
         <div class="chart-box"><canvas id="chartCorr"></canvas></div>
     </div>
 
-    <!-- Interactive Correlation Predictor Card -->
-    <div class="card" style="margin-top:1.5rem">
-        <div class="card-header">
-            <div class="card-header-text">
-                <h3>Support System Utilization Predictor</h3>
-                <p>Simulate how different levels of student Help-Seeking Behavior (HSB) correlate with predicted support system utilization scores.</p>
-            </div>
-        </div>
-        
-        <div style="margin-bottom: 1.5rem;">
-            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">
-                <span>Help-Seeking Tendency (HSB):</span>
-                <span id="hsbVal" style="color: var(--accent-blue); font-weight: 700;">3.20 (Sometimes)</span>
-            </div>
-            <input type="range" id="hsbSlider" min="1.0" max="5.0" step="0.1" value="3.20" style="width: 100%; accent-color: var(--accent-blue); cursor: pointer; height: 6px; border-radius: 3px; background: rgba(255,255,255,0.1); outline: none;">
-        </div>
-        
-        <div style="display: flex; flex-direction: column; gap: 1rem;">
-            <!-- HDC -->
-            <div>
-                <div style="display: flex; justify-content: space-between; font-size: 0.78rem; margin-bottom: 0.25rem;">
-                    <span>Health & Development Center (HDC) <span style="color: var(--text-muted); font-size: 0.7rem;">(r = .526 - Strongest)</span></span>
-                    <span id="predHDC" style="color: var(--accent-green); font-weight: 700;">3.29</span>
-                </div>
-                <div style="height: 8px; background: rgba(255,255,255,0.05); border-radius: 4px; overflow: hidden;">
-                    <div id="barHDC" style="height: 100%; width: 65.8%; background: var(--accent-green); transition: width 0.1s ease;"></div>
-                </div>
-            </div>
-            <!-- FS -->
-            <div>
-                <div style="display: flex; justify-content: space-between; font-size: 0.78rem; margin-bottom: 0.25rem;">
-                    <span>Faculty Support (FS) <span style="color: var(--text-muted); font-size: 0.7rem;">(r = .488 - Moderate)</span></span>
-                    <span id="predFS" style="color: var(--accent-blue); font-weight: 700;">3.12</span>
-                </div>
-                <div style="height: 8px; background: rgba(255,255,255,0.05); border-radius: 4px; overflow: hidden;">
-                    <div id="barFS" style="height: 100%; width: 62.4%; background: var(--accent-blue); transition: width 0.1s ease;"></div>
-                </div>
-            </div>
-            <!-- DSS -->
-            <div>
-                <div style="display: flex; justify-content: space-between; font-size: 0.78rem; margin-bottom: 0.25rem;">
-                    <span>Department of Student Services (DSS) <span style="color: var(--text-muted); font-size: 0.7rem;">(r = .488 - Moderate)</span></span>
-                    <span id="predDSS" style="color: var(--accent-yellow); font-weight: 700;">3.29</span>
-                </div>
-                <div style="height: 8px; background: rgba(255,255,255,0.05); border-radius: 4px; overflow: hidden;">
-                    <div id="barDSS" style="height: 100%; width: 65.8%; background: var(--accent-yellow); transition: width 0.1s ease;"></div>
-                </div>
-            </div>
-            <!-- OSSA -->
-            <div>
-                <div style="display: flex; justify-content: space-between; font-size: 0.78rem; margin-bottom: 0.25rem;">
-                    <span>Office of Student Services & Affairs (OSSA) <span style="color: var(--text-muted); font-size: 0.7rem;">(r = .317 - Weak)</span></span>
-                    <span id="predOSSA" style="color: var(--accent-purple); font-weight: 700;">3.67</span>
-                </div>
-                <div style="height: 8px; background: rgba(255,255,255,0.05); border-radius: 4px; overflow: hidden;">
-                    <div id="barOSSA" style="height: 100%; width: 73.4%; background: var(--accent-purple); transition: width 0.1s ease;"></div>
-                </div>
-            </div>
-            <!-- POD -->
-            <div>
-                <div style="display: flex; justify-content: space-between; font-size: 0.78rem; margin-bottom: 0.25rem;">
-                    <span>Prefect of Discipline (POD) <span style="color: var(--text-muted); font-size: 0.7rem;">(r = .283 - Weakest)</span></span>
-                    <span id="predPOD" style="color: var(--accent-pink); font-weight: 700;">3.80</span>
-                </div>
-                <div style="height: 8px; background: rgba(255,255,255,0.05); border-radius: 4px; overflow: hidden;">
-                    <div id="barPOD" style="height: 100%; width: 76.0%; background: var(--accent-pink); transition: width 0.1s ease;"></div>
-                </div>
-            </div>
-        </div>
-    </div>
 </section>
 
 <div class="divider"></div>
@@ -1776,45 +1706,6 @@ function sortTable(tableId, colIndex, isNum) {
     tbody.innerHTML = "";
     rows.forEach(row => tbody.appendChild(row));
     if (summaryRow) tbody.appendChild(summaryRow);
-}
-
-// ── Correlation Predictor Slider ──
-const hsbSlider = document.getElementById("hsbSlider");
-if (hsbSlider) {
-    hsbSlider.addEventListener("input", (e) => {
-        updatePredictor(e.target.value);
-    });
-    // Init
-    updatePredictor(3.20);
-}
-
-function updatePredictor(hsb) {
-    const hsbVal = document.getElementById("hsbVal");
-    hsbVal.innerText = parseFloat(hsb).toFixed(2) + " (" + getHSBDesc(hsb) + ")";
-    
-    const systems = [
-        { id: "HDC", base: 3.29, rho: 0.526 },
-        { id: "FS", base: 3.12, rho: 0.488 },
-        { id: "DSS", base: 3.29, rho: 0.488 },
-        { id: "OSSA", base: 3.67, rho: 0.317 },
-        { id: "POD", base: 3.80, rho: 0.283 }
-    ];
-    
-    systems.forEach(sys => {
-        let pred = sys.base + (hsb - 3.20) * sys.rho;
-        pred = Math.max(1.0, Math.min(5.0, pred));
-        
-        document.getElementById("pred" + sys.id).innerText = pred.toFixed(2);
-        document.getElementById("bar" + sys.id).style.width = (pred / 5.0) * 100 + "%";
-    });
-}
-
-function getHSBDesc(val) {
-    if (val <= 1.80) return "Never";
-    if (val <= 2.60) return "Rarely";
-    if (val <= 3.40) return "Sometimes";
-    if (val <= 4.20) return "Often";
-    return "Always";
 }
 </script>
 
