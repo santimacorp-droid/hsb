@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Results — Help-Seeking Behavior & Support Systems</title>
+    <meta name="description" content="Interactive research results dashboard analyzing the interrelationship between help-seeking behavior and support systems at ULS.">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0b0f1a;
+            --bg-secondary: #111827;
+            --bg-card: rgba(17, 24, 39, 0.85);
+            --bg-card-alt: rgba(30, 41, 59, 0.6);
+            --bg-table-row: rgba(255,255,255,0.02);
+            --bg-table-hover: rgba(56, 189, 248, 0.06);
+            --text-main: #f1f5f9;
+            --text-secondary: #cbd5e1;
+            --text-muted: #64748b;
+            --accent-blue: #38bdf8;
+            --accent-purple: #a78bfa;
+            --accent-green: #34d399;
+            --accent-pink: #f472b6;
+            --accent-yellow: #fbbf24;
+            --accent-orange: #fb923c;
+            --accent-teal: #2dd4bf;
+            --accent-indigo: #818cf8;
+            --border: rgba(255,255,255,0.06);
+            --border-strong: rgba(255,255,255,0.12);
+            --shadow: 0 4px 24px rgba(0,0,0,0.3);
+            --radius: 16px;
+            --radius-sm: 10px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ── NAVIGATION ── */
+        nav {
+            position: sticky; top: 0; z-index: 100;
+            background: rgba(11, 15, 26, 0.92);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+            padding: 0.75rem 2rem;
+        }
+
+        .nav-inner {
+            max-width: 1320px; margin: 0 auto;
+            display: flex; align-items: center; gap: 1.5rem;
+            overflow-x: auto; scrollbar-width: none;
+            -webkit-overflow-scrolling: touch;
+        }
+        .nav-inner::-webkit-scrollbar { display: none; }
+
+        .nav-brand {
+            font-weight: 700; font-size: 1rem;
+            color: var(--accent-blue); white-space: nowrap;
+            letter-spacing: -0.3px;
+        }
+
+        .nav-links { display: flex; gap: 0.25rem; }
+
+        .nav-links a {
+            color: var(--text-muted); text-decoration: none;
+            font-size: 0.8rem; font-weight: 500;
+            padding: 0.4rem 0.75rem; border-radius: 6px;
+            white-space: nowrap;
+            transition: all 0.2s ease;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--accent-blue);
+            background: rgba(56,189,248,0.1);
+        }
+
+        /* ── HERO ── */
+        .hero {
+            position: relative; overflow: hidden;
+            padding: 5rem 2rem 4rem;
+            text-align: center;
+            background: 
+                radial-gradient(ellipse 80% 60% at 50% 0%, rgba(56,189,248,0.12), transparent),
+                radial-gradient(ellipse 60% 50% at 80% 100%, rgba(167,139,250,0.1), transparent);
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            font-weight: 700;
+            background: linear-gradient(135deg, #38bdf8 0%, #a78bfa 50%, #f472b6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+            animation: fadeIn 1s ease;
+        }
+
+        .hero .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.05rem; max-width: 700px;
+            margin: 0 auto 2rem;
+            animation: fadeIn 1s ease 0.2s backwards;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            justify-content: center;
+            gap: 1.5rem;
+            animation: fadeIn 1s ease 0.4s backwards;
+        }
+
+        .hero-stat {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 1.2rem 2rem; min-width: 120px;
+            backdrop-filter: blur(8px);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .hero-stat:hover { transform: translateY(-3px); border-color: var(--border-strong); }
+        .hero-stat .value { font-size: 2rem; font-weight: 800; }
+        .hero-stat .label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-top: 0.25rem; }
+
+        /* ── SECTIONS ── */
+        .container { max-width: 1320px; margin: 0 auto; padding: 0 1.5rem; }
+
+        section { padding: 4rem 0; }
+
+        .section-header {
+            margin-bottom: 2.5rem;
+            animation: slideUp 0.6s ease;
+        }
+
+        .section-label {
+            display: inline-block;
+            font-size: 0.7rem; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 2px;
+            color: var(--accent-blue);
+            background: rgba(56,189,248,0.1);
+            padding: 0.3rem 0.8rem; border-radius: 20px;
+            margin-bottom: 0.75rem;
+        }
+
+        .section-title {
+            font-size: 1.8rem; font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem; max-width: 750px;
+        }
+
+        /* ── CARDS ── */
+        .grid { display: grid; gap: 1.5rem; }
+        .grid-2 { grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); }
+        .grid-3 { grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); }
+
+        .card {
+            background: var(--bg-card);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.75rem;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            animation: slideUp 0.6s ease backwards;
+            overflow: hidden;
+        }
+        .card:hover { transform: translateY(-4px); border-color: var(--border-strong); }
+
+        .card-header { margin-bottom: 1.25rem; }
+        .card-header h3 { font-size: 1.15rem; font-weight: 600; margin-bottom: 0.25rem; }
+        .card-header p { color: var(--text-muted); font-size: 0.82rem; }
+
+        .chart-box { position: relative; width: 100%; min-height: 300px; }
+        .chart-box.tall { min-height: 420px; }
+
+        /* ── TABLES ── */
+        .table-wrapper {
+            overflow-x: auto; border-radius: var(--radius-sm); border: 1px solid var(--border);
+            -webkit-overflow-scrolling: touch;
+            position: relative;
+        }
+        .table-wrapper table { min-width: 500px; }
+
+        table {
+            width: 100%; border-collapse: collapse;
+            font-size: 0.85rem;
+        }
+
+        thead { background: rgba(56,189,248,0.08); }
+
+        th {
+            padding: 0.85rem 1rem;
+            text-align: left; font-weight: 600;
+            color: var(--accent-blue);
+            border-bottom: 1px solid var(--border-strong);
+            white-space: nowrap;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        td {
+            padding: 0.7rem 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+
+        tr:nth-child(even) { background: var(--bg-table-row); }
+        tr:hover { background: var(--bg-table-hover); }
+
+        .td-bold { font-weight: 600; color: var(--text-main); }
+        .td-accent { color: var(--accent-blue); font-weight: 600; }
+
+        /* ── BADGES ── */
+        .badge {
+            display: inline-block;
+            font-size: 0.7rem; font-weight: 600;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .badge-never { background: rgba(239,68,68,0.15); color: #f87171; }
+        .badge-rarely { background: rgba(251,146,60,0.15); color: #fb923c; }
+        .badge-sometimes { background: rgba(251,191,36,0.15); color: #fbbf24; }
+        .badge-often { background: rgba(52,211,153,0.15); color: #34d399; }
+        .badge-always { background: rgba(56,189,248,0.15); color: #38bdf8; }
+
+        .badge-sig { background: rgba(52,211,153,0.15); color: #34d399; }
+        .badge-ns { background: rgba(100,116,139,0.15); color: #94a3b8; }
+
+        /* ── FINDINGS CALLOUT ── */
+        .finding {
+            display: flex; gap: 1rem;
+            background: rgba(56,189,248,0.05);
+            border-left: 3px solid var(--accent-blue);
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            padding: 1.25rem 1.5rem;
+            margin-top: 1.25rem;
+        }
+        .finding.green { border-left-color: var(--accent-green); background: rgba(52,211,153,0.05); }
+        .finding.purple { border-left-color: var(--accent-purple); background: rgba(167,139,250,0.05); }
+        .finding.pink { border-left-color: var(--accent-pink); background: rgba(244,114,182,0.05); }
+
+        .finding-icon { font-size: 1.5rem; flex-shrink: 0; }
+        .finding-body h4 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.25rem; }
+        .finding-body p { font-size: 0.85rem; color: var(--text-secondary); }
+
+        /* ── MEAN SCALE ── */
+        .mean-scale {
+            display: flex; gap: 0; border-radius: 8px; overflow: hidden;
+            margin-top: 1rem; font-size: 0.7rem; font-weight: 600;
+            text-align: center;
+        }
+        .mean-scale span {
+            flex: 1; padding: 0.5rem 0.25rem;
+        }
+
+        /* ── CORRELATION METER ── */
+        .corr-row { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+        .corr-label { width: 100px; font-size: 0.85rem; font-weight: 600; color: var(--text-main); flex-shrink: 0; }
+        .corr-bar-bg { flex: 1; height: 28px; background: rgba(255,255,255,0.04); border-radius: 14px; overflow: hidden; position: relative; }
+        .corr-bar {
+            height: 100%; border-radius: 14px;
+            display: flex; align-items: center; justify-content: flex-end; padding-right: 10px;
+            font-size: 0.75rem; font-weight: 700; color: #fff;
+            transition: width 1.5s ease;
+        }
+        .corr-p { font-size: 0.75rem; color: var(--accent-green); font-weight: 600; width: 70px; text-align: right; flex-shrink: 0; }
+
+        /* ── ANIMATIONS ── */
+        @keyframes fadeIn {
+            from { opacity: 0; } to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(24px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ── RESPONSIVE ── */
+
+        /* Tablets & small laptops */
+        @media (max-width: 1024px) {
+            .container { padding: 0 1rem; }
+            .grid-2 { grid-template-columns: 1fr; }
+            .section-title { font-size: 1.5rem; }
+        }
+
+        /* Fix inline grid on demographics section */
+        @media (max-width: 900px) {
+            #demo-inner { grid-template-columns: 1fr !important; }
+        }
+
+        /* Tablets portrait */
+        @media (max-width: 768px) {
+            nav { padding: 0.6rem 0; }
+            .nav-inner { gap: 0; padding: 0 0.75rem; }
+            .nav-brand { font-size: 0.85rem; margin-right: 0.5rem; flex-shrink: 0; }
+            .nav-links {
+                display: flex; gap: 0.15rem;
+                overflow-x: auto; scrollbar-width: none;
+                -webkit-overflow-scrolling: touch;
+                mask-image: linear-gradient(to right, transparent, black 8px, black calc(100% - 20px), transparent);
+                -webkit-mask-image: linear-gradient(to right, transparent, black 8px, black calc(100% - 20px), transparent);
+                padding: 0.15rem 20px 0.15rem 4px;
+            }
+            .nav-links::-webkit-scrollbar { display: none; }
+            .nav-links a {
+                font-size: 0.72rem; padding: 0.4rem 0.65rem;
+                min-height: 36px; display: flex; align-items: center;
+            }
+
+            .hero { padding: 2.5rem 1.25rem 2rem; }
+            .hero h1 { font-size: 1.6rem; margin-bottom: 0.75rem; }
+            .hero .subtitle { font-size: 0.88rem; margin-bottom: 1.5rem; padding: 0 0.5rem; }
+            .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; width: 100%; max-width: 400px; margin: 0 auto; }
+            .hero-stat { padding: 1rem; min-width: 0; }
+            .hero-stat .value { font-size: 1.6rem; }
+            .hero-stat .label { font-size: 0.62rem; letter-spacing: 0.5px; }
+
+            .container { padding: 0 0.75rem; }
+            section { padding: 2.5rem 0; }
+            .section-header { margin-bottom: 1.5rem; }
+            .section-title { font-size: 1.3rem; }
+            .section-desc { font-size: 0.85rem; }
+            .section-label { font-size: 0.65rem; padding: 0.25rem 0.6rem; }
+
+            .grid { gap: 1rem; }
+            .grid-2, .grid-3 { grid-template-columns: 1fr; }
+
+            .card { padding: 1.25rem; border-radius: 14px; }
+            .card:hover { transform: none; }
+            .card-header h3 { font-size: 1rem; }
+            .card-header p { font-size: 0.78rem; }
+
+            .chart-box { min-height: 260px; }
+            .chart-box.tall { min-height: 320px; }
+
+            .table-wrapper {
+                mask-image: linear-gradient(to right, black calc(100% - 24px), transparent);
+                -webkit-mask-image: linear-gradient(to right, black calc(100% - 24px), transparent);
+            }
+            .table-wrapper:hover,
+            .table-wrapper:active {
+                mask-image: none;
+                -webkit-mask-image: none;
+            }
+            table { font-size: 0.78rem; }
+            th { padding: 0.6rem 0.7rem; font-size: 0.7rem; }
+            td { padding: 0.55rem 0.7rem; }
+
+            .finding { padding: 1rem 1rem; gap: 0.75rem; }
+            .finding-icon { font-size: 1.2rem; }
+            .finding-body h4 { font-size: 0.85rem; }
+            .finding-body p { font-size: 0.8rem; line-height: 1.6; }
+
+            .mean-scale { flex-wrap: wrap; border-radius: 6px; }
+            .mean-scale span { flex: 1 1 auto; min-width: calc(33.33% - 2px); font-size: 0.62rem; padding: 0.45rem 0.15rem; }
+
+            .corr-row { gap: 0.5rem; }
+            .corr-label { width: 50px; font-size: 0.75rem; }
+            .corr-bar-bg { height: 26px; }
+            .corr-bar { font-size: 0.68rem; padding-right: 6px; }
+            .corr-p { width: 60px; font-size: 0.68rem; }
+
+            footer { padding: 2rem 1rem; font-size: 0.75rem; }
+
+            .back-to-top { bottom: 1.25rem; right: 1.25rem; width: 44px; height: 44px; font-size: 1.1rem; }
+        }
+
+        /* Large phones */
+        @media (max-width: 600px) {
+            .hero { padding: 2rem 1rem 1.75rem; }
+            .hero h1 { font-size: 1.35rem; }
+            .hero .subtitle { font-size: 0.82rem; }
+            .hero-stats { max-width: 340px; gap: 0.6rem; }
+            .hero-stat { padding: 0.85rem 0.75rem; }
+            .hero-stat .value { font-size: 1.4rem; }
+
+            .section-title { font-size: 1.15rem; }
+            section { padding: 2rem 0; }
+
+            .card { padding: 1rem; border-radius: 12px; }
+            .card-header h3 { font-size: 0.92rem; }
+
+            .chart-box { min-height: 230px; }
+            .chart-box.tall { min-height: 280px; }
+
+            table { font-size: 0.72rem; }
+            th { padding: 0.5rem 0.5rem; font-size: 0.65rem; }
+            td { padding: 0.45rem 0.5rem; }
+
+            .badge { font-size: 0.6rem; padding: 0.15rem 0.45rem; }
+
+            .corr-label { width: 42px; font-size: 0.7rem; }
+            .corr-p { width: 55px; font-size: 0.65rem; }
+
+            .mean-scale span { min-width: calc(33.33% - 2px); font-size: 0.6rem; }
+        }
+
+        /* Small phones */
+        @media (max-width: 480px) {
+            nav { padding: 0.5rem 0; }
+            .nav-inner { padding: 0 0.5rem; }
+            .nav-brand { font-size: 0.75rem; }
+            .nav-links a { font-size: 0.65rem; padding: 0.35rem 0.5rem; min-height: 34px; }
+
+            .hero { padding: 1.75rem 0.75rem 1.5rem; }
+            .hero h1 { font-size: 1.15rem; }
+            .hero .subtitle { font-size: 0.75rem; margin-bottom: 1.25rem; padding: 0; }
+            .hero-stats { max-width: 300px; gap: 0.5rem; }
+            .hero-stat { padding: 0.7rem 0.5rem; border-radius: 8px; }
+            .hero-stat .value { font-size: 1.2rem; }
+            .hero-stat .label { font-size: 0.55rem; }
+
+            .container { padding: 0 0.5rem; }
+            section { padding: 1.5rem 0; }
+            .section-header { margin-bottom: 1rem; }
+            .section-title { font-size: 1rem; }
+            .section-desc { font-size: 0.75rem; }
+
+            .grid { gap: 0.75rem; }
+            .card { padding: 0.85rem; border-radius: 10px; }
+            .card-header { margin-bottom: 0.75rem; }
+            .card-header h3 { font-size: 0.85rem; }
+            .card-header p { font-size: 0.7rem; }
+
+            .chart-box { min-height: 200px; }
+            .chart-box.tall { min-height: 250px; }
+
+            table { font-size: 0.65rem; }
+            th { padding: 0.4rem 0.35rem; font-size: 0.58rem; letter-spacing: 0; }
+            td { padding: 0.4rem 0.35rem; }
+
+            .finding { padding: 0.75rem; gap: 0.5rem; flex-direction: column; }
+            .finding-icon { font-size: 1rem; }
+            .finding-body h4 { font-size: 0.78rem; }
+            .finding-body p { font-size: 0.72rem; }
+
+            .badge { font-size: 0.52rem; padding: 0.12rem 0.3rem; }
+
+            .mean-scale span { min-width: calc(50% - 2px); font-size: 0.55rem; padding: 0.35rem 0.1rem; }
+
+            .corr-row { flex-wrap: wrap; gap: 0.35rem; }
+            .corr-label { width: 100%; font-size: 0.72rem; }
+            .corr-bar-bg { height: 22px; flex: 1; }
+            .corr-bar { font-size: 0.6rem; }
+            .corr-p { width: auto; font-size: 0.6rem; }
+
+            footer { padding: 1.5rem 0.5rem; font-size: 0.68rem; }
+        }
+
+        /* ── BACK TO TOP ── */
+        .back-to-top {
+            position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 99;
+            width: 48px; height: 48px; border-radius: 50%;
+            background: var(--accent-blue); color: var(--bg-primary);
+            border: none; cursor: pointer;
+            font-size: 1.2rem; font-weight: 700;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 4px 16px rgba(56,189,248,0.35);
+            opacity: 0; visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .back-to-top.visible { opacity: 1; visibility: visible; }
+        .back-to-top:active { transform: scale(0.92); }
+
+        /* ── DIVIDER ── */
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--border-strong), transparent);
+            margin: 0 auto; max-width: 600px;
+        }
+
+        /* ── FOOTER ── */
+        footer {
+            text-align: center; padding: 3rem 1.5rem;
+            color: var(--text-muted); font-size: 0.8rem;
+            border-top: 1px solid var(--border);
+        }
+        footer a { color: var(--accent-blue); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<!-- ═══════════════ NAVIGATION ═══════════════ -->
+<nav>
+    <div class="nav-inner">
+        <span class="nav-brand">Help-Seeking Behavior</span>
+        <div class="nav-links">
+            <a href="#demographics">Demographics</a>
+            <a href="#hsb">Help-Seeking</a>
+            <a href="#support">Support Systems</a>
+            <a href="#differences">Differences</a>
+            <a href="#correlation">Correlation</a>
+            <a href="#conclusions">Conclusions</a>
+        </div>
+    </div>
+</nav>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<div class="hero">
+    <h1>Results &amp; Discussions</h1>
+    <p class="subtitle">Interrelationship Between the Help-Seeking Behavior of Students and the Support Systems Within the University of La Salette, Inc.</p>
+    <div class="hero-stats">
+        <div class="hero-stat">
+            <div class="value" style="color:var(--accent-blue)">361</div>
+            <div class="label">Total Respondents</div>
+        </div>
+        <div class="hero-stat">
+            <div class="value" style="color:var(--accent-purple)">3.20</div>
+            <div class="label">HSB Mean (Sometimes)</div>
+        </div>
+        <div class="hero-stat">
+            <div class="value" style="color:var(--accent-green)">5</div>
+            <div class="label">Support Systems</div>
+        </div>
+        <div class="hero-stat">
+            <div class="value" style="color:var(--accent-pink)">9</div>
+            <div class="label">Departments</div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+<!-- ═══════════════ SECTION 1: DEMOGRAPHICS ═══════════════ -->
+<section id="demographics">
+    <div class="section-header">
+        <div class="section-label">Section 1</div>
+        <h2 class="section-title">Demographic Profile of the Respondents</h2>
+        <p class="section-desc">Overview of the 361 respondents across sex, year level, and department (Table 2).</p>
+    </div>
+
+    <div class="grid" style="grid-template-columns: 1fr 1fr 2fr; gap: 1.5rem;" id="demo-inner" class="demo-inner">
+        <!-- Sex Donut -->
+        <div class="card" style="animation-delay:0.1s">
+            <div class="card-header"><h3>Sex Distribution</h3><p>N = 361</p></div>
+            <div class="chart-box"><canvas id="chartSex"></canvas></div>
+        </div>
+        <!-- Year Level Donut -->
+        <div class="card" style="animation-delay:0.2s">
+            <div class="card-header"><h3>Year Level</h3><p>N = 361</p></div>
+            <div class="chart-box"><canvas id="chartYear"></canvas></div>
+        </div>
+        <!-- Department Bar -->
+        <div class="card" style="animation-delay:0.3s">
+            <div class="card-header"><h3>Department Distribution</h3><p>Across 9 academic departments</p></div>
+            <div class="chart-box"><canvas id="chartDept"></canvas></div>
+        </div>
+    </div>
+
+    <!-- Full Demographics Table -->
+    <div class="card" style="margin-top:1.5rem; animation-delay:0.4s">
+        <div class="card-header"><h3>Table 2. Full Demographic Data</h3></div>
+        <div class="table-wrapper">
+            <table>
+                <thead><tr><th>Profile Variable</th><th>Category</th><th>Frequency</th><th>Percent</th></tr></thead>
+                <tbody>
+                    <tr><td class="td-bold" rowspan="2">Sex</td><td>Female</td><td>213</td><td>59.0%</td></tr>
+                    <tr><td>Male</td><td>148</td><td>41.0%</td></tr>
+                    <tr><td class="td-bold" rowspan="3">Year Level</td><td>Freshmen</td><td>102</td><td>28.3%</td></tr>
+                    <tr><td>Sophomore</td><td>99</td><td>27.4%</td></tr>
+                    <tr><td>Junior</td><td>160</td><td>44.3%</td></tr>
+                    <tr><td class="td-bold" rowspan="9">Department</td><td>CMAMP</td><td>61</td><td>16.9%</td></tr>
+                    <tr><td>CIT</td><td>13</td><td>3.6%</td></tr>
+                    <tr><td>CTE</td><td>15</td><td>4.2%</td></tr>
+                    <tr><td>COA</td><td>23</td><td>6.4%</td></tr>
+                    <tr><td>CAS</td><td>18</td><td>5.0%</td></tr>
+                    <tr><td>CCJE</td><td>14</td><td>3.9%</td></tr>
+                    <tr><td>CONPHM</td><td>91</td><td>25.2%</td></tr>
+                    <tr><td>CBE</td><td>49</td><td>13.6%</td></tr>
+                    <tr><td>CEA</td><td>77</td><td>21.3%</td></tr>
+                    <tr style="background:rgba(56,189,248,0.06)"><td colspan="2" class="td-bold">Total</td><td class="td-accent">361</td><td class="td-accent">100.0%</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="finding" style="margin-top:1.25rem">
+            <div class="finding-icon">📊</div>
+            <div class="finding-body">
+                <h4>Key Observation</h4>
+                <p>The sample is predominantly female (59%), mostly juniors (44.3%), with CONPHM (25.2%) and CEA (21.3%) being the largest departments. This heterogeneous distribution strengthens the generalizability of findings.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════════════ SECTION 2: HELP-SEEKING BEHAVIOR ═══════════════ -->
+<section id="hsb">
+    <div class="section-header">
+        <div class="section-label">Section 2</div>
+        <h2 class="section-title">Level of Help-Seeking Behavior</h2>
+        <p class="section-desc">Mean ratings of 10 help-seeking indicators on a 5-point scale (Table 3). Overall mean = <strong>3.20</strong> ("Sometimes").</p>
+    </div>
+
+    <div class="grid grid-2">
+        <!-- HSB Chart -->
+        <div class="card" style="animation-delay:0.1s">
+            <div class="card-header"><h3>Indicator Mean Ratings</h3><p>Ranked from highest to lowest</p></div>
+            <div class="chart-box tall"><canvas id="chartHSB"></canvas></div>
+        </div>
+        <!-- HSB Table -->
+        <div class="card" style="animation-delay:0.2s">
+            <div class="card-header"><h3>Table 3. Complete Help-Seeking Behavior Data</h3></div>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>#</th><th>Indicator</th><th>Mean</th><th>SD</th><th>Description</th></tr></thead>
+                    <tbody>
+                        <tr><td>1</td><td>I seek help when I experience academic difficulties.</td><td class="td-accent">3.31</td><td>1.01</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                        <tr><td>2</td><td>I seek help when I experience personal or emotional concerns.</td><td class="td-accent">3.06</td><td>1.04</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                        <tr><td>3</td><td>I talk to someone when I feel stressed due to academic requirements.</td><td class="td-accent">3.38</td><td>1.03</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                        <tr><td>4</td><td>I ask for guidance when I do not understand academic tasks or lessons.</td><td class="td-accent">3.47</td><td>1.01</td><td><span class="badge badge-often">Often</span></td></tr>
+                        <tr><td>5</td><td>I seek help even if the concern is minor.</td><td class="td-accent">3.31</td><td>1.04</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                        <tr><td>6</td><td>I seek help immediately when I experience problems.</td><td class="td-accent">3.06</td><td>1.09</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                        <tr><td>7</td><td>I ask for help instead of handling my concerns on my own.</td><td class="td-accent">2.92</td><td>1.08</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                        <tr><td>8</td><td>I seek help only when my concerns affect my academic performance.</td><td class="td-accent">3.14</td><td>1.07</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                        <tr><td>9</td><td>I feel comfortable asking for help from others.</td><td class="td-accent">3.13</td><td>1.11</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                        <tr><td>10</td><td>I seek help when I feel overwhelmed by school-related responsibilities.</td><td class="td-accent">3.20</td><td>1.02</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                        <tr style="background:rgba(56,189,248,0.06)"><td></td><td class="td-bold">Overall Mean Rating</td><td class="td-accent">3.20</td><td>.76</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Mean scale legend -->
+            <div class="mean-scale">
+                <span style="background:rgba(239,68,68,0.15);color:#f87171">1.00–1.80<br>Never</span>
+                <span style="background:rgba(251,146,60,0.12);color:#fb923c">1.81–2.60<br>Rarely</span>
+                <span style="background:rgba(251,191,36,0.12);color:#fbbf24">2.61–3.40<br>Sometimes</span>
+                <span style="background:rgba(52,211,153,0.12);color:#34d399">3.41–4.20<br>Often</span>
+                <span style="background:rgba(56,189,248,0.12);color:#38bdf8">4.21–5.00<br>Always</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-2" style="margin-top:1.5rem">
+        <div class="finding green">
+            <div class="finding-icon">🔼</div>
+            <div class="finding-body">
+                <h4>Highest: Academic Guidance (M = 3.47, "Often")</h4>
+                <p>Students are most inclined to seek help when they do not understand academic tasks or lessons, reflecting that academic concerns with immediate consequences motivate timely help-seeking.</p>
+            </div>
+        </div>
+        <div class="finding pink">
+            <div class="finding-icon">🔽</div>
+            <div class="finding-body">
+                <h4>Lowest: Self-Reliance Preference (M = 2.92, "Sometimes")</h4>
+                <p>Students tend to manage concerns independently before seeking external support, suggesting a degree of self-reliance that may delay timely help-seeking behavior.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════════════ SECTION 3: SUPPORT SYSTEM UTILIZATION ═══════════════ -->
+<section id="support">
+    <div class="section-header">
+        <div class="section-label">Section 3</div>
+        <h2 class="section-title">Extent of Utilization of Available Support Systems</h2>
+        <p class="section-desc">Detailed indicator-level and summary analysis of five university support systems (Tables 4–9).</p>
+    </div>
+
+    <!-- Overall Summary Chart -->
+    <div class="card" style="margin-bottom:1.5rem">
+        <div class="card-header"><h3>Table 9. Overall Support System Comparison</h3><p>Mean utilization ratings across all 5 support systems</p></div>
+        <div class="grid grid-2" style="align-items:center">
+            <div class="chart-box" style="min-height:280px"><canvas id="chartOverall"></canvas></div>
+            <div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead><tr><th>Support System</th><th>Mean</th><th>SD</th><th>Description</th></tr></thead>
+                        <tbody>
+                            <tr><td class="td-bold">Faculty Support (FS)</td><td class="td-accent">3.12</td><td>.86</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                            <tr><td class="td-bold">Health & Dev. Center (HDC)</td><td class="td-accent">3.29</td><td>.82</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                            <tr><td class="td-bold">Dept. of Student Svcs (DSS)</td><td class="td-accent">3.29</td><td>.92</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                            <tr><td class="td-bold">Prefect of Discipline (POD)</td><td class="td-accent">3.80</td><td>.88</td><td><span class="badge badge-often">Often</span></td></tr>
+                            <tr><td class="td-bold">Student Svcs & Affairs (OSSA)</td><td class="td-accent">3.67</td><td>.90</td><td><span class="badge badge-often">Often</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="finding green" style="margin-top:1rem">
+                    <div class="finding-icon">💡</div>
+                    <div class="finding-body">
+                        <h4>Key Insight</h4>
+                        <p>POD (3.80) and OSSA (3.67) are the most frequently utilized, while Faculty Support (3.12) is the least. Students rely more on administrative/discipline services than academic or wellness support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Individual Support System Tables -->
+    <div class="grid grid-2">
+        <!-- FS -->
+        <div class="card" style="animation-delay:0.1s">
+            <div class="card-header"><h3>Table 4. Faculty Support (FS)</h3><p>Overall Mean = 3.12 (Sometimes)</p></div>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>#</th><th>Indicator</th><th>Mean</th><th>SD</th><th>Desc</th></tr></thead>
+                    <tbody>
+                        <tr><td>1</td><td>I approach faculty for academic concerns.</td><td>2.81</td><td>1.08</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                        <tr><td>2</td><td>I ask faculty for clarification regarding lessons.</td><td>3.07</td><td>1.03</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                        <tr><td>3</td><td>I seek advice from faculty regarding academic decisions.</td><td>2.73</td><td>1.12</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                        <tr><td>4</td><td>I feel comfortable approaching faculty for assistance.</td><td>2.92</td><td>1.09</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                        <tr><td>5</td><td>Faculty members listen to students' concerns.</td><td>3.31</td><td>1.11</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                        <tr><td>6</td><td>Faculty support helps me understand difficult lessons.</td><td>3.22</td><td>1.10</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                        <tr><td>7</td><td>Faculty members encourage students to ask questions.</td><td>3.45</td><td>1.10</td><td><span class="badge badge-often">Often</span></td></tr>
+                        <tr><td>8</td><td>I feel respected by faculty when I seek help.</td><td>3.40</td><td>1.13</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- HDC -->
+        <div class="card" style="animation-delay:0.2s">
+            <div class="card-header"><h3>Table 5. Health & Development Center (HDC)</h3><p>Overall Mean = 3.29 (Sometimes)</p></div>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>#</th><th>Indicator</th><th>Mean</th><th>SD</th><th>Desc</th></tr></thead>
+                    <tbody>
+                        <tr><td>1</td><td>I am aware of the services offered by HDC.</td><td>3.49</td><td>1.04</td><td><span class="badge badge-often">Often</span></td></tr>
+                        <tr><td>2</td><td>I visit HDC for guidance or counseling.</td><td>2.60</td><td>1.22</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                        <tr><td>3</td><td>HDC provides professional support for students.</td><td>3.35</td><td>1.08</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                        <tr><td>4</td><td>I receive support from HDC for personal concerns.</td><td>2.90</td><td>1.20</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                        <tr><td>5</td><td>HDC is accessible to students.</td><td>3.62</td><td>1.08</td><td><span class="badge badge-often">Often</span></td></tr>
+                        <tr><td>6</td><td>HDC staff are approachable.</td><td>3.52</td><td>1.07</td><td><span class="badge badge-often">Often</span></td></tr>
+                        <tr><td>7</td><td>I trust the confidentiality of HDC.</td><td>3.44</td><td>1.11</td><td><span class="badge badge-often">Often</span></td></tr>
+                        <tr><td>8</td><td>HDC services help students manage stress.</td><td>3.48</td><td>1.06</td><td><span class="badge badge-often">Often</span></td></tr>
+                        <tr><td>9</td><td>Awareness of HDC services encourages me to seek help.</td><td>3.24</td><td>1.11</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- DSS -->
+        <div class="card" style="animation-delay:0.3s">
+            <div class="card-header"><h3>Table 6. Dept. of Student Services (DSS)</h3><p>Overall Mean = 3.29 (Sometimes)</p></div>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>#</th><th>Indicator</th><th>Mean</th><th>SD</th><th>Desc</th></tr></thead>
+                    <tbody>
+                        <tr><td>1</td><td>I am aware of the services offered by DSS.</td><td>3.42</td><td>1.13</td><td><span class="badge badge-often">Often</span></td></tr>
+                        <tr><td>2</td><td>DSS provides support for academic/personal difficulties.</td><td>3.44</td><td>1.03</td><td><span class="badge badge-often">Often</span></td></tr>
+                        <tr><td>3</td><td>DSS provides guidance and assistance when needed.</td><td>3.43</td><td>1.03</td><td><span class="badge badge-often">Often</span></td></tr>
+                        <tr><td>4</td><td>DSS is a reliable source of support.</td><td>3.42</td><td>1.07</td><td><span class="badge badge-often">Often</span></td></tr>
+                        <tr><td>5</td><td>I feel comfortable approaching DSS for help.</td><td>3.15</td><td>1.17</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                        <tr><td>6</td><td>DSS encourages me to seek help when needed.</td><td>3.17</td><td>1.14</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                        <tr><td>7</td><td>DSS effectively addresses student-related concerns.</td><td>3.28</td><td>1.10</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                        <tr><td>8</td><td>I seek help from DSS when I experience difficulties.</td><td>2.96</td><td>1.21</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- POD -->
+        <div class="card" style="animation-delay:0.4s">
+            <div class="card-header"><h3>Table 7. Prefect of Discipline (POD)</h3><p>Overall Mean = 3.80 (Often) — Highest</p></div>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>#</th><th>Indicator</th><th>Mean</th><th>SD</th><th>Desc</th></tr></thead>
+                    <tbody>
+                        <tr><td>1</td><td>POD provides guidance regarding school rules.</td><td>3.91</td><td>1.02</td><td><span class="badge badge-often">Often</span></td></tr>
+                        <tr><td>2</td><td>POD addresses concerns related to student conduct.</td><td>3.89</td><td>.95</td><td><span class="badge badge-often">Often</span></td></tr>
+                        <tr><td>3</td><td>POD provides clear information about school policies.</td><td>3.90</td><td>.93</td><td><span class="badge badge-often">Often</span></td></tr>
+                        <tr><td>4</td><td>POD is part of the university's student support system.</td><td>3.86</td><td>1.01</td><td><span class="badge badge-often">Often</span></td></tr>
+                        <tr><td>5</td><td>I feel comfortable discussing discipline concerns with POD.</td><td>3.48</td><td>1.18</td><td><span class="badge badge-often">Often</span></td></tr>
+                        <tr><td>6</td><td>POD provides support for behavioral concerns.</td><td>3.74</td><td>1.06</td><td><span class="badge badge-often">Often</span></td></tr>
+                        <tr><td>7</td><td>I consider POD as part of the university's support system.</td><td>3.79</td><td>1.05</td><td><span class="badge badge-often">Often</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- OSSA -->
+        <div class="card" style="animation-delay:0.5s; grid-column: 1 / -1;">
+            <div class="card-header"><h3>Table 8. Office of Student Services & Affairs (OSSA)</h3><p>Overall Mean = 3.67 (Often)</p></div>
+            <div class="grid grid-2" style="align-items:start">
+                <div class="table-wrapper">
+                    <table>
+                        <thead><tr><th>#</th><th>Indicator</th><th>Mean</th><th>SD</th><th>Desc</th></tr></thead>
+                        <tbody>
+                            <tr><td>1</td><td>OSSA provides assistance for student-related concerns.</td><td>3.75</td><td>.95</td><td><span class="badge badge-often">Often</span></td></tr>
+                            <tr><td>2</td><td>I am aware of the programs/services offered by OSSA.</td><td>3.65</td><td>1.02</td><td><span class="badge badge-often">Often</span></td></tr>
+                            <tr><td>3</td><td>OSSA offers programs that support student engagement.</td><td>3.68</td><td>1.01</td><td><span class="badge badge-often">Often</span></td></tr>
+                            <tr><td>4</td><td>OSSA provides support for academic/personal challenges.</td><td>3.61</td><td>1.01</td><td><span class="badge badge-often">Often</span></td></tr>
+                            <tr><td>5</td><td>OSSA is a reliable source of support.</td><td>3.64</td><td>1.01</td><td><span class="badge badge-often">Often</span></td></tr>
+                            <tr><td>6</td><td>OSSA encourages students to engage in support programs.</td><td>3.68</td><td>1.00</td><td><span class="badge badge-often">Often</span></td></tr>
+                            <tr><td>7</td><td>OSSA encourages guidance for student life & development.</td><td>3.67</td><td>1.03</td><td><span class="badge badge-often">Often</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="chart-box" style="min-height:280px"><canvas id="chartOSSA"></canvas></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════════════ SECTION 4: DIFFERENCES ═══════════════ -->
+<section id="differences">
+    <div class="section-header">
+        <div class="section-label">Section 4</div>
+        <h2 class="section-title">Differences Across Profile Variables</h2>
+        <p class="section-desc">Analysis of significant differences in help-seeking behavior and support system engagement by sex, year level, and department (Tables 10–12).</p>
+    </div>
+
+    <!-- By Sex -->
+    <div class="card" style="margin-bottom:1.5rem">
+        <div class="card-header"><h3>Table 10. Differences by Sex (Mann-Whitney U)</h3><p>No significant differences found across all domains (p > .05)</p></div>
+        <div class="grid grid-2" style="align-items:center">
+            <div class="chart-box" style="min-height:340px"><canvas id="chartSexDiff"></canvas></div>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Domain</th><th>Sex</th><th>N</th><th>Mean</th><th>SD</th><th>Mann-Whitney U</th><th>p-value</th><th>Decision</th></tr></thead>
+                    <tbody>
+                        <tr><td class="td-bold" rowspan="2">HSB</td><td>Female</td><td>213</td><td>3.17</td><td>.74</td><td rowspan="2">14756.000</td><td rowspan="2">.302</td><td rowspan="2"><span class="badge badge-ns">Not Sig.</span></td></tr>
+                        <tr><td>Male</td><td>148</td><td>3.23</td><td>.80</td></tr>
+                        <tr><td class="td-bold" rowspan="2">FS</td><td>Female</td><td>213</td><td>3.07</td><td>.81</td><td rowspan="2">14225.000</td><td rowspan="2">.115</td><td rowspan="2"><span class="badge badge-ns">Not Sig.</span></td></tr>
+                        <tr><td>Male</td><td>148</td><td>3.19</td><td>.91</td></tr>
+                        <tr><td class="td-bold" rowspan="2">HDC</td><td>Female</td><td>213</td><td>3.25</td><td>.80</td><td rowspan="2">14723.000</td><td rowspan="2">.286</td><td rowspan="2"><span class="badge badge-ns">Not Sig.</span></td></tr>
+                        <tr><td>Male</td><td>148</td><td>3.35</td><td>.84</td></tr>
+                        <tr><td class="td-bold" rowspan="2">DSS</td><td>Female</td><td>213</td><td>3.21</td><td>.90</td><td rowspan="2">13865.500</td><td rowspan="2">.051</td><td rowspan="2"><span class="badge badge-ns">Not Sig.</span></td></tr>
+                        <tr><td>Male</td><td>148</td><td>3.39</td><td>.95</td></tr>
+                        <tr><td class="td-bold" rowspan="2">POD</td><td>Female</td><td>213</td><td>3.81</td><td>.85</td><td rowspan="2">15508.000</td><td rowspan="2">.794</td><td rowspan="2"><span class="badge badge-ns">Not Sig.</span></td></tr>
+                        <tr><td>Male</td><td>148</td><td>3.78</td><td>.93</td></tr>
+                        <tr><td class="td-bold" rowspan="2">OSSA</td><td>Female</td><td>213</td><td>3.72</td><td>.83</td><td rowspan="2">14760.000</td><td rowspan="2">.303</td><td rowspan="2"><span class="badge badge-ns">Not Sig.</span></td></tr>
+                        <tr><td>Male</td><td>148</td><td>3.59</td><td>.98</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- By Year Level -->
+    <div class="card" style="margin-bottom:1.5rem">
+        <div class="card-header"><h3>Table 11. Differences by Year Level (Kruskal-Wallis)</h3><p>No significant differences found across all domains (p > .05)</p></div>
+        <div class="grid grid-2" style="align-items:center">
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr><th>Domain</th><th>Year Level</th><th>N</th><th>Mean</th><th>SD</th><th>Kruskal-Wallis</th><th>p-value</th><th>Decision</th></tr></thead>
+                    <tbody>
+                        <tr><td class="td-bold" rowspan="3">HSB</td><td>Freshmen</td><td>102</td><td>3.29</td><td>.73</td><td rowspan="3">1.626</td><td rowspan="3">.444</td><td rowspan="3"><span class="badge badge-ns">Not Sig.</span></td></tr>
+                        <tr><td>Sophomore</td><td>99</td><td>3.19</td><td>.74</td></tr>
+                        <tr><td>Junior</td><td>160</td><td>3.15</td><td>.80</td></tr>
+                        <tr><td class="td-bold" rowspan="3">FS</td><td>Freshmen</td><td>102</td><td>3.07</td><td>.97</td><td rowspan="3">1.609</td><td rowspan="3">.447</td><td rowspan="3"><span class="badge badge-ns">Not Sig.</span></td></tr>
+                        <tr><td>Sophomore</td><td>99</td><td>3.21</td><td>.78</td></tr>
+                        <tr><td>Junior</td><td>160</td><td>3.09</td><td>.82</td></tr>
+                        <tr><td class="td-bold" rowspan="3">HDC</td><td>Freshmen</td><td>102</td><td>3.43</td><td>.73</td><td rowspan="3">5.195</td><td rowspan="3">.074</td><td rowspan="3"><span class="badge badge-ns">Not Sig.</span></td></tr>
+                        <tr><td>Sophomore</td><td>99</td><td>3.16</td><td>.85</td></tr>
+                        <tr><td>Junior</td><td>160</td><td>3.29</td><td>.84</td></tr>
+                        <tr><td class="td-bold" rowspan="3">DSS</td><td>Freshmen</td><td>102</td><td>3.33</td><td>.93</td><td rowspan="3">.903</td><td rowspan="3">.637</td><td rowspan="3"><span class="badge badge-ns">Not Sig.</span></td></tr>
+                        <tr><td>Sophomore</td><td>99</td><td>3.22</td><td>.94</td></tr>
+                        <tr><td>Junior</td><td>160</td><td>3.29</td><td>.91</td></tr>
+                        <tr><td class="td-bold" rowspan="3">POD</td><td>Freshmen</td><td>102</td><td>3.91</td><td>.79</td><td rowspan="3">4.548</td><td rowspan="3">.103</td><td rowspan="3"><span class="badge badge-ns">Not Sig.</span></td></tr>
+                        <tr><td>Sophomore</td><td>99</td><td>3.86</td><td>.94</td></tr>
+                        <tr><td>Junior</td><td>160</td><td>3.69</td><td>.89</td></tr>
+                        <tr><td class="td-bold" rowspan="3">OSSA</td><td>Freshmen</td><td>102</td><td>3.77</td><td>.88</td><td rowspan="3">2.018</td><td rowspan="3">.365</td><td rowspan="3"><span class="badge badge-ns">Not Sig.</span></td></tr>
+                        <tr><td>Sophomore</td><td>99</td><td>3.66</td><td>.92</td></tr>
+                        <tr><td>Junior</td><td>160</td><td>3.61</td><td>.89</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="chart-box" style="min-height:340px"><canvas id="chartYearDiff"></canvas></div>
+        </div>
+    </div>
+
+    <!-- By Department -->
+    <div class="card">
+        <div class="card-header"><h3>Table 12. Differences by Department (Kruskal-Wallis)</h3><p>Significant differences found in HSB, HDC, DSS, POD, and OSSA (p < .05). Faculty Support showed no significant difference.</p></div>
+        <div class="chart-box tall" style="margin-bottom:1.5rem"><canvas id="chartDeptDiff"></canvas></div>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Domain</th>
+                        <th>CMAMP<br><small>(61)</small></th>
+                        <th>CIT<br><small>(13)</small></th>
+                        <th>CTE<br><small>(15)</small></th>
+                        <th>COA<br><small>(23)</small></th>
+                        <th>CAS<br><small>(18)</small></th>
+                        <th>CCJE<br><small>(14)</small></th>
+                        <th>CONPHM<br><small>(91)</small></th>
+                        <th>CBE<br><small>(49)</small></th>
+                        <th>CEA<br><small>(77)</small></th>
+                        <th>KW</th>
+                        <th>p</th>
+                        <th>Decision</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="td-bold">HSB</td><td>3.35</td><td>3.09</td><td>3.76</td><td>3.06</td><td>1.84</td><td>3.61</td><td>3.27</td><td>3.04</td><td>3.06</td><td>23.390</td><td class="td-accent">.003</td><td><span class="badge badge-sig">Significant</span></td></tr>
+                    <tr><td class="td-bold">FS</td><td>3.10</td><td>3.06</td><td>3.46</td><td>3.34</td><td>3.07</td><td>3.55</td><td>2.94</td><td>3.26</td><td>3.06</td><td>12.551</td><td>.128</td><td><span class="badge badge-ns">Not Sig.</span></td></tr>
+                    <tr><td class="td-bold">HDC</td><td>3.30</td><td>3.20</td><td>4.01</td><td>3.22</td><td>3.18</td><td>3.57</td><td>3.37</td><td>3.23</td><td>3.11</td><td>16.395</td><td class="td-accent">.037</td><td><span class="badge badge-sig">Significant</span></td></tr>
+                    <tr><td class="td-bold">DSS</td><td>3.14</td><td>3.54</td><td>3.55</td><td>3.55</td><td>3.18</td><td>3.57</td><td>3.44</td><td>3.12</td><td>3.12</td><td>14.751</td><td class="td-accent">.044</td><td><span class="badge badge-sig">Significant</span></td></tr>
+                    <tr><td class="td-bold">POD</td><td>3.73</td><td>3.51</td><td>4.39</td><td>4.20</td><td>3.80</td><td>3.95</td><td>3.89</td><td>3.39</td><td>3.78</td><td>24.283</td><td class="td-accent">.002</td><td><span class="badge badge-sig">Significant</span></td></tr>
+                    <tr><td class="td-bold">OSSA</td><td>3.64</td><td>3.34</td><td>4.16</td><td>4.42</td><td>3.78</td><td>3.75</td><td>3.69</td><td>3.29</td><td>3.61</td><td>32.042</td><td class="td-accent">.000</td><td><span class="badge badge-sig">Significant</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="finding purple" style="margin-top:1.25rem">
+            <div class="finding-icon">⚡</div>
+            <div class="finding-body">
+                <h4>Notable: CAS Help-Seeking (M = 1.84) and COA OSSA (M = 4.42)</h4>
+                <p>CAS students exhibited remarkably low help-seeking behavior. Meanwhile, COA students showed the highest OSSA utilization ("Always"). CTE and CCJE consistently scored high across domains. Faculty Support remained comparable across all departments.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════════════ SECTION 5: CORRELATION ═══════════════ -->
+<section id="correlation">
+    <div class="section-header">
+        <div class="section-label">Section 5</div>
+        <h2 class="section-title">Relationship Between Help-Seeking Behavior and Support System Utilization</h2>
+        <p class="section-desc">Spearman's rho correlations between HSB and each support system (Table 13, N = 361). All relationships are statistically significant (p < .05).</p>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><h3>Table 13. Spearman's Rho Correlation Results</h3><p>All correlations significant at p &lt; .05</p></div>
+        
+        <div class="grid grid-2" style="align-items:start; gap:2rem">
+            <div>
+                <div class="table-wrapper" style="margin-bottom:1.5rem">
+                    <table>
+                        <thead><tr><th>Support System</th><th>Correlation Coefficient (r)</th><th>Sig. (2-tailed)</th><th>Strength</th></tr></thead>
+                        <tbody>
+                            <tr><td class="td-bold">Faculty Support (FS)</td><td class="td-accent">.488*</td><td>.000</td><td><span class="badge badge-often">Moderate</span></td></tr>
+                            <tr><td class="td-bold">Health & Dev. Center (HDC)</td><td class="td-accent">.526*</td><td>.000</td><td><span class="badge badge-often">Moderate</span></td></tr>
+                            <tr><td class="td-bold">Dept. of Student Svcs (DSS)</td><td class="td-accent">.488*</td><td>.000</td><td><span class="badge badge-often">Moderate</span></td></tr>
+                            <tr><td class="td-bold">Prefect of Discipline (POD)</td><td class="td-accent">.283*</td><td>.000</td><td><span class="badge badge-sometimes">Weak</span></td></tr>
+                            <tr><td class="td-bold">Student Svcs & Affairs (OSSA)</td><td class="td-accent">.317*</td><td>.000</td><td><span class="badge badge-sometimes">Weak</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="font-size:0.78rem; color:var(--text-muted)">* Spearman's rho Correlation is significant at &lt;0.05.</p>
+            </div>
+            <div>
+                <!-- Correlation bars -->
+                <div style="margin-bottom:0.5rem; font-size:0.82rem; font-weight:600; color:var(--text-muted)">Correlation Strength Visualization (r values)</div>
+                <div class="corr-row">
+                    <div class="corr-label">FS</div>
+                    <div class="corr-bar-bg"><div class="corr-bar" style="width:48.8%; background:linear-gradient(90deg,#38bdf8,#818cf8)">.488</div></div>
+                    <div class="corr-p">p = .000</div>
+                </div>
+                <div class="corr-row">
+                    <div class="corr-label">HDC</div>
+                    <div class="corr-bar-bg"><div class="corr-bar" style="width:52.6%; background:linear-gradient(90deg,#34d399,#2dd4bf)">.526</div></div>
+                    <div class="corr-p">p = .000</div>
+                </div>
+                <div class="corr-row">
+                    <div class="corr-label">DSS</div>
+                    <div class="corr-bar-bg"><div class="corr-bar" style="width:48.8%; background:linear-gradient(90deg,#fbbf24,#fb923c)">.488</div></div>
+                    <div class="corr-p">p = .000</div>
+                </div>
+                <div class="corr-row">
+                    <div class="corr-label">POD</div>
+                    <div class="corr-bar-bg"><div class="corr-bar" style="width:28.3%; background:linear-gradient(90deg,#f472b6,#fb7185)">.283</div></div>
+                    <div class="corr-p">p = .000</div>
+                </div>
+                <div class="corr-row">
+                    <div class="corr-label">OSSA</div>
+                    <div class="corr-bar-bg"><div class="corr-bar" style="width:31.7%; background:linear-gradient(90deg,#a78bfa,#c084fc)">.317</div></div>
+                    <div class="corr-p">p = .000</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="finding green" style="margin-top:1.5rem">
+            <div class="finding-icon">🔗</div>
+            <div class="finding-body">
+                <h4>Strongest Correlation: HDC (r = .526)</h4>
+                <p>The Health and Development Center shows the strongest positive correlation with help-seeking behavior, followed by Faculty Support and DSS (both r = .488). POD and OSSA show weaker but still significant positive correlations, suggesting students access these services more for compliance rather than as primary help-seeking outlets.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="margin-top:1.5rem">
+        <div class="card-header"><h3>Correlation Scatter Overview</h3><p>Comparative correlation coefficients across all support systems</p></div>
+        <div class="chart-box"><canvas id="chartCorr"></canvas></div>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════════════ CONCLUSIONS ═══════════════ -->
+<section id="conclusions">
+    <div class="section-header">
+        <div class="section-label">Summary</div>
+        <h2 class="section-title">Conclusions &amp; Recommendations</h2>
+        <p class="section-desc">Key conclusions derived from the findings and actionable recommendations for the University of La Salette, Inc.</p>
+    </div>
+
+    <div class="grid grid-3">
+        <div class="card" style="animation-delay:0.1s">
+            <div style="font-size:2rem; margin-bottom:0.5rem">📋</div>
+            <h3 style="font-size:1rem; margin-bottom:0.5rem">Moderate Help-Seeking</h3>
+            <p style="font-size:0.85rem; color:var(--text-secondary)">Students exhibit moderate help-seeking behavior (M=3.20). They are more likely to seek help for academic concerns but tend to be self-reliant in handling personal issues.</p>
+        </div>
+        <div class="card" style="animation-delay:0.2s">
+            <div style="font-size:2rem; margin-bottom:0.5rem">🏛️</div>
+            <h3 style="font-size:1rem; margin-bottom:0.5rem">Utilization Gap</h3>
+            <p style="font-size:0.85rem; color:var(--text-secondary)">POD and OSSA are frequently utilized ("Often"), while Faculty Support, HDC, and DSS remain only moderately used. A gap exists between awareness and actual service use.</p>
+        </div>
+        <div class="card" style="animation-delay:0.3s">
+            <div style="font-size:2rem; margin-bottom:0.5rem">⚖️</div>
+            <h3 style="font-size:1rem; margin-bottom:0.5rem">Sex & Year Level</h3>
+            <p style="font-size:0.85rem; color:var(--text-secondary)">No significant differences in help-seeking behavior or support utilization based on sex or year level, suggesting equitable access and engagement patterns.</p>
+        </div>
+        <div class="card" style="animation-delay:0.4s">
+            <div style="font-size:2rem; margin-bottom:0.5rem">🎓</div>
+            <h3 style="font-size:1rem; margin-bottom:0.5rem">Department Matters</h3>
+            <p style="font-size:0.85rem; color:var(--text-secondary)">Significant differences across departments in HSB, HDC, DSS, POD, and OSSA (p < .05). Academic environment and departmental culture influence engagement patterns.</p>
+        </div>
+        <div class="card" style="animation-delay:0.5s">
+            <div style="font-size:2rem; margin-bottom:0.5rem">🔗</div>
+            <h3 style="font-size:1rem; margin-bottom:0.5rem">Positive Relationship</h3>
+            <p style="font-size:0.85rem; color:var(--text-secondary)">A significant positive relationship exists between help-seeking behavior and all support systems. Students who seek help more are more likely to utilize institutional services.</p>
+        </div>
+        <div class="card" style="animation-delay:0.6s; border-color: rgba(56,189,248,0.3); background: rgba(56,189,248,0.05);">
+            <div style="font-size:2rem; margin-bottom:0.5rem">💡</div>
+            <h3 style="font-size:1rem; margin-bottom:0.5rem; color:var(--accent-blue)">Recommendations</h3>
+            <p style="font-size:0.85rem; color:var(--text-secondary)">Strengthen proactive help-seeking initiatives, enhance visibility of underutilized services (FS, HDC, DSS), implement department-based interventions, and improve integration among all support systems.</p>
+        </div>
+    </div>
+</section>
+
+</div><!-- /container -->
+
+<footer>
+    <p>University of La Salette, Inc. — College of Medicine and Allied Medical Programs — A.Y. 2025–2026</p>
+    <p style="margin-top:0.5rem">Balag, Malate, Noda, Purification, Tamayo &amp; Valdez | Adviser: <a href="#">Regine L. Pace, RMT, MSPH</a></p>
+</footer>
+
+<!-- ═══════════════ SCRIPTS ═══════════════ -->
+<script>
+// ── Theme & Defaults ──
+Chart.defaults.color = '#94a3b8';
+Chart.defaults.font.family = 'Inter';
+Chart.defaults.plugins.legend.labels.color = '#cbd5e1';
+Chart.defaults.plugins.legend.labels.padding = 16;
+Chart.defaults.plugins.tooltip.backgroundColor = 'rgba(11, 15, 26, 0.95)';
+Chart.defaults.plugins.tooltip.titleColor = '#f1f5f9';
+Chart.defaults.plugins.tooltip.bodyColor = '#cbd5e1';
+Chart.defaults.plugins.tooltip.borderColor = 'rgba(255,255,255,0.1)';
+Chart.defaults.plugins.tooltip.borderWidth = 1;
+Chart.defaults.plugins.tooltip.cornerRadius = 8;
+Chart.defaults.plugins.tooltip.padding = 12;
+
+const C = {
+    blue: '#38bdf8', purple: '#a78bfa', green: '#34d399',
+    pink: '#f472b6', yellow: '#fbbf24', orange: '#fb923c',
+    teal: '#2dd4bf', indigo: '#818cf8', red: '#f87171'
+};
+
+// ── SEX ──
+new Chart(document.getElementById('chartSex'), {
+    type: 'doughnut',
+    data: {
+        labels: ['Female (213)', 'Male (148)'],
+        datasets: [{ data: [213, 148], backgroundColor: [C.purple, C.blue], borderWidth: 0, hoverOffset: 8 }]
+    },
+    options: {
+        responsive: true, maintainAspectRatio: false, cutout: '72%',
+        plugins: { legend: { position: 'bottom', labels: { padding: 12, font: {size: 12} } } }
+    }
+});
+
+// ── YEAR ──
+new Chart(document.getElementById('chartYear'), {
+    type: 'doughnut',
+    data: {
+        labels: ['Freshmen (102)', 'Sophomore (99)', 'Junior (160)'],
+        datasets: [{ data: [102, 99, 160], backgroundColor: [C.green, C.yellow, C.pink], borderWidth: 0, hoverOffset: 8 }]
+    },
+    options: {
+        responsive: true, maintainAspectRatio: false, cutout: '72%',
+        plugins: { legend: { position: 'bottom', labels: { padding: 12, font: {size: 12} } } }
+    }
+});
+
+// ── DEPARTMENT ──
+new Chart(document.getElementById('chartDept'), {
+    type: 'bar',
+    data: {
+        labels: ['CMAMP', 'CIT', 'CTE', 'COA', 'CAS', 'CCJE', 'CONPHM', 'CBE', 'CEA'],
+        datasets: [{
+            label: 'Students',
+            data: [61, 13, 15, 23, 18, 14, 91, 49, 77],
+            backgroundColor: [C.blue, C.purple, C.green, C.pink, C.yellow, C.orange, C.teal, C.indigo, C.red],
+            borderRadius: 6, barPercentage: 0.65
+        }]
+    },
+    options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+            y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.04)' } },
+            x: { grid: { display: false } }
+        }
+    }
+});
+
+// ── HSB INDICATORS ──
+new Chart(document.getElementById('chartHSB'), {
+    type: 'bar',
+    data: {
+        labels: [
+            'Ask guidance for lessons',
+            'Talk when stressed',
+            'Help for academic difficulties',
+            'Help even if minor concern',
+            'Overwhelmed by responsibilities',
+            'Help affects academic performance',
+            'Comfortable asking for help',
+            'Personal/emotional concerns',
+            'Seek help immediately',
+            'Ask help instead of alone'
+        ],
+        datasets: [{
+            label: 'Mean',
+            data: [3.47, 3.38, 3.31, 3.31, 3.20, 3.14, 3.13, 3.06, 3.06, 2.92],
+            backgroundColor: (ctx) => ctx.index === 0 ? C.green : ctx.index === 9 ? C.pink : 'rgba(56,189,248,0.6)',
+            borderRadius: 4
+        }]
+    },
+    options: {
+        responsive: true, maintainAspectRatio: false, indexAxis: 'y',
+        plugins: { legend: { display: false } },
+        scales: {
+            x: { min: 2.5, max: 4, grid: { color: 'rgba(255,255,255,0.04)' } },
+            y: { grid: { display: false }, ticks: { font: {size: 11} } }
+        }
+    }
+});
+
+// ── OVERALL SUPPORT ──
+new Chart(document.getElementById('chartOverall'), {
+    type: 'polarArea',
+    data: {
+        labels: ['Faculty (FS)', 'HDC', 'DSS', 'POD', 'OSSA'],
+        datasets: [{
+            data: [3.12, 3.29, 3.29, 3.80, 3.67],
+            backgroundColor: [
+                'rgba(56,189,248,0.5)', 'rgba(52,211,153,0.5)',
+                'rgba(251,191,36,0.5)', 'rgba(244,114,182,0.5)', 'rgba(167,139,250,0.5)'
+            ],
+            borderColor: [C.blue, C.green, C.yellow, C.pink, C.purple],
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true, maintainAspectRatio: false,
+        scales: { r: { min: 2, max: 4.2, ticks: { display: false, stepSize: 0.5 }, grid: { color: 'rgba(255,255,255,0.06)' } } },
+        plugins: { legend: { position: 'bottom', labels: { padding: 12 } } }
+    }
+});
+
+// ── OSSA Radar ──
+new Chart(document.getElementById('chartOSSA'), {
+    type: 'radar',
+    data: {
+        labels: ['Assistance', 'Awareness', 'Engagement', 'Academic/Personal', 'Reliability', 'Encourage Programs', 'Student Life'],
+        datasets: [{
+            label: 'OSSA Indicators',
+            data: [3.75, 3.65, 3.68, 3.61, 3.64, 3.68, 3.67],
+            backgroundColor: 'rgba(167,139,250,0.15)',
+            borderColor: C.purple, pointBackgroundColor: C.purple,
+            pointBorderColor: '#fff', borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true, maintainAspectRatio: false,
+        scales: { r: { min: 3.2, max: 3.9, ticks: {display: false, stepSize: 0.1}, grid: {color: 'rgba(255,255,255,0.08)'}, angleLines: {color: 'rgba(255,255,255,0.08)'}, pointLabels: {color: '#cbd5e1', font: {size: 11}} } },
+        plugins: { legend: { display: false } }
+    }
+});
+
+// ── SEX DIFF ──
+new Chart(document.getElementById('chartSexDiff'), {
+    type: 'radar',
+    data: {
+        labels: ['HSB', 'FS', 'HDC', 'DSS', 'POD', 'OSSA'],
+        datasets: [
+            { label: 'Female', data: [3.17, 3.07, 3.25, 3.21, 3.81, 3.72], backgroundColor: 'rgba(167,139,250,0.15)', borderColor: C.purple, pointBackgroundColor: C.purple, borderWidth: 2 },
+            { label: 'Male', data: [3.23, 3.19, 3.35, 3.39, 3.78, 3.59], backgroundColor: 'rgba(56,189,248,0.15)', borderColor: C.blue, pointBackgroundColor: C.blue, borderWidth: 2 }
+        ]
+    },
+    options: {
+        responsive: true, maintainAspectRatio: false,
+        scales: { r: { min: 2.8, max: 4.0, ticks: {display: false, stepSize: 0.3}, grid: {color: 'rgba(255,255,255,0.08)'}, angleLines: {color: 'rgba(255,255,255,0.08)'}, pointLabels: {color: '#cbd5e1', font: {size: 12, weight: 600}} } }
+    }
+});
+
+// ── YEAR DIFF ──
+new Chart(document.getElementById('chartYearDiff'), {
+    type: 'bar',
+    data: {
+        labels: ['HSB', 'FS', 'HDC', 'DSS', 'POD', 'OSSA'],
+        datasets: [
+            { label: 'Freshmen', data: [3.29, 3.07, 3.43, 3.33, 3.91, 3.77], backgroundColor: C.green, borderRadius: 3 },
+            { label: 'Sophomore', data: [3.19, 3.21, 3.16, 3.22, 3.86, 3.66], backgroundColor: C.yellow, borderRadius: 3 },
+            { label: 'Junior', data: [3.15, 3.09, 3.29, 3.29, 3.69, 3.61], backgroundColor: C.pink, borderRadius: 3 }
+        ]
+    },
+    options: {
+        responsive: true, maintainAspectRatio: false,
+        scales: { y: { min: 2.5, max: 4.3, grid: {color: 'rgba(255,255,255,0.04)'} }, x: {grid: {display: false}} }
+    }
+});
+
+// ── DEPT DIFF ──
+new Chart(document.getElementById('chartDeptDiff'), {
+    type: 'line',
+    data: {
+        labels: ['CMAMP', 'CIT', 'CTE', 'COA', 'CAS', 'CCJE', 'CONPHM', 'CBE', 'CEA'],
+        datasets: [
+            { label: 'HSB (p=.003)', data: [3.35, 3.09, 3.76, 3.06, 1.84, 3.61, 3.27, 3.04, 3.06], borderColor: C.blue, backgroundColor: C.blue, tension: 0.4, borderWidth: 3, pointRadius: 5, pointHoverRadius: 7 },
+            { label: 'HDC (p=.037)', data: [3.30, 3.20, 4.01, 3.22, 3.18, 3.57, 3.37, 3.23, 3.11], borderColor: C.green, backgroundColor: C.green, tension: 0.4, borderWidth: 3, pointRadius: 5, pointHoverRadius: 7 },
+            { label: 'DSS (p=.044)', data: [3.14, 3.54, 3.55, 3.55, 3.18, 3.57, 3.44, 3.12, 3.12], borderColor: C.yellow, backgroundColor: C.yellow, tension: 0.4, borderWidth: 3, pointRadius: 5, pointHoverRadius: 7 },
+            { label: 'POD (p=.002)', data: [3.73, 3.51, 4.39, 4.20, 3.80, 3.95, 3.89, 3.39, 3.78], borderColor: C.pink, backgroundColor: C.pink, tension: 0.4, borderWidth: 3, pointRadius: 5, pointHoverRadius: 7 },
+            { label: 'OSSA (p=.000)', data: [3.64, 3.34, 4.16, 4.42, 3.78, 3.75, 3.69, 3.29, 3.61], borderColor: C.purple, backgroundColor: C.purple, tension: 0.4, borderWidth: 3, pointRadius: 5, pointHoverRadius: 7 }
+        ]
+    },
+    options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { position: 'top' } },
+        scales: { y: { min: 1.5, max: 5, grid: {color: 'rgba(255,255,255,0.04)'} }, x: {grid: {color: 'rgba(255,255,255,0.04)'}} },
+        interaction: { mode: 'index', intersect: false }
+    }
+});
+
+// ── CORRELATION ──
+new Chart(document.getElementById('chartCorr'), {
+    type: 'bar',
+    data: {
+        labels: ['Faculty Support (FS)', 'Health & Dev (HDC)', 'Student Svcs (DSS)', 'Discipline (POD)', 'Student Affairs (OSSA)'],
+        datasets: [{
+            label: 'Spearman r',
+            data: [.488, .526, .488, .283, .317],
+            backgroundColor: [
+                'rgba(56,189,248,0.7)', 'rgba(52,211,153,0.7)',
+                'rgba(251,191,36,0.7)', 'rgba(244,114,182,0.7)', 'rgba(167,139,250,0.7)'
+            ],
+            borderColor: [C.blue, C.green, C.yellow, C.pink, C.purple],
+            borderWidth: 2, borderRadius: 8
+        }]
+    },
+    options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: {
+            legend: { display: false },
+            tooltip: {
+                callbacks: {
+                    afterLabel: function() { return 'p = .000 (Significant)'; }
+                }
+            }
+        },
+        scales: { y: { min: 0, max: 0.7, grid: {color: 'rgba(255,255,255,0.04)'}, title: {display: true, text: 'Correlation Coefficient (r)', color: '#94a3b8'} }, x: {grid: {display: false}} }
+    }
+});
+
+// ── Responsive grid fix for demographics ──
+const demoGrid = document.getElementById('demo-inner');
+function checkWidth() {
+    if (window.innerWidth < 900) {
+        demoGrid.style.gridTemplateColumns = '1fr';
+    } else {
+        demoGrid.style.gridTemplateColumns = '1fr 1fr 2fr';
+    }
+}
+checkWidth();
+window.addEventListener('resize', checkWidth);
+
+</script>
+
+<!-- Back to top button -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script>
+// ── Back to top ──
+const backBtn = document.getElementById('backToTop');
+const sections2 = document.querySelectorAll('section[id]');
+const navLinks2 = document.querySelectorAll('.nav-links a');
+
+window.addEventListener('scroll', () => {
+    // Active nav
+    let current = '';
+    sections2.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 120) current = s.id;
+    });
+    navLinks2.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+    });
+    // Show/hide back-to-top
+    if (window.scrollY > 600) {
+        backBtn.classList.add('visible');
+    } else {
+        backBtn.classList.remove('visible');
+    }
+}, { passive: true });
+
+backBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
+</body>
+</html>
