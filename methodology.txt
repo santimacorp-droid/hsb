@@ -1,0 +1,49 @@
+================================================================================
+RESEARCH POSTER: METHODOLOGY
+================================================================================
+
+METHODOLOGICAL FLOW:
+Approval ──> Validation ──> Pilot Test ──> Survey ──> Data Encoding
+
+────────────────────────────────────────────────────────────────────────────────
+1. RESEARCH DESIGN (Quantitative Descriptive-Correlational)
+────────────────────────────────────────────────────────────────────────────────
+Proposal Approval ──> Expert Vetting ──> Pilot Feasibility ──> Survey Administration ──> Nonparametric Analysis
+
+────────────────────────────────────────────────────────────────────────────────
+2. RESEARCH RESPONDENTS (Stratified Random Sampling)
+────────────────────────────────────────────────────────────────────────────────
+N = 5,821 population ──> Raosoft Calculator ──> n = 361 Sample:
+* Freshmen: 102 (28.3%)
+* Sophomores: 99 (27.4%)
+* Juniors: 160 (44.3%)
+* Total: 361 respondents (Proportional selection across 9 colleges)
+
+────────────────────────────────────────────────────────────────────────────────
+3. LOCALE OF THE STUDY (University of La Salette, Inc. - ULS)
+────────────────────────────────────────────────────────────────────────────────
+Site Selection ──> President & Deans' Approvals ──> Target Unit Mapping (HDC, DSS, POD, OSSA) ──> On-site Classroom Collection
+
+────────────────────────────────────────────────────────────────────────────────
+4. RESEARCH INSTRUMENT (2-Part Survey Questionnaire)
+────────────────────────────────────────────────────────────────────────────────
+Drafting (Demographics + 5-Point Likert Scales) ──> Expert Panel Review ──> Pilot Test (Cronbach's Alpha = 0.953) ──> Numeric Coding (1-5 Scale)
+
+────────────────────────────────────────────────────────────────────────────────
+5. DATA COLLECTION PROCEDURE (Field Protocol)
+────────────────────────────────────────────────────────────────────────────────
+Adviser clearance ──> Expert validation ──> Pilot trial ──> Classroom distribution (3–5 min) ──> Immediate retrieval ──> Excel entry
+
+────────────────────────────────────────────────────────────────────────────────
+6. DATA ANALYSIS PROCEDURE (Descriptive & Inferential)
+────────────────────────────────────────────────────────────────────────────────
+Excel Entry ──> Shapiro-Wilk Normality Test (p < 0.05; Non-Normal) ──> Nonparametric Tests:
+* Profile: Frequency & Percentages
+* Variable Levels: Mean & Standard Deviation
+* Group Differences: Mann-Whitney U (Sex) | Kruskal-Wallis H (Year & Department)
+* Relationship: Spearman's rho correlation (Alpha = 0.05 significance)
+
+────────────────────────────────────────────────────────────────────────────────
+7. ETHICAL CONSIDERATIONS (Participant Protection)
+────────────────────────────────────────────────────────────────────────────────
+Protocol Vetting ──> Consent Form Approval ──> Voluntary Briefing ──> Signed Consent/Anonymity ──> Encrypted Database

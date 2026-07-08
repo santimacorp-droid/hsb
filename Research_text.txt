@@ -1,0 +1,5210 @@
+Research
+
+University of La. Salette Inc.
+Dubinan East, Santiago City, Isabela
+College of Medicine and Allied Medical Programs
+A.Y 2025-2026
+
+Interrelationship Between the Help-Seeking Behavior of Students and the Support
+Systems Within the University of La Salette, Inc.
+
+A Research Presented to :
+The faculty of Medical Laboratory Science
+University of La Salette Inc.
+Santiago City, Philippines
+
+In Partial Fulfillment
+Of the Requirements in
+Research 2
+
+BMLS
+
+Submitted By :
+
+Balag, Emma Joy Z.
+Malate, Ma. Danella A.
+Noda, Creselle Ann P.
+Purification, Mabel
+Tamayo, Ashley Jyean M.
+Valdez, Jenny L.
+Submitted to:
+BENDEDICT M. MARQUEZ, RMT, MSPH
+Clinical Instructor
+
+July 2026
+
+ACKNOWLEDGEMENT
+We, the researchers, extend our profound gratitude to God Almighty for bestowing us
+with the fortitude, wisdom and resolve needed to complete this research study successfully. His
+guidance and blessings have been our sources of strength throughout this journey.
+Our heartfelt gratitude is directed towards our Research Adviser, REGINE L. PACE,
+RMT, MSPH, whose expert guidance, invaluable insights, patience and support throughout the
+entire research process.
+We also express our deep gratitude to our Research instructor, BENEDICT B.
+MARQUEZ, RMT, MSPH, for providing the foundational knowledge, continuous support, and
+academic structure that were indispensable to this research. Their mentorship significantly
+enhanced the quality and direction of our study.
+We also extend our gratitude to the experts who validated our research instrument
+instrument for their invaluable insights, constructive feedback, and professional guidance, which
+greatly contributed to the accuracy and credibility of this study.
+Furthermore, we would like to express our deepest appreciation to our families and
+friends for their unwavering support, encouragement, and understanding throughout the entire
+research process.
+
+DEDICATION
+This research is respectfully dedicated to the individuals whose unwavering support,
+encouragement, and guidance made this study possible.
+Firstly, we dedicate this work to our beloved families for their love, support, and
+encouragement. Their unwavering trust in our abilities gave us the strength, determination, and
+motivation to overcome challenges and successfully complete this research.
+Secondly, this work is dedicated to our respected Research Adviser and Research
+Instructor for their guidance, expertise, patience, and continuous support throughout this study.
+Their dedication and support played an important role in
+
+our academic growth and the
+
+successful completion of this study.
+Finally, this study is dedicated to the students, faculty, and staff of the University of La
+Salette, Inc., whose commitment, compassion, and support continue to foster a learning
+environment where every student feels valued and encouraged to seek help when needed. It is
+our sincere hope that the findings of this research will contribute to strengthening the university's
+support systems, promoting positive help-seeking behavior among students, and fostering a
+caring, supportive, and inclusive academic community that enhances students' well-being and
+success.
+
+ABSTRACT
+Help-seeking behavior plays a vital role in students’ academic success and
+well-being as it influences their utilization of institutional support systems in higher
+education. This study employed a quantitative design using descriptive, comparative, and
+correlational methods to examine the level of help-seeking behavior, the extent of utilization
+of available support systems, their differences across profile variables, and their relationship
+among 361 Medical Technology students of the University of La Salette, Inc. Findings
+revealed that students exhibited a moderate level of help-seeking behavior and moderate to
+high utilization of support systems, with Prefect of Discipline and Office of Student Services
+and Affairs being the most frequently accessed services, while Faculty Support, Health and
+Development Center, and Department of Student Services were only moderately utilized.
+No significant differences were found in help-seeking behavior and support system
+utilization when grouped according to sex and year level, while significant differences
+emerged across departments. Furthermore, a significant positive relationship was found
+between help-seeking behavior and the utilization of all support systems, indicating that
+students who are more inclined to seek help are more likely to engage with institutional
+services. The study concludes that help-seeking behavior is generally moderate and
+influenced more by departmental context than by sex or year level, and that stronger
+help-seeking tendencies are associated with greater utilization of support systems. It is
+recommended that the university strengthen proactive help-seeking initiatives, enhance
+awareness and accessibility of underutilized services, implement department-based
+interventions, and improve the integration and coordination of student support systems to
+promote holistic student development and well-being.
+
+Keywords: academic help-seeking, student engagement, institutional support utilization,
+counseling services, higher education well-being
+
+TABLE OF CONTENTS
+TITLE
+ACKNOWLEDGEMENT
+
+i
+
+DEDICATION
+
+ii
+
+ABSTRACT
+
+iii
+
+LIST OF TABLES
+
+iv
+
+INTRODUCTION
+
+1
+
+Significance of the Study
+
+5
+
+Theoretical Framework
+
+7
+
+LITERATURE REVIEW
+
+9
+
+Support Systems in Higher Education
+
+9
+
+Help seeking behavior in high demand academic environments
+
+16
+
+Engagement with institutional and social support systems
+
+22
+
+The link between help seeking behavior and support systems utilization
+
+25
+
+Mental Health Challenges in College Students
+
+30
+
+METHODOLOGY
+
+36
+
+Research Design
+
+36
+
+Research Respondents
+
+36
+
+Locale of the study
+
+37
+
+Research Instrument
+
+38
+
+Data Collection Procedure
+
+39
+
+Data Analysis Procedure
+
+41
+
+Ethical Considerations
+
+42
+
+RESULTS AND DISCUSSIONS
+
+44
+
+Section 1. Demographic Profile of the Respondents
+
+44
+
+Section 2. Level of Help-Seeking Behavior among the Respondents
+
+46
+
+Section 3. Extent of Utilization of Available Support Systems
+
+49
+
+Section 4. Difference in Help-Seeking Behavior and Support System Engagement
+According to Profile Variables
+
+65
+
+Section 5. Relationship between Help-Seeking Behavior and Utilization of Available
+Support Systems
+
+SUMMARY, CONCLUSIONS AND RECOMMENDATIONS
+
+72
+
+75
+
+Summary of Findings
+
+75
+
+Conclusions
+
+77
+
+Recommendations
+
+78
+
+REFERENCES
+
+81
+
+APPENDICES
+
+89
+
+Appendix A. Approved letters
+
+89
+
+Appendix B. Data Gathering Tools
+
+104
+
+Questionnaire
+
+104
+
+Chronbach Alpha
+
+110
+
+Survey Instrument Validation
+
+111
+
+Content Validity Index
+
+114
+
+Appendix C. Documentation
+
+115
+
+Appendix D. Curriculum Vitae
+
+117
+
+LIST OF TABLES
+Table 1. Mean Ranges, Qualitative Description and Interpretation
+
+41
+
+Table 2. Demographic Profile of the Respondents
+
+44
+
+Table 3. Level of Help-Seeking Behavior among the Respondents
+
+46
+
+Table 4. Extent of Utilization in terms of Faculty Support
+
+50
+
+Table 5. Extent of Utilization in terms Health and Development Center (HDC)
+
+53
+
+Table 6. Extent of Utilization in terms Department of Student Services (DSS)
+
+57
+
+Table 7. Extent of Utilization in terms Prefect of Discipline (POD)
+
+59
+
+Table 8. Extent of Utilization in terms Office of the Student Services and Affairs (OSSA)
+
+62
+
+Table 9. Extent of Utilization in all of the Available Support Systems
+
+64
+
+Table 10. Difference in Help-Seeking Behavior and Support System Engagement in terms of
+Sex
+
+65
+
+Table 11. Difference in Help-Seeking Behavior and Support System Engagement in terms of
+Year Level
+
+67
+
+Table 12. Difference in Help-Seeking Behavior and Support System Engagement in terms of
+Department
+
+69
+
+Table 13. Relationship between Help-Seeking Behavior and Utilization of Available Support
+Systems (N=361)
+
+73
+
+1
+
+INTRODUCTION
+Mental health concerns among college students continue to intensify in
+academically demanding programs. Students are often exposed to heavy academic
+workloads, coursework requirements, and performance-based requirements that require
+sustained focus and high performance, increasing their vulnerability to stress and
+emotional strain. Tan et al (2025) showed that these circumstances of education led to
+self-stigma which contributed to the students' discouragement in seeking mental health
+support. These circumstances provide context for understanding how students perceive
+and manage their academic experiences, as well as how they access and engage with
+available support systems.
+This study focuses on students’ tendency to seek assistance as a key factor in
+understanding how they cope with academic and psychological demands. Willingness to
+ask for help reflects how students perceive their own difficulties and their openness to
+engaging with others for guidance or care. Psychological barriers such as self-stigma,
+fear of judgment, and limited confidence in formal services may influence this behavior,
+especially in high-pressure learning settings. Therefore, the research investigates the
+level of help-seeking behavior among university students and how it differs when
+categorized by specific traits.
+In parallel, the study examines the spectrum of support systems available to
+students. This includes sources like
+
+the Faculty, Health and Development Center,
+
+Department of Student Services, Prefect of Discipline, Office of the Student Services and
+Affairs. The decision to use these sources is influenced by their
+
+availability,
+
+approachability, and the students’ perception of their effectiveness. By identifying the
+types of support systems present at the University of La Salette, Inc., and assessing the
+
+2
+extent to which these are utilized, the study seeks to describe patterns of student
+engagement with these University’s services.
+Given these considerations, the research explores the connection between
+students’ willingness to seek help and their actual use of available support systems.The
+study will also look for any differences in these factors across various student profile
+groups, focusing on the relationship between help-seeking behavior and support system
+utilization. Through this approach, it allows the study to examine how individual
+tendencies and institutional resources interact within the academic context of university
+students.
+
+Background of the Study
+Mental health concerns are prevalent among university students, with many
+experiencing stress, anxiety, emotional distress, and other psychological difficulties
+linked to academic demands and developmental transitions. Of particular concern are
+self-harm behaviors and suicide-related risks, recognized as serious public health issues
+among young adults (Tickell, 2022). Despite these challenges, many students
+demonstrate limited awareness of mental health resources and low engagement in
+professional help-seeking, often relying on self-care or peer support. This is supported
+by Zhao et al. (2025), whose systematic review and meta-analysis of 62 studies found
+that although many college students intend to seek professional help, only about
+one-third actually utilize mental health services. The review identified self-reliance, lack
+of time, limited knowledge of available services, perceived lack of need, concerns about
+privacy, and stigma as the most common barriers preventing students from seeking
+professional support. While peers can provide emotional comfort, they may lack the
+
+3
+expertise to address severe distress. Help-seeking decisions are influenced by stigma,
+normalization of distress, internalized negative attitudes toward mental health services,
+and perceived barriers to care, leading many students to avoid professional assistance
+even when needed.
+The
+
+consequences
+
+of
+
+low
+
+professional
+
+help-seeking
+
+are
+
+amplified
+
+in
+
+academically demanding programs (Qiu et al., 2024), where prolonged psychological
+distress can contribute to academic difficulties, reduced functioning, and increased
+vulnerability to harmful outcomes, including self-harm and suicide. University programs
+often involve
+
+rigorous coursework, technical requirements, and various academic
+
+responsibilities, creating significant pressures for students. However, much of the
+literature treats university students as a homogeneous population, neglecting
+discipline-specific
+
+experiences
+
+and
+
+how
+
+program-specific
+
+demands
+
+influence
+
+help-seeking behavior and reliance on available academic, social, and institutional
+support systems.
+Research on help-seeking behavior and support systems has largely focused on
+general student populations, emphasizing psychological barriers, attitudes toward
+services, and stigma. While informative, these studies rarely consider the specific
+culture, expectations, and training contexts of students across different university
+programs. Similarly, studies on support systems often examine available resources
+without assessing how students actually engage with them under academic or emotional
+pressure. The limited integration of these constructs leaves gaps in understanding how
+recognition of distress translates into the utilization of support mechanisms in specialized
+programs.
+
+4
+To address these gaps, the present study investigates help-seeking behavior and
+support systems among students at the University of La Salette, Inc. Using survey
+questionnaires, it will examine students’ help-seeking practices, frequency of seeking
+assistance, utilization of institutional and social support, and differences based on
+selected profile characteristics. Conducting this study promptly is essential, as the
+findings can inform targeted academic and psychosocial interventions that address
+students’ mental health needs. Without such discipline-specific evidence, support
+programs may remain generalized and insufficiently responsive to the unique demands
+of students’ education, leaving psychological and academic challenges unaddressed.
+Research Questions
+This study assessed the interrelationship between the help-seeking behavior of
+the students and the support systems within the University of La Salette. Specifically, this
+study aims to answer the following questions:
+1. What is the demographic profile of the students in terms of:
+1.2. Sex
+1.3. Year level
+1.4. Department
+2. What is the level of help seeking behavior among the students?
+3. What is the extent of utilization of available support systems among students of the
+University of La Salette, Inc. in terms of the following:
+3.1 Faculty
+3.2 Health and Development Center (HDC)
+
+5
+3.3 Department of Student Services (DSS)
+3.4 Prefect of Discipline (POD)
+3.5 Office of the Student Services and Affairs (OSSA)
+4. Is there a significant difference among the respondents based on their help-seeking
+behavior and support system engagement when grouped according to their profile
+variables?
+5. Is there a significant relationship between help-seeking behavior and the utilization of
+available support systems among the respondents
+
+Significance of the Study
+This study is significant because it examines the interrelationship between the
+help-seeking behavior of students and the support systems available within the
+University of La Salette, Inc. The research specifically seeks to identify the types and
+sources of support system utilized, measure the level of help-seeking behavior, quantify
+the extent of support system utilization, and determine if a significant statistical
+relationship exists among these variables.
+Students. This study will provide students with a clearer understanding of their
+own help-seeking pattern and the degree to which they engage with the support
+structures offered by the university.
+Parents/Guardians. This study will help parents and guardians better
+understand the challenges their children face when using support systems and seeking
+
+6
+help. The findings can guide them in providing effective emotional and academic support
+at home, encouraging their children to utilize available university resources properly.
+Faculty. This study will enhance instructors' understanding of the help-seeking
+behavior and support system utilization among students. The findings can then guide the
+faculty in improving student-teacher interactions, offering more appropriate academic
+support, and strengthening the referral practices to university support services.
+School Counselors. This study will benefit school counselors by providing
+insights into the help-seeking behavior and support system utilization of students. These
+findings will assist counselors in identifying effective methods to build better rapport and
+develop targeted strategies to encourage students to seek necessary assistance.
+Administrators. This study will help administrators develop and improve
+institutional policies, programs and strategies that strengthen the delivery, integration
+and promotion of Health Development Center (HDC) services. The findings may
+ultimately benefit the wider student population.
+Higher Education Institutions. This study can serve as a valuable reference or
+model for institutions offering health care or laboratory-based programs. It provides
+guidance on how to effectively improve mental health support services tailored
+specifically for their students.
+Healthcare Providers. This study offers guidance to healthcare professionals,
+including interns or clinical students. By understanding the help-seeking behavior and
+support system utilization patterns, providers can design more effective, targeted
+interventions and programs specifically addressing students’ unique mental health
+needs.
+
+7
+Policy Makers/Education Authorities. This study can directly inform policies
+regarding student mental health. The findings can assist educational institutions or
+relevant government agencies in creating programs that support overall student
+well-being and enhance the accessibility of essential mental health resources.
+Student Organizations. This study will help student organizations and peer
+support groups with insights into the help-seeking behavior and support system usage
+among the university students. The findings can develop effective peer-led initiatives and
+awareness campaigns aimed at actively promoting help-seeking behavior.
+Future Researchers. This may serve as a foundational reference for future
+researchers focusing on mental health concerns, help-seeking behavior, and support
+system use among students. The findings can be utilized for comparative analyses or as
+a basis for further research in related academic and professional fields.
+
+Theoretical Framework
+This quantitative study will be anchored on Cobb’s Social Support Theory (1976),
+which states that individuals are more likely to cope effectively with stress when they
+perceive themselves as cared for, valued, and supported within a social system. In the
+Philippine context, university students often experience high academic demands,
+including intensive coursework, laboratory requirements, and performance-based
+assessments, which may increase their need for support and influence their
+help-seeking behavior.
+
+8
+
+Figure 1. Theoretical Framework of the Study Based on Cobb’s Social Support
+Theory (1976)
+
+Within this framework, the support systems of the University of La Salette,
+Inc. are considered as institutional sources of social support that help students
+feel cared for, valued, and supported. Figure 1 shows the relationship between
+the university support systems and the help-seeking behavior of university
+students based on Cobb's Social Support Theory (1976). The theory suggests
+that students who perceive support systems as available and accessible are
+more likely to seek help when they encounter academic or personal concerns. In
+line with this, the present study aims to determine whether there is a significant
+relationship between the support systems within the University of La Salette, Inc.
+and the help-seeking behavior of university students. The findings of the study
+are expected to provide a better understanding of how university support
+systems are related to students' help-seeking behavior in the context of higher
+education.
+
+9
+LITERATURE REVIEW
+Support Systems in Higher Education
+Support systems in higher education have been recognized as essential
+resources for promoting students’ academic performance, psychological functioning, and
+overall well-being. Social support, in particular, serves as a critical component of these
+systems by providing emotional, informational, and practical resources that help students
+navigate the challenges of university life. A systematic review examining 51 empirical
+studies published between 2010 and 2024 analyzed the influence of social support on
+undergraduate students’ mental health and well-being. The review found that social
+support exerts both direct and indirect effects on student outcomes. Direct effects
+include improved psychological and emotional well-being, reduced stress, and healthier
+behaviors, while indirect effects involve enhancing resilience, self-esteem, and life
+satisfaction through emotional and informational mediation (Ruihua et al., 2024).
+Chen, Zhu, and Xiao (2023) examined the interrelationships between social
+support, sense of security, family cultural capital, and academic self-efficacy among
+1,119 college students. Using a multivariate moderated mediation model, the study
+found that social support significantly increased students’ sense of security, which in turn
+enhanced academic self-efficacy. In addition, social support was shown to have a direct
+positive effect on academic self-efficacy, while a sense of security partially mediated the
+relationship between social support and academic self-efficacy. These findings provide
+empirical evidence on the mechanisms through which social support contributes to
+students’ academic confidence and engagement.
+Furthermore, Vicarya et al.(2024) conducted a systematic review examining the
+role and impact of social support for university students with self-reported or diagnosed
+
+10
+mental health problems. The study included ten studies with a total of 3,669 participants
+and found that high levels of social support were significantly associated with reduced
+suicide risk, depression, anxiety, and psychological distress. The study also identified
+barriers to accessing support, highlighting how variations in availability and engagement
+with support resources influence mental health outcomes among students.
+Valenti and Branham (2024) explored the relationship between social support
+and perceived stress among 203 undergraduate freshman students, using both
+quantitative
+
+and
+
+qualitative
+
+methods.
+
+Quantitative
+
+assessment
+
+employed
+
+the
+
+Multidimensional Scale of Perceived Social Support (MSPSS) and the Perceived Stress
+Scale
+
+(PSS-10),
+
+while
+
+qualitative
+
+data
+
+were
+
+gathered
+
+through
+
+open-ended
+
+questionnaires. The study found that students reported higher-than-average stress
+levels compared to peers in the general population and that higher levels of social
+support were positively correlated with increased self-efficacy and negatively correlated
+with perceived helplessness.
+Johnson et al. (2022) investigated how university students utilize campus support
+services and whether service utilization influences academic performance and student
+retention. Using a quantitative correlational design, the researchers analyzed institutional
+records from foundation and undergraduate students at Qatar University, including
+service usage logs and academic performance data. The study found that students who
+actively engaged with support services such as academic advising, counseling, tutoring,
+and career guidance generally achieved higher grades and were more likely to remain
+enrolled in the university. These findings imply that support systems are essential
+components of student success, emphasizing the need for higher education institutions
+to improve awareness and accessibility of available services.
+
+11
+Martín-Arbós et al. (2021) conducted a systematic review to examine academic
+help-seeking behavior among adolescents and university students and its relationship
+with institutional support systems. The study reviewed 25 peer-reviewed journal articles
+and focused on variables such as perceived social support, accessibility of services, and
+barriers to help-seeking. Findings revealed that students were more likely to seek
+assistance when support services were visible, accessible, and trusted. The review
+highlighted that simply offering support services is insufficient if students are unaware of
+them or hesitant to use them. Therefore, universities should actively promote support
+systems and create student-friendly environments that encourage service utilization.
+Samuel and Kamenetsky (2022) explored help-seeking preferences among
+first-year undergraduate students and the factors influencing their attitudes toward
+mental health services. Using a quantitative descriptive-correlational design, data were
+collected from 167 first-year university students in Canada through online surveys.
+Results indicated that students preferred seeking support from family and friends rather
+than formal university services. Cost, limited availability, and uncertainty about service
+effectiveness were identified as major barriers. The study implies that universities should
+strengthen both formal support services and informal support networks to improve
+students’ adjustment and well-being during their transition to higher education.
+Li et al. (2023) conducted a systematic literature review to synthesize existing
+research on college students’ academic help-seeking behavior and the role of academic
+support systems. The review analyzed 55 studies published between 2012 and 2022
+and identified themes related to academic performance, support resources, self-efficacy,
+and learning strategies. Findings showed that support systems such as faculty members,
+peers, family, and academic centers significantly enhance students’ willingness to seek
+help and improve their academic engagement and achievement. These results suggest
+
+12
+that comprehensive support systems are crucial for fostering student confidence,
+learning effectiveness, and academic success.
+Ryahin et al. (2026) examined the relationship between perceived social support,
+self-esteem, and help-seeking behavior among nursing students. Using a quantitative
+correlational design and standardized questionnaires, the researchers assessed
+students’ perceptions of support from family, friends, and educators. The study found
+that students with stronger social support networks were more likely to seek help and
+exhibited higher levels of self-esteem. This finding implies that emotional and
+interpersonal support systems play an important role in encouraging students to seek
+assistance and cope effectively with academic and personal challenges.
+Qualitative analysis further revealed that students primarily sought support from
+family, friends, and counseling services. Barriers to seeking support included
+self-reliance, fear of burdening others, and trust issues. These findings highlight the role
+of social support in shaping students’ psychological functioning and the importance of
+recognizing and addressing obstacles to support access. The study underscores the
+multifaceted ways in which institutional, peer, and familial support systems contribute to
+student well-being in higher education contexts
+Fronda et al. (2025) investigated the predictive relationship between perceived
+social support and mental health among 104 first-year college students at a state
+university in Pampanga, Philippines. Using a quantitative predictive correlational design,
+the study found a weak but significant negative relationship (p < 0.001, R = -0.48)
+between perceived social support and mental health, indicating that perceived support
+accounted for 23% of the variance in students’ mental health outcomes. Data were
+analyzed using JAMOVI version 2.4.14, and respondents were selected through
+
+13
+purposive sampling. The study highlights the nuanced role of social support, showing
+that while support can benefit students, excessive or misaligned support may contribute
+to distress and hinder students’ autonomy and stress-coping abilities.
+
+Segbenya and Bervell (2024) investigated the factors that influence students'
+decisions to seek academic help and utilize university support services. The study
+found that students' recognition of their academic needs, encouragement from their
+social networks, and awareness of available campus resources were the strongest
+predictors of help-seeking behavior. Although emotional distress increased students'
+need for assistance, it did not necessarily lead them to seek help unless they clearly
+knew where to obtain support and felt comfortable accessing it. The findings
+highlight the importance of higher education institutions in promoting support
+services, increasing their visibility, and creating an environment where students feel
+safe and encouraged to seek assistance.
+Pantaleon, Uy, and Dino (2022) examined the help-seeking experiences of
+Filipino university students and the influence of formal and informal support systems
+on their decisions to seek assistance. The study found that students usually turned
+to family and friends before approaching counselors or other professional services.
+The quality, accessibility, and trustworthiness of available support systems played a
+significant role in encouraging students to seek help. However, barriers such as
+stigma, fear of being a burden, and lack of trust in institutional services limited the
+use of formal support. The findings suggest that higher education institutions should
+strengthen both formal support services and peer support networks to foster a more
+supportive and help-seeking campus environment.
+
+14
+The findings also emphasize the influence of support sources and environmental
+factors on the effectiveness of social support. Perceived support from demanding family
+environments was associated with decreased mental health outcomes among first-year
+students, suggesting that the characteristics of support providers and the types of
+stressors students face may shape the impact of support. This study provides evidence
+on the complex interaction between social support and mental health in higher education
+contexts, particularly among early college students navigating transitional challenges.
+These studies emphasize the multifaceted role of social support within the
+broader framework of higher education support systems. Engagement with social
+networks, which includes peers, family, and institutional contacts, provides critical
+resources that can buffer students against academic and social stressors. The findings
+highlight the significance of structured and accessible support mechanisms in fostering
+positive student experiences and enhancing the functional capacity of students to
+manage the demands of university life. These insights underscore the centrality of social
+support as an integral component of institutional support systems in higher education.
+
+They have identified that family cultural capital moderates the effects of social support
+on academic self-efficacy, particularly influencing both direct and indirect pathways. This
+suggests that the impact of social support may vary depending on students’ familial and
+cultural backgrounds. By employing validated instruments, including the Social Support
+Scale, the Sense of Security Scale, and the Academic Self-efficacy Scale, the study
+highlights how psychological and contextual factors interact with social support to shape
+academic self-efficacy within higher education settings
+Furthermore, much of the studies emphasized that social support can have both
+positive and negative effects depending on its nature, quality, and accessibility. Students
+
+15
+with insufficient access to high social support were particularly vulnerable to adverse
+psychological outcomes, indicating that the effectiveness of support interventions is
+contingent upon meeting the distinct needs of this population. The study employed
+rigorous quality assessment using the Mixed Methods Appraisal Tool and synthesized
+evidence from multiple electronic and grey literature databases, demonstrating the
+empirical significance of social support as a critical component of higher education
+support systems .
+Support systems in higher education play a vital role in promoting students’
+academic success, mental health, and overall well-being. The reviewed studies
+consistently showed that social support from family, peers, educators, and institutional
+services enhances students’ self-efficacy, resilience, emotional well-being, and academic
+engagement while reducing stress, anxiety, and psychological distress. Students who
+actively utilize counseling services, academic advising, tutoring programs, and
+supportive social networks tend to perform better academically and are more likely to
+remain enrolled in their institutions. Furthermore, accessible, visible, and trusted support
+systems encourage students to seek assistance when facing challenges, strengthening
+their ability to cope with the demands of university life.
+These findings imply that higher education institutions should prioritize the
+development of comprehensive, student-centered support systems that address both
+academic and psychological needs. Universities must ensure that support services are
+well-publicized, easily accessible, and responsive to students’ diverse backgrounds and
+circumstances. Strengthening connections among students, families, faculty members,
+and campus services can foster a supportive learning environment that enhances
+student retention, well-being, and academic achievement.
+
+16
+Help seeking behavior in high demand academic environments
+Understanding help-seeking behavior among university students is critical for
+developing effective mental health interventions in academically intensive environments.
+Barkham (2021) investigated the mental health profiles of students across multiple UK
+universities and identified key barriers, intentions, and preferences that shape students’
+decisions to seek psychological support. The study revealed that distinct mental health
+patterns exist across academic faculties and that students often experience obstacles
+such as stigma, uncertainty about service effectiveness, and limited awareness of
+available resources. These findings highlight the importance of examining not only the
+presence of mental health concerns, but also the psychological and structural factors
+that influence students’ willingness to engage with support services.
+Psychological barriers, particularly self-stigma, play a critical role in shaping
+college students’ mental health outcomes and their willingness to seek professional
+support. In a predictive correlational study conducted among Filipino college students,
+Tan et al. (2025) examined the relationship between self-stigma of seeking help and
+mental well-being. Their findings revealed a significant negative association, indicating
+that higher levels of self-stigma are linked to lower mental well-being and reduced
+likelihood of engaging in psychological support services. This highlights how internalized
+negative beliefs about mental health care can undermine students’ capacity to cope with
+academic and emotional stressors, even when formal support services are available.
+Help-seeking behavior is increasingly recognized as a crucial mediator in the
+relationship between personal resources and student mental health. In a study
+examining postgraduates, Min et al. (2022) explored the influence of self-compassion on
+mental health, highlighting the mediating role of non-professional help-seeking behavior.
+
+17
+Their findings revealed that self-compassion positively predicted engagement in
+help-seeking behaviors, which in turn enhanced positive mental health factors, while also
+reducing psychological symptoms. This demonstrates that students who are more
+self-compassionate are not only more likely to reach out for support, but also experience
+better overall well-being as a result.
+Canda et al. (2025) investigate how self-stigma acts as a psychological barrier to
+seeking mental health support and its predictive impact on students’ well-being. By
+highlighting the internal attitudes and perceptions that influence whether students reach
+out for help, this study aligns closely with the objective of understanding help-seeking
+behavior among students in academically demanding programs, such as Medical
+Technology students at the University of La Salette, Inc. The research emphasizes that
+even when support services are available, personal barriers like stigma can prevent
+students from utilizing these resources effectively, increasing vulnerability to mental
+health challenges.
+The findings of Canda et al. (2025) are particularly relevant for the current study
+because they underscore the interaction between individual psychological factors and
+the use of institutional and social support systems. Their results showed a negative
+correlation between self-stigma and mental well-being, highlighting that students who
+perceive higher stigma are less likely to seek help and more prone to stress, anxiety, and
+other mental health concerns. This provides a conceptual basis for exploring how
+Medical Technology students navigate help-seeking within the context of rigorous
+academic demands and clinical training, as well as how universities can design
+interventions such as stigma-reduction programs and supportive counseling initiatives to
+encourage proactive engagement with available support systems, thereby promoting
+both mental health and academic success.
+
+18
+Pantaleon et al., (2022) examine how Filipino university students perceive and
+experience help-seeking, including the psychological processes of problem recognition,
+decision-making, and reliance on support systems. The study highlights both informal
+sources
+
+of
+
+support
+
+(family,
+
+friends)
+
+and
+
+professional
+
+resources
+
+(counselors,
+
+psychologists), emphasizing that students’ attitudes, awareness, and quality of available
+support influence whether they actually seek help. The findings are particularly relevant
+for understanding the nuanced processes that guide help-seeking among students in
+high-pressure educational settings. Their study illustrates that the decision to seek help
+is shaped by both the student’s outlook and the perceived quality of support systems,
+reinforcing the importance of accessible, reliable, and empathetic resources.
+Li et al. (2023) are particularly relevant for understanding the processes and
+resources that shape students’ engagement with help-seeking opportunities. Their
+review highlights that help-seeking behavior is influenced by both individual factors such
+as motivation, self-efficacy, and perceived competence and structural elements, such as
+availability of resources and online academic platforms. For Medical Technology
+students at the University of La Salette, Inc., these insights provide a framework for
+exploring how students identify, access, and utilize support mechanisms to enhance
+academic performance and manage stress.
+
+Pinggolio and Mateo (2024) conducted a mixed-methods study to examine
+help-seeking behaviors among Filipino college students. The study found that
+although students were generally willing to seek assistance, they preferred
+consulting guidance counselors over psychiatrists because they felt more
+comfortable and less fearful of being judged. Major barriers included concerns about
+confidentiality, fear of appearing weak, financial constraints, and a strong preference
+
+19
+for handling problems independently. The researchers concluded that reducing
+stigma and strengthening students' trust in university support services are necessary
+to encourage help-seeking in demanding college environments.
+Bizuneh (2022) explores the interplay between academic self-concept, beliefs in
+counseling service effectiveness, and academic help-seeking behavior among college
+students. The study emphasizes that students’ internal perceptions such as confidence
+in their academic abilities and trust in the usefulness of counseling significantly influence
+whether they seek academic help. They highlight how students’ self-concept and
+perceptions of support services shape actual engagement in help-seeking behavior. The
+research demonstrated that academic self-concept and belief in counseling effectiveness
+collectively accounted for 36% of the variance in help-seeking behavior, with significant
+gender differences observed.
+Students under academic environments often suffer from self stigmatization,
+which hinders their abilities to seek mental health support, be it from formal, informal,
+and nonformal sources. In turn, this shapes their image of what mental health support
+should be based on what they have experienced under the pressure of academic
+progress.
+Li, Rui and colleagues (2023) conducted a systematic literature review to
+examine academic help-seeking behavior among college students, focusing on the
+academic support resources they use, factors influencing their help-seeking decisions,
+and the relationship between help-seeking and academic success. Their review of 55
+studies published between 2012 and 2022 found that students in demanding academic
+settings are more likely to seek assistance when they perceive their environment as
+supportive and when help is readily accessible. The study emphasized that teachers,
+
+20
+peers, family members, and academic support centers strengthen students' confidence,
+academic engagement, and learning outcomes. However, students experiencing heavy
+academic pressure often delay seeking help because of concerns about independence,
+competence, or embarrassment. These findings suggest that effective institutional
+support systems encourage proactive help-seeking and enable students to better
+manage the challenges associated with rigorous academic environments.
+
+Pantaleon et al. (2022) explored the help-seeking behaviors of Filipino
+university students to better understand how they seek support for academic,
+personal,
+
+and
+
+mental
+
+health
+
+concerns.
+
+Using
+
+a qualitative design with
+
+semi-structured interviews among 14 university students, the study found that
+students usually turned to family and friends before approaching professional
+counselors or university support services. The quality and availability of support
+systems greatly influenced students' willingness to seek help, while stigma, fear of
+becoming a burden, and lack of trust discouraged formal help-seeking. The findings
+emphasize that strong and accessible support networks are essential for students
+experiencing academic pressures.
+Students under academic environments often suffer from self stigmatization,
+which hinders their abilities to seek mental health support, be it from formal, informal,
+and nonformal sources. In turn, this shapes their image of what mental health support
+should be based on what they have experienced under the pressure of academic
+progress.
+
+Gao and Li (2024) conducted a systematic review and meta-analysis
+involving more than 435,000 students from 20 countries to examine help-seeking
+intentions, actual help-seeking behaviors, and barriers among college students. The
+
+21
+review found that while many students intended to seek help, substantially fewer
+actually accessed available support services. The most common barriers included
+self-reliance, lack of awareness about available services, scheduling conflicts with
+academic responsibilities, and social stigma. The study concluded that universities
+should improve the accessibility, visibility, and flexibility of support services to ensure
+students in academically demanding environments can seek help when they need it.
+Help-seeking behavior among students is influenced by a combination of
+personal, social, and institutional factors. The literature reveals that students in
+academically demanding environments often face barriers such as self-stigma, fear of
+judgment, preference for self-reliance, lack of awareness of available services, and
+uncertainty regarding the effectiveness of support systems. While many students
+recognize the need for assistance, a significant gap exists between intending to seek
+help and actually using support services. Positive factors such as self-efficacy,
+resilience, supportive peer and faculty relationships, and trust in counseling services
+increase the likelihood of seeking help. Additionally, students often prefer informal
+sources of support, such as family and friends, before approaching professional
+services.
+These findings suggest that universities should not only provide support services
+but also actively address the psychological and social barriers that discourage students
+from using them. Mental health awareness campaigns, stigma-reduction initiatives,
+peer-support programs, and faculty training can help normalize help-seeking behavior.
+Institutions should also simplify access to services and create environments where
+seeking help is viewed as a strength rather than a weakness. By doing so, students may
+
+22
+become more willing to utilize available resources, resulting in improved well-being,
+resilience, and academic success.
+
+Engagement with institutional and social support systems
+The role of institutional and social support systems in shaping student well-being
+and academic success has been widely emphasized in higher education research. A
+study on perceived social support among college-going students by Anil et al. (2023)
+highlights the multidimensional nature of support networks, identifying family, peers,
+faculty, and online communities as key sources of emotional, academic, and
+psychological assistance. The findings indicate that students who report higher levels of
+perceived social support tend to experience lower levels of stress, anxiety, and
+depressive symptoms, underscoring the protective role of social relationships in
+academically and psychologically demanding environments.
+Furthermore,
+
+Anil
+
+et
+
+al. (2023) emphasize the importance of faculty
+
+approachability and peer relationships in shaping students’ perceptions of available
+support and their willingness to seek assistance. The inclusion of online platforms as
+emerging spaces for social connection reflects the evolving nature of support system
+engagement in contemporary higher education. These insights complement the current
+investigation’s examination of both institutional services, such as the Health and
+Development Center, and informal support networks. By framing social support as both a
+perceived and utilized resource, the study provides a conceptual foundation for
+analyzing how Medical Technology students engage with available support systems and
+how this engagement relates to their help-seeking behavior and mental health
+outcomes.
+
+23
+Effective engagement with institutional support systems is critical for promoting
+student success, retention, and overall well-being in higher education. Johnson et al.
+(2022) examined help-seeking behaviors among Foundation and Undergraduate
+students at Qatar University through their actual utilization of campus services,
+highlighting a strong association between service use and student success and
+persistence. Their findings revealed notable differences in engagement based on
+academic discipline, gender, nationality, and student classification, emphasizing that
+utilization patterns are influenced by both individual and structural factors.
+This study provides valuable insight for the present research on Students at the
+University of La Salette, Inc., as it underscores the importance of examining not just the
+availability of support services but also the degree to which students actively engage
+with these resources. By understanding patterns of utilization, including who accesses
+support, how frequently, and for what purposes, institutions can better tailor
+interventions, promote equitable access, and enhance both academic outcomes and
+mental well-being in high-demand healthcare education programs.
+Johnson, C. et al. (2022) found out that students who actively use campus
+support services generally achieve better grades and are more likely to stay enrolled in
+the university a quantitative correlational research design to examine the relationships
+between variables. Data were gathered from official institutional records, including logs
+of service usage and academic performance data covering the Spring 2019 and Fall
+2019 semesters. The participants consisted of foundation‑level and undergraduate
+students enrolled at Qatar University. Statistical tests were applied to determine
+significant associations and differences between groups.
+
+24
+Samuel, R. & Kamenetsky, S. B. (2022) the results show that first year students
+strongly prefer turning to family and friends rather than using official school services.
+Those who feel they have strong social support and those experiencing more stress or
+negative feelings tend to have a more open attitude toward getting professional help.
+Still, many avoid formal help because of worries about cost, limited schedules, and
+uncertainty about quality. This suggests universities should build both strong community
+connections and easier to reach mental health services to help students settle in.​This is
+a quantitative descriptive-correlational study. Data were collected using an online survey
+that measured help-seeking attitudes, preferences, social support levels, personality
+traits, and emotional patterns.
+
+The respondents are 167 first-year undergraduate
+
+students from a university in Canada. Statistical tools were used to see the links
+between each factor and the students’ willingness to seek help.
+
+McCabe et al. (2024) examined the relationship between university students'
+help-seeking intentions and psychological well-being. The study demonstrated that
+students who intended to seek help and who had access to institutional support
+services generally reported better mental health outcomes, healthier coping
+strategies, and greater resilience. The findings highlight the important role of
+accessible university support systems in promoting student well-being and
+encouraging positive engagement with available mental health resources.
+Help-seeking behavior among students is influenced by a combination of
+personal, social, and institutional factors. The literature reveals that students in
+academically demanding environments often face barriers such as self-stigma, fear of
+judgment, preference for self-reliance, lack of awareness of available services, and
+uncertainty regarding the effectiveness of support systems. While many students
+recognize the need for assistance, a significant gap exists between intending to seek
+
+25
+help and actually using support services. Positive factors such as self-efficacy,
+resilience, supportive peer and faculty relationships, and trust in counseling services
+increase the likelihood of seeking help. Additionally, students often prefer informal
+sources of support, such as family and friends, before approaching professional
+services.
+These findings suggest that universities should not only provide support services
+but also actively address the psychological and social barriers that discourage students
+from using them. Mental health awareness campaigns, stigma-reduction initiatives,
+peer-support programs, and faculty training can help normalize help-seeking behavior.
+Institutions should also simplify access to services and create environments where
+seeking help is viewed as a strength rather than a weakness. By doing so, students may
+become more willing to utilize available resources, resulting in improved well-being,
+resilience, and academic success
+
+The link between help seeking behavior and support systems utilization
+The gap between students’ mental health needs and their actual use of support
+services has been widely documented in recent research. In a large-scale systematic
+review and meta-analysis, Zhao et al. (2025) synthesized findings from 62 studies to
+examine help-seeking intentions, behaviors, and barriers among college students
+experiencing mental health concerns. Their results revealed that while a substantial
+proportion of students express intentions to seek professional help, a much smaller
+percentage actively engage with formal support services. Commonly reported barriers
+included preferences for self-reliance, time constraints, limited awareness of available
+resources, and a perceived lack of need for professional intervention. These findings
+
+26
+underscore the presence of both personal and systemic factors that influence whether
+students translate mental health needs into concrete help-seeking actions.
+This evidence is highly relevant to the present study of Medical Technology
+students at the University of La Salette, Inc., who operate within a demanding academic
+and clinical training environment that may intensify stress while simultaneously limiting
+opportunities to access support. By building on Zhao et al.’s (2025) identification of
+intention–behavior gaps and contextual barriers, the current research extends this
+framework to a specialized healthcare education setting, examining how help-seeking
+behavior relates to the actual utilization of institutional services, such as the Health and
+Development Center, as well as informal social support networks. This alignment
+strengthens the conceptual basis for assessing whether similar structural and
+psychological barriers shape support system engagement among students in
+high-demand academic programs.
+Students’ willingness to seek help is not determined solely by the availability of
+support services; psychological barriers such as self-stigma can strongly influence
+help-seeking attitudes. In a study by Punla (2022), self-stigma was found to have a
+significant negative effect on college students’ help-seeking attitudes, suggesting that
+individuals who internalize negative beliefs about mental health support are less likely to
+pursue assistance. Importantly, the study also found that perceived social support,
+whether from family, peers, or other social networks positively moderated this
+relationship, reducing the adverse effects of self-stigma and promoting more favorable
+help-seeking attitudes.
+These findings are particularly relevant to Medical Technology students at the
+University of La Salette, Inc., who face rigorous academic and clinical demands that may
+
+27
+heighten stress and exacerbate mental health concerns. By highlighting the buffering
+role of perceived social support, Punla (2022) provides a framework for understanding
+how engagement with institutional and social support systems can counteract internal
+barriers like self-stigma. This underscores the importance of not only providing
+accessible support services but also fostering strong social networks and supportive
+environments that encourage students to utilize these resources effectively, thereby
+promoting both mental well-being and academic resilience in high-demand educational
+settings.
+Johnson et al. (2022) investigated the relationship between support service
+utilization and student success in higher education. Using a quantitative correlational
+design, the researchers analyzed institutional records of students who accessed
+academic and counseling services. Findings demonstrated that students who actively
+sought assistance through available support systems achieved better academic
+outcomes and higher retention rates than those who did not use such services. The
+study implies that help-seeking behavior serves as a critical pathway through which
+support systems positively influence academic success and persistence among
+university students.
+Segbenya and Bervell (2024) explored how perceptions of institutional support
+affect students’ willingness to seek help. Through a cross-sectional survey involving 290
+undergraduate students, the researchers found that students who viewed support
+services as accessible, trustworthy, and beneficial were more likely to seek assistance.
+These findings suggest a direct relationship between support system utilization and
+help-seeking behavior, emphasizing that students are more likely to use available
+resources when they perceive them as effective and approachable.
+
+28
+Li et al. (2023) conducted a systematic review of 55 studies to understand
+academic help-seeking behavior among college students. The review focused on
+support resources, self-efficacy, academic achievement, and learning strategies.
+Findings showed that students who had access to supportive environments, including
+teachers, peers, family members, and academic support centers, were more likely to
+seek academic assistance and achieve better educational outcomes. The study implies
+that the availability and quality of support systems directly influence students’ willingness
+to seek help and their overall academic performance.
+Ryahin et al. (2026) examined the association between perceived social support,
+self-esteem, and help-seeking behavior among nursing students. Using a quantitative
+correlational design and standardized questionnaires, the researchers found that
+students who perceived greater support from family, friends, and educators were
+significantly more likely to seek help when facing personal or academic challenges.
+These findings indicate that support systems strengthen help-seeking behaviors by
+providing students with emotional security, confidence, and encouragement to access
+available resources.
+
+Dizon et al. (2025) examined self-stigma as a barrier to help-seeking among
+Filipino college students using a causal-comparative research design involving 210
+participants. The findings showed that students with higher levels of self-stigma were
+significantly less likely to utilize available support systems despite recognizing their
+availability. Male students demonstrated higher levels of stigma than female
+students, suggesting that cultural beliefs and negative perceptions about seeking
+help reduce the use of counseling services and other support resources. The study
+
+29
+emphasized that reducing self-stigma is essential for increasing students' utilization
+of institutional and social support systems.
+Dueñas et al. (2021) investigated the relationship between academic
+help-seeking attitudes and socio-emotional variables among secondary and
+vocational students using a quantitative correlational design. The findings showed
+that students with stronger functional social support, greater life satisfaction, and
+positive self-concept reported more favorable attitudes toward seeking academic
+help. In contrast, emotional loneliness and limited social support predicted greater
+avoidance of help-seeking. The study concluded that strong social support systems
+positively influence students' willingness to utilize available academic support
+services and reduce negative attitudes toward asking for help.
+Pinamang et al. (2021) explored the relationship between social support,
+psychological adjustment, and acculturative stress among international students in the
+Philippines using a descriptive-correlational design with 125 participants. The study
+found that students who perceived greater social support experienced lower
+acculturative stress and better psychological adjustment. Although participants reported
+relatively low levels of available social support, stronger support networks significantly
+contributed to healthier adjustment and encouraged students to seek assistance when
+facing academic and personal challenges. The findings highlight the importance of
+strengthening institutional and social support systems to improve students' help-seeking
+behavior and overall well-being.
+Furthermore, Pantaleon et al. (2022) explored the role of support systems in
+shaping help-seeking decisions among Filipino university students. Through qualitative
+interviews with 14 participants, the study found that trust, accessibility, and previous
+
+30
+positive experiences with support providers encouraged students to seek assistance,
+while stigma and fear of judgment discouraged service utilization. The findings imply that
+strengthening trust and reducing stigma can improve both help-seeking behavior and
+engagement with institutional support systems.
+
+Mental Health Challenges in College Students
+Tickell (2022) conducted a systematic review to synthesize research on
+help-seeking behaviors among university students with a history of suicidal thoughts and
+self-harm. The review included 19 studies identified from Medline, PsychINFO, and
+ERIC databases, focusing on population-based epidemiological and qualitative research.
+Findings indicated that at least half of students with prior suicidal ideation or self-harm
+did not seek or receive mental health support while at university, with lower help-seeking
+rates observed among men and students from ethnic minority groups. The review
+highlighted ten factors influencing help-seeking, emphasizing the complex interplay of
+individual, social, and contextual determinants in students’ decisions to pursue support.
+The study also underscored patterns in the sources of help sought, revealing
+reliance on informal networks alongside underutilization of professional mental health
+services. By examining heterogeneous populations across multiple studies, Tickell
+(2022) identified significant barriers and disparities in help-seeking behaviors, which
+contribute to the persistence of unaddressed mental health challenges among at-risk
+students. The findings provide insight into the prevalence and characteristics of low
+help-seeking among university students experiencing suicidal thoughts or self-harm,
+illustrating the critical need for tailored strategies within higher education settings to
+address these mental health concerns.
+
+31
+Dela
+
+Torre
+
+(2025)
+
+investigated
+
+the
+
+relationship
+
+between
+
+shyness,
+
+self-efficacy, and help-seeking behavior among Filipino college students. The study
+found that shyness alone did not strongly prevent students from seeking help.
+Instead, students with lower self-efficacy were significantly less likely to ask for
+assistance, particularly for emotional and mental health concerns. Those with greater
+confidence in their abilities were more willing to seek professional support when
+facing serious personal or academic challenges. The findings highlight the
+importance of enhancing students' confidence to encourage positive help-seeking
+behaviors.
+Nair (2024) investigated perceived social support among college students
+and its relationship with psychological well-being. The study found that students who
+reported stronger support from family, friends, teachers, and online communities
+experienced lower levels of stress, anxiety, and depression. The findings also
+emphasized the growing importance of digital communities in providing emotional
+support. The study concluded that increasing students' awareness of available
+support systems can contribute to improved mental health and overall well-being.
+Espinoza (2023) examined factors influencing the utilization of mental health
+resources among college students using a quantitative research design. The study
+employed a non-probability convenience sample of students who volunteered to
+complete a survey distributed via university email. The survey was developed using
+social cognitive theory constructs and included four Likert-style scales, with validity
+confirmed by experts and reliability tested through a pilot study. Descriptive statistics
+were used to profile scale scores, and regression analysis revealed a significant
+
+32
+association between students’ perceptions of their campus mental health environment
+and their utilization of available resources.
+Findings
+
+indicated
+
+that
+
+specific
+
+environmental
+
+perceptions,
+
+including
+
+confidentiality, staff friendliness, and the physical appearance of facilities, influenced
+students’ engagement with mental health services. The study highlights that students’
+subjective experiences of the resource environment play a critical role in determining
+whether they access support. By examining these perceptual and contextual factors,
+Espinoza (2023) provides insight into the barriers that may prevent students from fully
+utilizing campus mental health resources, contributing to the broader understanding of
+mental health challenges in higher education.
+
+Zhou et al. (2022) examined how shared cultural values influence mental
+health help-seeking behaviors among Asian and Latinx college students. The study
+found that cultural beliefs, particularly interdependence and cultural obligation,
+significantly affected students' attitudes toward seeking professional mental health
+support. Many students viewed emotional struggles through the lens of family
+expectations
+
+and
+
+cultural
+
+responsibilities, which often discouraged formal
+
+help-seeking. The researchers concluded that culturally responsive mental health
+services are essential for improving students' willingness to seek psychological
+support and addressing mental health challenges in diverse college populations.
+Sanghvi et al. (2025) investigated factors influencing help-seeking behavior
+among distressed, non-treatment-seeking young adults (D-NTS) for common mental
+health concerns following the ReachOut intervention. The study recruited 109
+participants aged 20–35 through purposive and snowball sampling and assessed
+help-seeking barriers, inclination, and encouragement from significant others (SO) at
+
+33
+baseline and one month post-intervention. Help-seeking behavior from mental health
+professionals (MHP) was evaluated at a two-month follow-up. Regression analysis
+indicated a significant predictive model, with help-seeking inclination from MHP, help
+negation, and encouragement from SO emerging as significant predictors of subsequent
+help-seeking behavior.
+Han et al. (2024) examined knowledge and use of mental health services, as well
+as self-care practices, among 821 first-year university students in Australia. The study
+compared domestic and international students, finding that domestic students reported
+greater awareness, confidence, and engagement with mental health services, along with
+better self-care knowledge. Hierarchical regression analyses indicated that demographic
+factors were associated with mental health outcomes, although the predictive strength of
+these models was limited. Psychological distress was linked to lower knowledge and
+confidence in accessing mental health services, reduced self-care knowledge and use,
+but paradoxically higher engagement with available services.
+Cecchin and Murta (2026) investigated the barriers and facilitators of
+help-seeking behavior among university students experiencing suicidal ideation using a
+mixed-methods approach. Qualitative data were collected from interviews with 20
+students, 12 course coordinators, and a focus group of 6 administrative staff members,
+while quantitative data were obtained from a questionnaire completed by 22 mental
+health professionals. The study identified seventeen barriers and twelve facilitators to
+professional help-seeking, categorized across individual, interpersonal, organizational,
+and social levels. Key barriers included low perceived need for professional care,
+self-stigma, emotional avoidance, insufficient social support, and institutional fragility.
+
+34
+Zhao et al. (2025) conducted a systematic review and meta-analysis to examine
+mental health help-seeking behaviors and barriers among college students. The study
+synthesized findings from multiple databases, including PubMed, PsycINFO, and
+Embase, to identify common challenges affecting students' access to mental health
+services. Results revealed a substantial gap between students who experience mental
+health difficulties and those who actually seek professional help. Major barriers included
+stigma, self-reliance, and lack of awareness of available services. The study implies that
+universities must implement comprehensive mental health promotion strategies and
+improve service accessibility to address students’ growing psychological needs.
+McCabe et al. (2024) investigated the relationship between help-seeking
+intentions and mental well-being among university students. Using a quantitative survey
+approach and standardized mental health assessment tools, the researchers measured
+students’ psychological distress, well-being, and support utilization. Findings revealed
+that students with stronger intentions to seek help generally reported better mental
+health outcomes, healthier coping mechanisms, and greater resilience. The study
+implies that promoting positive attitudes toward help-seeking may enhance psychological
+well-being and reduce the impact of mental health challenges among college students.
+Facilitators of help-seeking highlighted by the study comprised mental health
+literacy, encouragement from close individuals, previous positive experiences with
+therapy, financial aid for mental health treatment, and accessible on-campus services.
+Professors, peers, and administrative staff emerged as critical social actors in
+connecting
+
+students
+
+with
+
+support
+
+resources,
+
+emphasizing
+
+the importance of
+
+interpersonal and institutional networks in promoting help-seeking behaviors. The
+integration of qualitative and quantitative findings illustrated how individual perceptions,
+
+35
+social support, and institutional infrastructure collectively influence students’ engagement
+with mental health services within the university context.
+From these studies they emphasized that individuals’ inclination to seek
+professional support, the tendency to avoid help, and encouragement from significant
+others all significantly influence actual help-seeking outcomes. These findings provide
+empirical evidence on the nuanced dynamics of mental health help-seeking among
+young adults, particularly those not actively engaged with treatment services, offering
+insight into how various psychological and social factors intersect to affect behavioral
+outcomes. It should also be noted that they highlighted how demographic and
+psychological factors interact to influence students’ engagement with mental health
+resources. International students and students experiencing higher psychological
+distress demonstrated disparities in awareness, confidence, and self-care practices,
+suggesting that the transition to university may exacerbate vulnerabilities among certain
+subgroups. These findings provide insight into the variability in mental health literacy,
+resource utilization, and self-care behaviors, emphasizing the complex relationship
+between student characteristics, psychological well-being, and engagement with support
+systems.
+
+36
+METHODOLOGY
+Research Design
+The study utilized a quantitative descriptive-correlational research design to
+examine students’ help-seeking behavior and their engagement with support systems.
+The quantitative methods were used to collect and analyze numerical data, enabling the
+identification of patterns, trends and relationships between variables.
+The descriptive part presented the prevalence and patterns of help-seeking
+behavior, including students’ use of support services such as from Peers, Faculty and
+support services such as Human Development Center (HDC), Department of Student
+Services and Affairs (DSS), Prefect of Discipline (POD) and Office of Student Services
+and Affairs (OSSA). Descriptive statistics including frequencies, percentages, means
+and standard deviations were used to summarize the data.
+The correlational part examined the relationship between help-seeking behavior
+and support system utilization. Pearson’s correlation coefficient was used for continuous
+and normally distributed variables, while Spearman’s rho was applied to ordinal or
+non-normally distributed variables. The findings provided insights into how support
+systems influenced students’ help-seeking practices, informing strategies to improve the
+accessibility, effectiveness, and utilization of support services in the University of La
+Salette, Inc.
+
+Research Respondents
+The respondents of this study consisted of freshmen, sophomore, junior and
+senior students enrolled at the University of La Salette, Inc., Santiago City during the
+
+37
+2nd semester of the academic year 2025-2026. The researchers used a stratified
+random sampling technique to select participants. The required sample size was
+determined using the Raosoft Sample Size Calculator to ensure an adequate number of
+respondents for the study.
+Students from all year levels enrolled at the university were included in the study
+to ensure a comprehensive and balanced representation of the student population,
+allowing the researchers to gather diverse perspectives across different academic
+stages.
+
+College
+
+Population
+
+Sample
+
+CAS
+
+292
+
+18
+
+CBE
+
+784
+
+49
+
+CCJE
+
+231
+
+14
+
+CEA
+
+1236
+
+77
+
+CTE
+
+240
+
+15
+
+CIT
+
+217
+
+13
+
+CMAMP
+
+984
+
+61
+
+COA
+
+372
+
+23
+
+CONPHM
+
+1465
+
+91
+
+TOTAL
+
+5821
+
+361
+
+Locale of the study
+This study was conducted at the University of La Salette, Inc., Santiago City,
+during the 2nd semester, academic year 2025-2026. The university was selected
+because it has one of the largest student populations among the higher education
+institutions in Santiago City, providing a diverse and representative group of
+
+38
+respondents. Moreover, the institution offers a wide range of colleges and academic
+departments , which allows the researcher to obtain data from the students with varying
+educational backgrounds and perspectives. The participants of the study were students
+enrolled in the different colleges and academic departments of the University of La
+Salette, Inc.
+
+Research Instrument
+This study employed a quantitative research approach, utilizing quantitative data
+that were collected through survey questionnaires employing a Five-point Likert scale
+ranging from 1–Never, 2–Rarely, 3–Sometimes, 4–Often, and 5–Always. This scale was
+used for data analysis.
+The questionnaire was composed of two main parts: Part I (Personal Details) and
+Part II (Questionnaire Proper). Part I gathered basic information such as age, sex, and
+year level. Part II consisted of six sections designed to assess different aspects of
+students’ help-seeking behavior and utilization of support services.
+The Help-seeking Behavior section focused on students’ willingness, frequency,
+and comfort in seeking assistance when faced with academic, emotional, or personal
+challenges.
+Meanwhile, the utilization of support services included several institutional units.
+The Faculty Support section assessed the accessibility, responsiveness, and
+effectiveness of faculty members in providing academic and emotional support to
+students. The Human Development Center section examined students’ awareness, use,
+
+39
+and perception of counseling and mental health services, including their accessibility and
+confidentiality.
+The Department of Student Services section determined the extent of students’
+use of institutional services for academic and personal concerns, as well as their level of
+trust and comfort in these services. The Prefect of Discipline section explored students’
+engagement with disciplinary support, particularly in relation to school rules, behavior,
+and student conduct. Lastly, the Office of Student Services and Affairs section assessed
+students’ awareness, participation, and reliance on student development programs and
+services.
+Furthermore, the validity analysis of Pilot testing revealed Cronbach's alpha
+score of 0.953 , which indicated excellent internal consistency and demonstrated that the
+research questionnaire was highly reliable.
+
+Data Collection Procedure
+The researchers followed a systematic procedure in the collection of data for the
+study. A formal letter requesting permission to conduct the study was prepared and
+submitted to the University President and the respective College Deans of the University
+of La Salette, Inc. to secure approval for data gathering.
+To determine the appropriate number of respondents, the researchers utilized the
+Raosoft Sample Size Calculator. The computation was based on the desired confidence
+level, margin of error, and the total population of students. This ensured that the selected
+sample size was statistically representative of the target population.
+
+40
+The researchers created the survey questionnaire. The instrument was
+composed of two parts: Part I gathered demographic information such as age, sex, and
+year level, while Part II consisted of six sections designed to assess different aspects of
+students’ help-seeking behavior and utilization of support services.
+The questionnaire was then subjected to validation by experts to ensure that the
+items were relevant, clear, and aligned with the objectives of the study. Upon approval, a
+pilot test was conducted among a small group of students to identify ambiguous or
+unclear items and to ensure the reliability of the instrument.
+Based on the results of the pilot test, necessary revisions were made to improve the
+clarity and effectiveness of the questionnaire. Once finalized, the questionnaire was
+reproduced for distribution.
+The finalized questionnaires were then personally distributed to the respondents
+during the data gathering proper. Informed consent was obtained by providing
+respondents with clear, comprehensive, and detailed information regarding the study’s
+objectives, procedures, and
+
+potential risks. The information was presented in a
+
+straightforward and comprehensible manner to ensure that respondents fully understood
+their involvement. Participation was entirely voluntary, and respondents’ rights were
+strictly respected and they were informed of the importance of their contributions to the
+research.
+Upon collection of the completed questionnaires, the researchers encoded the
+data into Microsoft Excel for organization and processing.The data were then analyzed
+using appropriate statistical tools and computations with the assistance of a statistical
+professional to interpret the results and answer the research objectives.
+
+41
+Throughout the process, confidentiality and anonymity of the respondents were
+strictly maintained. All collected data were securely stored and used solely for academic
+purposes.
+
+Data Analysis Procedure
+Prior to the conduct of inferential statistical analyses, the normality of the data
+distribution was assessed using the Shapiro-Wilk test. The results indicated that the data
+were not normally distributed (p < .05). Consequently, nonparametric statistical tests
+were employed for inferential analyses, while descriptive statistics were used to
+summarize and describe the respondents’ responses.
+The demographic profile of the respondents in terms of sex, year level, and
+department was analyzed using frequency counts and percentages. These measures
+were used to describe the characteristics and distribution of the respondents according
+to the identified profile variables.
+The level of help-seeking behavior, and the extent of utilization of available
+support systems were analyzed using the mean and standard deviation. Table 1 was
+used for the mean ranges, qualitative description and interpretation.
+
+Table 1. Mean Ranges, Qualitative Description and Interpretation
+Mean
+Ranges
+
+Qualitative
+Description
+
+Interpretation
+Help-seeking Behavior
+Utilization of Support
+Services
+
+42
+4.21 – 5.00
+
+Always
+
+Very high level of
+help-seeking behavior;
+respondents consistently
+seek assistance when
+needed
+High level of help-seeking
+behavior; respondents
+frequently seek help in
+academic, personal, or
+social concerns
+Moderate level of
+help-seeking behavior;
+respondents occasionally
+seek assistance
+
+3.41 – 4.20
+
+Often
+
+2.61 – 3.40
+
+Sometimes
+
+1.81 – 2.60
+
+Rarely
+
+Low level of help-seeking
+behavior; respondents
+seldom seek assistance
+
+1.00 - 1.80
+
+Never
+
+Very low or no help-seeking
+behavior; respondents do
+not seek assistance
+
+Very high utilization of
+support services;
+respondents regularly
+access institutional support
+systems
+High utilization of support
+services; respondents
+often engage with
+available university
+services
+Moderate utilization of
+support services;
+respondents sometimes
+use institutional services
+Low utilization of support
+services; respondents
+rarely access available
+services
+No utilization of support
+services; respondents do
+not engage with
+institutional services
+
+To determine whether significant differences existed in help-seeking behavior and
+support system engagement when respondents were grouped according to their profile
+variables, nonparametric tests were employed. The Mann-Whitney U Test was used for
+sex variables, while the Kruskal-Wallis H Test was used for year level and department.
+The relationship between help-seeking behavior and the utilization of available
+support systems was examined using Spearman’s Rank-Order Correlation Coefficient
+(Spearman’s rho). For all inferential analyses, the level of significance was set at 0.05.
+
+Ethical Considerations
+​
+
+This study adhered to establish ethical guidelines to ensure the protection of
+
+respondents’ rights, privacy, and well-being throughout the research process. Informed
+
+43
+consent was obtained by providing respondents’ with clear, comprehensive, and detailed
+information regarding the study’s objectives , procedures, and
+
+potential risks. The
+
+information was presented in a straightforward and comprehensible manner to ensure
+that respondents’ fully understood their involvement. Participation was entirely voluntary,
+and respondents’ rights were strictly respected and they were informed of the
+importance of their contributions to the research.
+​
+
+The study utilized a face-to-face questionnaire to gather data. This approach
+
+allowed researchers to directly engage with the respondents’, providing opportunities for
+clarification and ensuring accurate data collection. Respondents were given the option to
+provide their names; however, this was not mandatory.
+
+All responses, whether
+
+identifiable or anonymous , were securely stored, and access was limited exclusively to
+the researchers to ensure the confidentiality of the data. Respect respondents’ cultural,
+social, and personal differences, ensuring inclusivity and avoiding any form of bias or
+discrimination. By implementing these measures, the research upheld ethical standards
+while maintaining the validity and reliability of the data. Such considerations ensured the
+integrity of the study and the respectful treatment of all participants. The research also
+undergoes review and approval by the research adviser prior to data collection to ensure
+compliance with institutional and ethical standards.
+The study adhered to the principles of beneficence, non-maleficence, justice, and
+respect for persons throughout the research process. Beneficence was observed by
+emphasizing the potential benefits of the study for participants and other relevant
+stakeholders. Non-maleficence guided the procedures to ensure that no harm was
+inflicted upon the participants. The principle of justice was upheld by ensuring fair and
+equal treatment of all participants, while respect for persons was demonstrated by
+recognizing and upholding their autonomy, dignity, and fundamental rights.
+
+44
+RESULTS AND DISCUSSIONS
+This chapter discusses the results, analysis, and interpretation of the data
+gathered from the respondents of the study. Specifically, the chapter examines the
+demographic profile of the respondents, their level of help-seeking behavior, the extent
+of support system utilization, differences in help-seeking behavior and support system
+engagement across profile variables, and the relationship between help-seeking
+behavior and support system utilization.
+
+Section 1. Demographic Profile of the Respondents
+This section shows the demographic characteristics of the respondents in terms
+of sex, year level, and department. The profile data provide a general description of the
+study participants and serve as a basis for further analyses of help-seeking behavior and
+support system utilization.
+
+Table 2. Demographic Profile of the Respondents
+Profile Variables
+Sex
+​
+Female
+​
+Male
+Year Level
+​
+Freshmen
+​
+Sophomore
+​
+Junior
+Department
+​
+CMAMP
+​
+CIT
+​
+CTE
+​
+COA
+​
+CAS
+​
+CCJE
+
+Frequency
+
+Percent
+
+213
+148
+
+59.0
+41.0
+
+102
+99
+160
+
+28.3
+27.4
+44.3
+
+61
+13
+15
+23
+18
+14
+
+16.9
+3.6
+4.2
+6.4
+5.0
+3.9
+
+45
+​
+CONPHM
+​
+CBE
+​
+CEA
+Total
+
+91
+49
+77
+361
+
+25.2
+13.6
+21.3
+100.0
+
+Table 2 presents the demographic profile of the 361 respondents in terms of sex,
+year level, and department, providing essential contextual information for understanding
+the interrelationship between students’ help-seeking behavior and the university’s
+support systems. In terms of sex, the majority of respondents are female (59.0%), while
+41.0% are male, indicating a relatively higher representation of female students, which
+may influence help-seeking tendencies. Previous literature suggests that females are
+generally more inclined to seek assistance than males. However, findings regarding the
+influence of gender on help-seeking behavior remain inconsistent. Arbos (2021) noted
+that some studies reported more positive attitudes toward help-seeking among female
+students, whereas others found no significant differences between male and female
+students.
+As to their year level, most respondents are Junior students (44.3%), followed by
+Freshmen (28.3%) and Sophomores (27.4%), suggesting that a substantial portion of the
+sample has already experienced multiple years in the university, which may affect their
+familiarity and engagement with available support services such as Faculty, HDC, DSS,
+POD, and OSSA.
+In terms of department distribution, respondents are drawn from various
+academic units, with the largest groups coming from CONPHM (25.2%), CEA (21.3%),
+and CMAMP (16.9%), while smaller proportions come from CIT (3.6%), CCJE (3.9%),
+CTE (4.2%), CAS (5.0%), COA (6.4%), and CBE (13.6%). This distribution indicates a
+fairly diverse representation across colleges, which strengthens the generalizability of
+
+46
+the findings in examining how help-seeking behavior relates to the utilization of
+institutional support systems.
+In general, the demographic profile suggests a balanced and heterogeneous
+sample, which is important for analyzing variations in help-seeking behavior and
+engagement with university support services across different student groups.
+
+Section 2. Level of Help-Seeking Behavior among the Respondents
+This section provides for the level of help-seeking behavior among the
+respondents in terms of their help-seeking practices and the frequency with which they
+seek assistance. The findings provide insights into the students' willingness and
+tendency to access available support when faced with academic, personal, or social
+concerns.
+
+Table 3. Level of Help-Seeking Behavior among the Respondents
+Indicators
+
+Mean
+
+SD
+
+1. I seek help when I experience academic difficulties.
+
+3.31
+
+Qualitative
+Description
+1.01 Sometimes
+
+2. I seek help when I experience personal or emotional 3.06
+
+1.04 Sometimes
+
+concerns.
+3. I talk to someone when I feel stressed due to 3.38
+
+1.03 Sometimes
+
+academic requirements.
+4. I ask for guidance when I do not understand 3.47
+
+1.01 Often
+
+academic tasks or lessons.
+5. I seek help even if the concern is minor.
+
+3.31
+
+1.04 Sometimes
+
+47
+6. I seek help immediately when I experience 3.06
+
+1.09 Sometimes
+
+problems.
+7. I ask for help instead of handling my concerns on my 2.92
+
+1.08 Sometimes
+
+own.
+8. I seek help only when my concerns affect my 3.14
+
+1.07 Sometimes
+
+academic performance.
+9. I feel comfortable asking for help from others.
+
+3.13
+
+1.11 Sometimes
+
+10. I seek help when I feel overwhelmed by 3.20
+
+1.02 Sometimes
+
+school-related responsibilities.
+Mean Rating
+
+Mean Ranges:
+
+3.20
+
+.76
+
+Sometimes
+
+1.00 – 1.80: Never; 1.81 – 2.60: Rarely; 2.61 – 3.40: Sometimes; 3.41 – 4.20:
+
+Often: 4.21 – 5.00: Always
+
+Table 3 reveals the level of help-seeking behavior among the respondents,
+yielding a mean rating of 3.20 (SD = 0.76), which is interpreted as “Sometimes.” This
+indicates that, in general, students demonstrate a moderate tendency to seek help when
+facing academic, personal, or emotional concerns, suggesting that help-seeking is
+present but not consistently practiced across situations.
+Among the indicators, the highest mean rating is observed in the item “I ask for
+guidance when I do not understand academic tasks or lessons” with a mean of 3.47-2.47
+(SD = 1.01), interpreted as “Often.” This implies that students are more inclined to seek
+assistance specifically in academic comprehension-related concerns, highlighting a
+stronger reliance on support when tasks directly affect their learning performance. This
+finding is consistent with Li et al. (2023), who explained that students are more likely to
+seek help for academic concerns because they view help-seeking as a positive learning
+
+48
+strategy that enhances academic performance and enables them to overcome learning
+difficulties. Academic concerns also carry immediate consequences, such as grades and
+course requirements, motivating students to seek assistance promptly.
+In contrast, the lowest mean rating is reflected in the item “I ask for help instead
+of handling my concerns on my own” with a mean of 2.92 (SD = 1.08), still interpreted as
+“Sometimes.” This suggests that students tend to manage their concerns independently
+before seeking external support, indicating a degree of self-reliance that may limit timely
+help-seeking behavior.
+Collectively, the results imply that while students are somewhat receptive to
+seeking assistance, their help-seeking behavior tends to occur only under specific
+circumstances rather than as a regular or preventive practice. The moderate level of
+help-seeking may indicate the presence of barriers such as lack of awareness of
+available services, concerns about stigma, fear of judgment, limited trust in support
+providers, or uncertainty regarding when and where to seek help. Consequently, some
+students may choose to endure challenges independently until these concerns begin to
+significantly affect their academic performance, emotional well-being, or social
+functioning.
+The findings further suggest the need for the University of La Salette, Inc. to
+strengthen initiatives that promote a positive help-seeking culture among students. This
+may include enhancing the visibility and accessibility of support services, conducting
+regular orientations and awareness campaigns, fostering supportive relationships
+between students and university personnel, and creating safe and nonjudgmental
+environments where students feel comfortable expressing their concerns. Encouraging
+early help-seeking behaviors can contribute to improved academic achievement, better
+
+49
+mental health outcomes, greater resilience, and a stronger sense of belonging within the
+university community. Ultimately, cultivating proactive help-seeking practices may enable
+students to address challenges more effectively and maximize the benefits of the
+support systems available to them.
+The systematic review conducted by Zhao et al. (2025) found that although many
+university students recognize the need for support, far fewer actually utilize formal
+services. The review identified self-reliance, limited awareness of available resources,
+and uncertainty about professional intervention as common barriers to help-seeking. A
+related observation was reported by Tan et al. (2025), who demonstrated that higher
+levels of self-stigma were associated with lower mental well-being and a reduced
+willingness to seek psychological support among Filipino college students. These
+findings are reflected in the present study, where respondents displayed only a moderate
+tendency to seek help and were more likely to ask for assistance when academic
+concerns directly affected their learning. The results suggest that personal attitudes and
+psychological barriers continue to influence students' decisions to seek support despite
+the availability of university services.
+
+Section 3. Extent of Utilization of Available Support Systems
+This section relates with the extent to which students utilize the available support
+systems offered by the University of La Salette, Inc. The analysis highlights the degree
+of engagement of students with institutional services such as: Faculty Support (FS);
+Health and Development Center (HDC); Department of Student Services (DSS); Prefect
+of Discipline (POD); and Office of the Student Services and Affairs (OSSA).
+
+50
+
+Table 4. Extent of Utilization in terms of Faculty Support
+Indicators
+
+Mean
+
+SD
+
+2.81
+
+1.08
+
+Qualitative
+Description
+Sometimes
+
+3.07
+
+1.03
+
+Sometimes
+
+2.73
+
+1.12
+
+Sometimes
+
+2.92
+
+1.09
+
+Sometimes
+
+5. Faculty members listen to students’ concerns.
+
+3.31
+
+1.11
+
+Sometimes
+
+6. Faculty support helps me understand difficult
+
+3.22
+
+1.10
+
+Sometimes
+
+3.45
+
+1.10
+
+Often
+
+3.40
+
+1.13
+
+Sometimes
+
+3.12
+
+.860
+
+Sometimes
+
+1. I approach faculty members for academic
+concerns.
+2. I ask faculty members for clarification regarding
+lessons or requirements.
+3. I seek advice from faculty members regarding
+my academic decisions.
+4. I feel comfortable approaching faculty members
+when I need assistance.
+
+lessons.
+7. Faculty members encourage students to ask
+questions.
+8. I feel respected by faculty members when I seek
+help.
+Mean Rating
+Mean Ranges:
+
+1.00 – 1.80: Never; 1.81 – 2.60: Rarely; 2.61 – 3.40: Sometimes; 3.41 – 4.20:
+
+Often: 4.21 – 5.00: Always
+
+Table 4 deals with the extent of utilization of faculty support among the
+respondents, yielding a mean rating of 3.12 (SD = 0.86), which is interpreted as
+“Sometimes.” This indicates that students moderately utilize faculty members as a
+source of support for their academic and personal concerns. The findings suggest that
+
+51
+while students recognize faculty members as important sources of assistance, their
+engagement with faculty support services is not frequent or consistent.
+Among the indicators, the highest mean rating is observed in the item “Faculty
+members encourage students to ask questions” with a mean of 3.45 (SD = 1.10),
+interpreted as “Often.” This finding suggests that faculty members generally foster an
+environment that promotes inquiry and encourages student participation in the learning
+process. The result implies that students perceive their instructors as approachable in
+classroom settings and recognize efforts made by faculty members to facilitate
+communication and academic engagement. Such encouragement can contribute to a
+more supportive learning environment where students feel empowered to clarify
+concepts, express concerns, and actively participate in their educational experiences.
+On the other hand, the lowest mean rating is reflected in the item “I seek advice
+from faculty members regarding my academic decisions” with a mean of 2.73 (SD =
+1.12), interpreted as “Sometimes.” This suggests that students do not regularly consult
+faculty members when making important academic choices, such as course selection,
+career planning, or decisions related to their academic progression. The finding may
+indicate that students prefer relying on their own judgment, peers, family members, or
+other support systems rather than seeking guidance from faculty members. It may also
+reflect limited opportunities for mentoring interactions or a lack of awareness regarding
+the advisory role of faculty members.
+Overall, the results indicate that although faculty members are viewed as
+supportive and encouraging, students do not consistently maximize the academic and
+developmental support that faculty can provide. The moderate utilization of faculty
+support suggests that interactions between students and faculty may remain largely
+
+52
+confined to classroom instruction rather than extending to broader academic advising,
+personal guidance, and mentoring functions. This pattern may prevent students from
+fully benefiting from the expertise, experience, and support that faculty members can
+offer.
+The findings imply a need for the university to strengthen student-faculty
+engagement through initiatives that encourage meaningful interactions beyond
+classroom activities. Faculty mentoring programs, academic consultation hours, advising
+sessions, and student-centered support activities may help increase students’
+willingness to seek assistance and guidance from faculty members. Likewise, faculty
+members may further enhance their visibility and accessibility by actively communicating
+their availability and encouraging students to seek support whenever concerns arise.
+Strengthening these relationships can foster trust, improve students’ academic
+confidence, facilitate informed decision-making, and contribute positively to student
+success, retention, and overall well-being within the university.
+The review by Li et al. (2023) emphasized that support from faculty members,
+together with peers and academic support services, encourages students to seek
+assistance, strengthens academic engagement, and enhances learning outcomes. In
+addition, Chen, Zhu, and Xiao (2023) found that social support significantly improves
+students' academic self-efficacy by increasing their sense of security, enabling them to
+become more confident in managing academic challenges. Similarly, Zhao et al. (2025)
+found that although many college students recognize their need for support,
+considerably fewer utilize formal support services due to barriers such as self-reliance,
+limited awareness of available resources, time constraints, and a perceived lack of need
+for professional intervention. These findings are consistent with the present study, where
+students perceived faculty members as encouraging classroom participation but only
+
+53
+occasionally sought their advice regarding academic decisions. Although faculty
+members are viewed as supportive, students may still reserve faculty interactions
+primarily for instructional purposes rather than broader academic mentoring and
+guidance, as personal and systemic barriers may discourage them from fully utilizing
+available faculty support. .
+
+Table 5. Extent of Utilization in terms Health and Development Center (HDC)
+Indicators
+
+Mean SD
+1.04
+
+Qualitative
+Description
+Often
+
+1.22
+
+Sometimes
+
+provides 3.35
+
+1.08
+
+Sometimes
+
+4. I receive support from the Human Development 2.90
+
+1.20
+
+Sometimes
+
+1.08
+
+Often
+
+are 3.52
+
+1.07
+
+Often
+
+7. I trust the confidentiality of the Human Development 3.44
+
+1.11
+
+Often
+
+1. I am aware of the services offered by the Human 3.49
+Development Center.
+2. I visit the Human Development Center for guidance 2.60
+or counseling.
+3.
+
+The
+
+Human
+
+Development
+
+Center
+
+professional support for students.
+
+Center for personal concerns.
+5. The Human Development Center is accessible to 3.62
+students.
+6.
+
+The
+
+Human
+
+Development
+
+Center
+
+staff
+
+approachable.
+
+Center.
+
+54
+8. The services of the Human Development Center 3.48
+help
+
+students
+
+manage
+
+stress
+
+and
+
+1.06
+
+Often
+
+1.11
+
+Sometimes
+
+.82
+
+Sometimes
+
+personal
+
+concerns
+9. Awareness of HDC services encourages me to seek 3.24
+help.
+Mean Rating
+Mean Ranges:
+
+3.29
+
+1.00 – 1.80: Never; 1.81 – 2.60: Rarely; 2.61 – 3.40: Sometimes; 3.41 – 4.20:
+
+Often: 4.21 – 5.00: Always
+
+Table 5 relates with the extent of utilization of the Human Development Center
+(HDC) in terms of students’ awareness, access, trust, and perceived usefulness of its
+services. The overall mean rating of 3.29 (SD = 0.82), interpreted as “Sometimes,”
+indicates a moderate level of utilization, suggesting that students are generally aware of
+the HDC and recognize its functions, but do not consistently engage with its services.
+This implies that while the center is visible and acknowledged within the institution, its
+services are not yet fully integrated into students’ regular coping and support-seeking
+behaviors.
+Looking at the indicators, students reported that they are often aware of the
+services offered by the HDC (M = 3.49), which suggests that information dissemination
+about the center is relatively effective. They also rated the accessibility of the HDC (M =
+3.62), staff approachability (M = 3.52), trust in confidentiality (M = 3.44), and perceived
+effectiveness in helping manage stress and personal concerns (M = 3.48) as often,
+indicating generally positive perceptions of the center’s environment and service quality.
+
+55
+These results imply that structural and interpersonal conditions within the HDC are
+favorable and supportive of student engagement.
+However, despite these positive perceptions, actual utilization remains lower.
+Students reported that they only sometimes visit the HDC for guidance or counseling (M
+= 2.60) and only sometimes receive support for personal concerns (M = 2.90). Similarly,
+perceptions that the HDC provides professional support (M = 3.35) and that awareness
+encourages help-seeking (M = 3.24) were also rated as sometimes. This pattern
+suggests a gap between awareness and actual help-seeking behavior, where students
+acknowledge the availability and usefulness of services but do not frequently translate
+this awareness into active utilization.
+In general, the findings indicate that although the HDC is perceived positively in
+terms of accessibility, trustworthiness, and staff approachability, student engagement
+remains moderate. This may be influenced by factors such as hesitation to seek formal
+psychological or counseling support, reliance on informal support systems, or limited
+perceived urgency of personal concerns. The results suggest the need to strengthen
+initiatives that promote help-seeking behavior and normalize the use of counseling
+services to enhance utilization of the HDC.
+The findings are supported by previous studies on students' utilization of
+counseling and support services. Espinoza (2023) found that students' willingness to
+utilize campus mental health services is influenced by their perceptions of confidentiality,
+staff friendliness, and the overall counseling environment. Nevertheless, favorable
+perceptions alone did not necessarily result in regular service utilization. Likewise, Han
+et al. (2024) observed that students experiencing psychological distress often
+demonstrated lower confidence and knowledge in accessing mental health services
+
+56
+despite the availability of institutional resources. These findings are reflected in the
+present study, where respondents rated the HDC highly in terms of accessibility, staff
+approachability, trust in confidentiality, and perceived effectiveness, suggesting that
+students generally hold favorable perceptions of the center and its services.
+Despite these positive perceptions, actual utilization remained only moderate.
+This is consistent with the systematic review by Zhao et al. (2025), which found that
+although many college students intend to seek professional help, only about one-third
+actually utilize mental health services. The review identified self-reliance, lack of time,
+limited knowledge of available services, low perceived need, concerns about privacy,
+stigma, and cost as common barriers that prevent students from translating awareness
+into actual help-seeking behavior. Similarly, Tan et al. (2025) reported that self-stigma
+discourages Filipino college students from seeking professional help, with many
+preferring to rely on family members and friends and considering formal counseling only
+when their concerns become severe. These findings help explain why respondents
+acknowledged the availability and usefulness of the HDC but only sometimes visited the
+center for counseling or personal concerns.
+Moreover, Segbenya and Bervell (2024) emphasized that the availability of
+support services alone does not guarantee their utilization. Their study found that
+students' awareness of available support and the development of actual help-seeking
+behavior significantly influence whether institutional support services are used. They
+further noted that educational institutions should actively promote awareness of available
+services and encourage help-seeking behaviors through orientation programs and
+continuous student engagement. These findings support the present study, suggesting
+that while the HDC is visible and positively perceived, additional initiatives that normalize
+
+57
+help-seeking, reduce stigma, and strengthen students' willingness to seek professional
+support are necessary to increase the utilization of its services.
+
+Table 6. Extent of Utilization in terms Department of Student Services (DSS)
+Indicators
+
+Mean SD
+
+1. I am aware of the services offered by DSS.
+
+3.42
+
+2. DSS provides support for students experiencing 3.44
+
+Qualitative
+Description
+1.13 Often
+1.03 Often
+
+academic or personal difficulties.
+3. DSS provides guidance and assistance to students 3.43
+
+1.03 Often
+
+when needed.
+4. DSS is a reliable source of support for students.
+
+3.42
+
+1.07 Often
+
+5. I feel comfortable approaching DSS for help.
+
+3.15
+
+1.17 Sometimes
+
+6. DSS encourages me to seek help when needed.
+
+3.17
+
+1.14 Sometimes
+
+student-related 3.28
+
+1.10 Sometimes
+
+7.
+
+DSS
+
+effectively
+
+addresses
+
+concerns.
+8. I seek help from DSS whenever I experience
+
+2.96
+
+1.21 Sometimes
+
+3.29
+
+.92
+
+​ difficulties within the university.
+Mean Rating
+Mean Ranges:
+
+Sometimes
+
+1.00 – 1.80: Never; 1.81 – 2.60: Rarely; 2.61 – 3.40: Sometimes; 3.41 – 4.20:
+
+Often: 4.21 – 5.00: Always
+
+Table 6 reflects the extent of utilization of the Department of Student Services
+(DSS) in terms of students’ awareness, perceived support, accessibility, and actual
+help-seeking behavior. The computed mean of 3.29 (SD = 0.92), interpreted as
+
+58
+“Sometimes,” indicates a moderate level of utilization. This suggests that while students
+are familiar with DSS and recognize its functions, they do not consistently rely on its
+services when academic or personal concerns arise. In effect, DSS is acknowledged as
+a support unit within the university, but its use remains occasional rather than habitual.
+In terms of perception, students indicated that they are often aware of DSS
+services (M = 3.42). They also view DSS as capable of providing support for students
+experiencing academic or personal difficulties (M = 3.44), offering guidance and
+assistance when needed (M = 3.43), and serving as a reliable source of support (M =
+3.42). These responses suggest that DSS is well-recognized and institutionally visible,
+with students generally affirming its role in addressing their concerns within the university
+setting.
+A different pattern, however, appears in the area of engagement. Students
+reported only moderate comfort in approaching DSS for help (M = 3.15), and they
+similarly perceive that DSS only sometimes encourages help-seeking behavior (M =
+3.17). Ratings for its effectiveness in addressing student-related concerns (M = 3.28)
+and actual utilization during difficulties (M = 2.96) further reflect limited direct
+engagement. This indicates that even if DSS is seen as reliable and supportive, students
+may still hesitate to actively seek assistance when challenges arise.
+Taken together, the findings reflect a gap between awareness and actual
+utilization. DSS is generally viewed in a positive light in terms of its support functions and
+institutional presence, yet this perception does not fully translate into consistent
+help-seeking behavior. This may be influenced by factors such as reliance on informal
+support systems, personal hesitation, or lack of perceived urgency in seeking formal
+
+59
+assistance. Strengthening student engagement strategies and normalizing help-seeking
+behavior may help improve the utilization of DSS services.
+Samuel and Kamenetsky (2022) found that university students commonly relied
+on family and friends before approaching formal campus support services, even when
+institutional resources were readily available. Their study suggested that personal
+preferences, uncertainty about service effectiveness, and perceived accessibility
+influenced students' decisions to seek formal assistance. Supporting this observation,
+Pantaleon et al. (2022) highlighted that students' help-seeking decisions are shaped by
+trust in support providers, previous experiences, and the perceived quality of available
+services. These findings parallel the present study, in which respondents generally
+viewed the Department of Student Services as dependable and supportive but only
+sometimes sought its assistance during academic or personal concerns. The results
+indicate that awareness of available services does not necessarily translate into
+consistent utilization of formal support systems.
+
+Table 7. Extent of Utilization in terms Prefect of Discipline (POD)
+Indicators
+
+Mean
+
+SD
+
+1. POD provides guidance regarding school’s rules 3.91
+
+1.02
+
+Qualitative
+Description
+Often
+
+.95
+
+Often
+
+.93
+
+Often
+
+and discipline.
+2. POD addresses concerns related to student 3.89
+conduct.
+3. POD provides clear information about school 3.90
+policies.
+
+60
+4. POD is part of the university’s
+
+student support 3.86
+
+1.01
+
+Often
+
+3.48
+
+1.18
+
+Often
+
+6. POD provides support when dealing with behavioral 3.74
+
+1.06
+
+Often
+
+1.05
+
+Often
+
+.88
+
+Often
+
+system.
+5. I feel comfortable discussing
+​
+
+discipline -related concerns with POD.
+
+concerns.
+7. I consider POD as part of the university’s support 3.79
+system.
+Mean Rating
+Mean Ranges:
+
+3.80
+
+1.00 – 1.80: Never; 1.81 – 2.60: Rarely; 2.61 – 3.40: Sometimes; 3.41 – 4.20:
+
+Often : 4.21 – 5.00: Always
+
+Table 7 highlights the extent of utilization of the Prefect of Discipline (POD) in
+terms of students’ awareness, perception of support functions, and willingness to
+engage with its services. The computed mean rating of 3.80 (SD = 0.88), interpreted as
+“Often,” indicates a relatively high level of utilization. This suggests that students are
+generally aware of the POD’s role and frequently recognize it as an important
+component of the university’s student support and disciplinary system.
+In terms of specific indicators, students reported that the POD often provides
+guidance regarding school rules and discipline (M = 3.91), addresses concerns related
+to student conduct (M = 3.89), and offers clear information about school policies (M =
+3.90). They also view the POD as part of the university’s student support system (M =
+3.86) and similarly affirm its role as an institutional mechanism for maintaining discipline
+(M = 3.79). These findings suggest that the POD is strongly established in terms of
+visibility and functional role within the university structure.
+
+61
+Students further indicated that the POD provides support when dealing with
+behavioral concerns (M = 3.74) and that they feel relatively comfortable discussing
+discipline-related issues with the office (M = 3.48). While this latter indicator is slightly
+lower compared to others, it still falls within the “Often” range, implying that students
+generally perceive the POD as approachable, though with some degree of caution when
+it comes to sensitive disciplinary matters.
+As a whole, the results show that the POD is consistently recognized and
+frequently utilized as part of the university’s support system, particularly in relation to
+discipline and student conduct. Compared with other student support offices, the POD
+appears to have stronger engagement from students, likely because its functions are
+more directly tied to compliance, behavioral regulation, and institutional policy
+enforcement.
+Studies done by Segbenya and Bervell (2024) demonstrated that students are
+more likely to engage with institutional support services when they perceive them as
+accessible, trustworthy, and beneficial. A similar perspective was presented by Johnson
+et al. (2022), who reported that active engagement with university support services
+increases when students clearly understand the purpose and value of these services
+within the institution. This pattern is evident in the present findings, where respondents
+frequently recognized the Prefect of Discipline as an important office for addressing
+student conduct, implementing school policies, and providing guidance on disciplinary
+matters. The consistently high ratings suggest that the office has established credibility
+among students, encouraging them to recognize its role within the university's broader
+student support system.
+
+62
+Table 8. Extent of Utilization in terms Office of the Student Services and Affairs (OSSA)
+Indicators
+1. OSSA provides assistance for student-related
+
+Mean
+
+SD
+
+3.75
+
+.95
+
+Qualitative
+Description
+Often
+
+3.65
+
+1.02
+
+Often
+
+3.68
+
+1.01
+
+Often
+
+3.61
+
+1.01
+
+Often
+
+3.64
+
+1.01
+
+Often
+
+3.68
+
+1.00
+
+Often
+
+3.67
+
+1.03
+
+Often
+
+3.67
+
+.90
+
+Often
+
+concerns and activities.
+2. I am aware of the programs and services
+offered by OSSA.
+3. OSSA offers programs that support student
+​
+
+engagement.
+4. OSSA provides support for students facing
+academic or personal challenges.
+5. OSSA is a reliable source of support for
+students.
+6. OSSA encourages students to engage in
+support programs.
+7. OSSA encourages guidance for student life
+​ and development.
+
+Mean Rating
+Mean Ranges:
+
+1.00 – 1.80: Never; 1.81 – 2.60: Rarely; 2.61 – 3.40: Sometimes; 3.41 – 4.20:
+
+Often: 4.21 – 5.00: Always
+
+Table 8 shows the extent of utilization of the Office of the Student Services and
+Affairs (OSSA) in terms of students’ awareness, perceived support, and engagement
+with its programs and services. The computed mean rating of 3.67 (SD = 0.90),
+interpreted as “Often,” indicates a relatively high level of utilization. This suggests that
+
+63
+students are generally familiar with OSSA and frequently recognize its role in providing
+support for academic, personal, and developmental concerns within the university.
+In terms of specific indicators, students reported that OSSA often provides
+assistance for student-related concerns and activities (M = 3.75). They also indicated
+awareness of its programs and services (M = 3.65) and acknowledged that OSSA offers
+initiatives that support student engagement (M = 3.68). In addition, respondents affirmed
+that OSSA provides support for students facing academic or personal challenges (M =
+2.61), serves as a reliable source of assistance (M = 3.64), and encourages participation
+in support programs (M = 3.68). Students likewise noted that OSSA promotes guidance
+for student life and development (M = 3.67). These results suggest that OSSA maintains
+a consistent and visible presence in supporting various aspects of student welfare and
+engagement.
+In summary, the findings indicate that OSSA is frequently recognized and utilized
+as a key student support office within the university. Its programs are perceived not only
+as accessible but also as responsive to student needs, particularly in promoting
+engagement and providing developmental support. Compared with other support units,
+OSSA appears to function as a more comprehensive service hub that integrates
+academic assistance, student involvement, and personal development initiatives,
+contributing to a more holistic student support system.
+The findings of Johnson et al. (2022) demonstrated that students who actively
+engaged with university support services achieved better academic outcomes and were
+more likely to remain enrolled, highlighting the importance of well-utilized institutional
+support systems. Complementing this, Anil et al. (2023) emphasized that institutional
+support contributes significantly to students' academic, emotional, and psychological
+
+64
+well-being by fostering stronger engagement with university resources. These
+observations align with the present study, where respondents frequently recognized and
+utilized the Office of Student Services and Affairs as a reliable source of academic,
+personal, and developmental support. The consistently high level of awareness and
+engagement suggests that OSSA effectively serves as a central student support office,
+providing comprehensive services that encourage student participation and contribute to
+their overall development.
+
+Table 9. Extent of Utilization in all of the Available Support Systems
+Support System
+Mean
+
+SD
+
+Faculty Support
+Health and Development Center (HDC)
+Department of Student Services (DSS)
+Prefect of Discipline (POD)
+Office of the Student Services and Affairs (OSSA)
+
+.86
+.82
+.92
+.88
+.90
+
+Mean Ranges:
+
+3.12
+3.29
+3.29
+3.80
+3.67
+
+Qualitative
+Description
+Sometimes
+Sometimes
+Sometimes
+Often
+Often
+
+1.00 – 1.80: Never; 1.81 – 2.60: Rarely; 2.61 – 3.40: Sometimes; 3.41 – 4.20:
+
+Often: 4.21 – 5.00: Always
+
+Table 9 presents that the extent of utilization of available support systems among
+respondents is generally moderate to high, ranging from “Sometimes” to “Often.” The
+Prefect of Discipline (M = 3.80, SD = .88) and the Office of the Student Services and
+Affairs (M = 3.67, SD = .90) are the most frequently utilized support systems, both
+interpreted
+
+as
+
+“Often,”
+
+suggesting
+
+that
+
+students
+
+more
+
+commonly
+
+access
+
+discipline-related guidance and general student services support.
+In contrast, Faculty Support (M = 3.12, SD = .86), Health and Development
+Center (M = 3.29, SD = .82), and the Department of Student Services (M = 3.29, SD =
+.92) are only utilized “Sometimes,” indicating relatively lower engagement with these
+
+65
+support structures. Overall, the findings imply that while institutional support systems are
+present and accessible, students tend to rely more on formal administrative and
+discipline-related services than on academic or wellness-related support services.
+
+Section 4. Difference in Help-Seeking Behavior and Support System Engagement
+According to Profile Variables
+This section reflects the results of the analysis on the differences in help-seeking
+behavior and support system engagement when respondents are grouped according to
+their demographic characteristics. The findings provide whether variations exist across
+sex, year level, and department.
+Table 10. Difference in Help-Seeking Behavior and Support System Engagement in
+terms of Sex
+Domains
+
+Sex
+
+N
+
+Mean SD
+
+HSB
+
+Female
+Male
+Female
+Male
+Female
+Male
+Female
+Male
+Female
+Male
+Female
+Male
+
+213
+148
+213
+148
+213
+148
+213
+148
+213
+148
+213
+148
+
+3.17
+3.23
+3.07
+3.19
+3.25
+3.35
+3.21
+3.39
+3.81
+3.78
+3.72
+3.59
+
+FS
+HCD
+DSS
+POD
+OSSA
+
+.74
+.80
+.81
+.91
+.80
+.84
+.90
+.95
+.85
+.93
+.83
+.98
+
+Qualitative
+Description
+Sometimes
+Sometimes
+Sometimes
+Sometimes
+Sometimes
+Sometimes
+Sometimes
+Sometimes
+Often
+Often
+Often
+Often
+
+Mann-Whit p-valu
+ney U
+e
+14756.000 .302
+14225.000 .115
+14723.000 .286
+13865.500 .051
+15508.000 .794
+14760.000 .303
+
+Decision
+Not
+Significant
+Not
+Significant
+Not
+Significant
+Not
+Significant
+Not
+Significant
+Not
+Significant
+
+Mean Ranges: 1.00 – 1.80: Never; 1.81 – 2.60: Rarely; 2.61 – 3.40: Sometimes; 3.41 – 4.20:
+Often: 4.21 – 5.00: Always
+* Significance level at <0.05.
+
+66
+The table 10 showed no significant difference on help-seeking behavior
+
+​
+
+and support system engagement when they are grouped according to sex.
+As presented in the table, the both male and
+
+female respondents
+
+demonstrated similar levels of help-seeking behavior and support system
+engagement in all domains. The mean score for both groups consistently fall
+within the “ sometimes “ and “ often” qualitative description. In terms of
+help-seeking behavior, male respondents obtained a mean score of 3.78, while
+female
+
+respondents obtained a mean score of 3.81 that yield a higher mean
+
+rating in the domains Perfect of Discipline (POD), with a Mann- Whitney U value
+of 15508.000 and a p-value of .794 ,which is greater than the .05 level of
+significance. Therefore, it indicates that there was no significant difference in
+help-seeking behavior and support system engagement between male and
+female respondents.
+​
+
+Furthermore, the absence of statistically significant differences suggest
+
+that sex does not meaningfully influence help-seeking behavior or support
+system engagement among the respondents. This finding indicates that both
+female and male students have comparable access to, awareness of, and
+willingness to engage with available support service. It may also suggest that the
+institution provides support services that are similarly utilized by students
+regardless of sex.
+​
+
+Dueñas et al. (2021) reported that equal access to institutional resources
+
+results in comparable patterns of support service utilization regardless of sex.
+
+67
+Likewise, Pantaleon et al. (2022) found that Filipino university students have
+similar opportunities to access institutional support systems, resulting in
+comparable levels of engagement with these services. In contrast, Bizuneh
+(2022) found significant gender differences in academic help-seeking behavior,
+demonstrating that students' academic self-concept and beliefs regarding the
+effectiveness of counseling services significantly influence their willingness to
+seek academic help. The study further showed that these factors accounted for a
+substantial proportion of the variance in help-seeking behavior, suggesting that
+differences in help-seeking may be influenced by students' confidence in their
+academic abilities and trust in available support services. These contrasting
+findings indicate that the influence of gender on help-seeking behavior remains
+inconclusive.
+
+Supporting
+
+this
+
+observation,
+
+the
+
+systematic
+
+review
+
+and
+
+meta-analysis conducted by Martín-Arbós et al. (2021) found mixed evidence
+regarding the role of gender, with some studies reporting more positive
+help-seeking attitudes among female students while others found no significant
+differences between males and females. The review concluded that help-seeking
+behavior is more strongly influenced by individual needs, awareness, and
+perceptions of available support services than by sex alone.
+
+Table 11. Difference in Help-Seeking Behavior and Support System Engagement in
+terms of Year Level
+Domain
+
+Year Level
+
+N
+
+Mean
+
+SD
+
+HSB
+
+Freshmen
+Sophomore
+
+102 3.29
+99 3.19
+
+.73
+.74
+
+Qualitative Kruskal
+Description Wallis
+Sometimes 1.626
+Sometimes
+
+P-val Decision
+ue
+.444 Not
+Significant
+
+68
+
+FS
+
+HCD
+
+DSS
+
+POD
+
+OSSA
+
+Junior
+Freshmen
+Sophomore
+Junior
+Freshmen
+Sophomore
+Junior
+Freshmen
+Sophomore
+Junior
+Freshmen
+Sophomore
+Junior
+Freshmen
+Sophomore
+Junior
+
+160
+102
+99
+160
+102
+99
+160
+102
+99
+160
+102
+99
+160
+102
+99
+160
+
+3.15
+3.07
+3.21
+3.09
+3.43
+3.16
+3.29
+3.33
+3.22
+3.29
+3.91
+3.86
+3.69
+3.77
+3.66
+3.61
+
+.80
+.97
+.78
+.82
+.73
+.85
+.84
+.93
+.94
+.91
+.79
+.94
+.89
+.88
+.92
+.89
+
+Sometimes
+Sometimes
+Sometimes
+Sometimes
+Often
+Sometimes
+Sometimes
+Sometimes
+Sometimes
+Sometimes
+Often
+Often
+Often
+Often
+Often
+Often
+
+1.609
+
+.447
+
+Not
+Significant
+
+5.195
+
+.074
+
+Not
+Significant
+
+.903
+
+.637
+
+Not
+Significant
+
+4.548
+
+.103
+
+Not
+Significant
+
+2.018
+
+.365
+
+Not
+Significant
+
+Mean Ranges: 1.00 – 1.80: Never; 1.81 – 2.60: Rarely; 2.61 – 3.40: Sometimes; 3.41 – 4.20:
+Often: 4.21 – 5.00: Always
+* Significance level at <0.05.
+
+The table 11 showed that there is no significant difference in Help-Seeking Behavior
+and support system engagement in terms of year level. This is based on the computed
+p-values for all domains such as Health-Seeking Behavior (HSB) (p = .444), Faculty
+Support (FS) (p = .447), Human Development Center (HDC) (p = .074), Department of
+Student Services (DSS) (p = .637), Prefect of Discipline (POD) (p = .103), and Office of
+Student Services and Affairs (OSSA) (p = .365), all of which are greater than the 0.05
+level of significance. This indicates that the level of freshmen, sophomore, and junior
+students are generally similar across all measured domains. Although slight variations in
+mean across were observed, these differences are not statistically significant. This
+implies that year level does not influence students’ help-seeking behavior and
+engagement with support systems, suggesting that students across different year levels
+exhibit comparable patterns in accessing and utilizing support services.
+
+69
+​
+
+According to a recent study by Johnson et al. (2022), there is no significant
+
+difference in help‑seeking behavior and service utilization among students from different
+year levels. They explained that once students receive proper orientation and
+information about available resources, freshmen, sophomores, and upper‑classmen use
+support systems at similar rates.
+Similarly, another study by Pinggolio and Mateo (2018), year level is not a
+determining factor in how often Filipino college students seek assistance. They observed
+that while first‑year students may need time to adjust to university routines, their actual
+frequency of accessing academic, administrative, and wellness services does not differ
+statistically from students in higher years.White and Canning (2023), familiarity with
+support services increases gradually over time, but this does not result in significant
+variations in usage across different academic years. They noted that consistent access
+and clear information make utilization patterns comparable regardless of how long a
+student has been enrolled.
+
+Table 12. Difference in Help-Seeking Behavior and Support System Engagement in
+terms of Department
+Domain
+
+Department N
+
+Mean SD
+
+HSB
+
+CMAMP
+CIT
+CTE
+COA
+CAS
+CCJE
+CONPHM
+CBE
+CEA
+CMAMP
+CIT
+
+3.35
+3.09
+3.76
+3.06
+1.84
+3.61
+3.27
+3.04
+3.06
+3.10
+3.06
+
+FS
+
+61
+13
+15
+23
+18
+14
+91
+49
+77
+61
+13
+
+.76
+.70
+.72
+.61
+.73
+.63
+.74
+.74
+.82
+.98
+.79
+
+Qualitative
+Description
+Sometimes
+Sometimes
+Often
+Sometimes
+Sometimes
+Often
+Sometimes
+Sometimes
+Sometimes
+Sometimes
+Sometimes
+
+Kruskal
+Wallis
+23.390
+
+p-value
+
+Decision
+
+.003
+
+Significant
+
+12.551
+
+.128
+
+Not
+Significant
+
+70
+
+HCD
+
+DSS
+
+POD
+
+OSSA
+
+CTE
+COA
+CAS
+CCJE
+CONPHM
+CBE
+CEA
+CMAMP
+CIT
+CTE
+COA
+CAS
+CCJE
+CONPHM
+CBE
+CEA
+CMAMP
+CIT
+CTE
+COA
+CAS
+CCJE
+CONPHM
+CBE
+CEA
+CMAMP
+CIT
+CTE
+COA
+CAS
+CCJE
+CONPHM
+CBE
+CEA
+CMAMP
+CIT
+CTE
+COA
+CAS
+CCJE
+CONPHM
+CBE
+CEA
+
+15
+23
+18
+14
+91
+49
+77
+61
+13
+15
+23
+18
+14
+91
+49
+77
+61
+13
+15
+23
+18
+14
+91
+49
+77
+61
+13
+15
+23
+18
+14
+91
+49
+77
+61
+13
+15
+23
+18
+14
+91
+49
+77
+
+3.46
+3.34
+3.07
+3.55
+2.94
+3.26
+3.06
+3.30
+3.20
+4.01
+3.22
+3.18
+3.57
+3.37
+3.23
+3.11
+3.14
+3.54
+3.55
+3.55
+3.18
+3.57
+3.44
+3.12
+3.12
+3.73
+3.51
+4.39
+4.20
+3.80
+3.95
+3.89
+3.39
+3.78
+3.64
+3.34
+4.16
+4.42
+3.78
+3.75
+3.69
+3.29
+3.61
+
+.95 Often
+.67 Sometimes
+.80 Sometimes
+.68 Often
+.87 Sometimes
+.76 Sometimes
+.84 Sometimes
+.76 Sometimes
+.76 Sometimes
+.85 Often
+.64 Sometimes
+1.00 Sometimes
+.83 Often
+.77 Sometimes
+.70 Sometimes
+.91 Sometimes
+1.04 Sometimes
+.84 Often
+1.02 Often
+.91 Often
+.94 Sometimes
+.70 Often
+.89 Often
+.87 Sometimes
+.92 Sometimes
+.89 Often
+1.13 Often
+.79 Always
+.65 Always
+.94 Often
+.65 Often
+.85 Often
+.92 Sometimes
+.83 Often
+.94 Often
+1.11 Sometimes
+.83 Often
+.48 Always
+.72 Often
+.59 Often
+.84 Often
+.98 Sometimes
+.87 Often
+
+16.395
+
+.037
+
+Significant
+
+14.751
+
+.044
+
+Significant
+
+24.283
+
+.002
+
+Significant
+
+32.042
+
+.000
+
+Significant
+
+71
+Mean Ranges: 1.00 – 1.80: Never; 1.81 – 2.60: Rarely; 2.61 – 3.40: Sometimes; 3.41 – 4.20:
+Often 4.21 – 5.00: Always
+* Significance level at <0.05.
+
+The Table 12 showed that there were significant differences in help-seeking
+behavior and support system engagement when respondents were grouped according to
+their department in the domains of Help-Seeking Behavior (HSB), Health and
+Counseling Department (HCD), Department Student Services (DSS), and Office of
+Student Services and Affairs (OSSA). However, no significant difference was found in
+the Faculty Support (FS) domain.
+As presented in the table, the mean scores across the different departments
+generally fell within the "Sometimes" and "Often" qualitative descriptions. Notably, the
+Office of Student Services and Affairs (OSSA) domain obtained the highest mean score
+among respondents from the College of Accountancy (COA), with a mean of “ 4 .42” ,
+corresponding to the qualitative description of "Always." The Kruskal–Wallis test
+revealed a statistically significant difference for the OSSA domain ( Kruskal Wallis=
+32.042, p = .000), indicating that students' engagement with OSSA services differed
+significantly across departments. In contrast, the Faculty Support (FS) domain did not
+show a statistically significant difference, indicating that faculty support was comparable
+across departments.
+Moreover, These findings suggest that students' department significantly
+influences their help-seeking behavior and engagement with most institutional support
+services. The observed differences may be associated with variations in academic
+program culture, students' needs, curricular demands, leadership opportunities, and
+exposure to institutional support services. However, the absence of significant
+
+72
+differences in the Faculty Support domain suggests that faculty members provide a
+relatively consistent level of academic support to students regardless of department.
+According to the study of Pinamang et al. (2021), who reported that students
+from different academic programs exhibit varying patterns in the utilization of
+administrative and wellness services due to differences in academic demands and stress
+levels. However, they found that students sought assistance from faculty members at
+comparable rates regardless of their field of study. Similarly, Shaheen et al. (2020) found
+that the nature and intensity of academic requirements across departments influence
+students' utilization of student affairs and discipline-related services, while faculty
+support remains consistently available and equally accessible to students from different
+academic programs. These findings support the present study, suggesting that although
+departmental affiliation may influence students' engagement with institutional support
+services, faculty members continue to provide equitable academic guidance and
+assistance regardless of students' department.
+
+Section 5. Relationship between Help-Seeking Behavior and Utilization of
+Available Support Systems
+This section presents the results of the analysis on the relationship between
+help-seeking behavior and the utilization of available support systems among the
+respondents. The findings determine whether students who exhibit higher levels of
+help-seeking behavior are more likely to utilize the support services provided by the
+institution.
+
+73
+Table 13. Relationship between Help-Seeking Behavior and Utilization of Available
+Support Systems (N=361)
+Domain
+Faculty Support (FS)
+Health
+and
+Development
+Center (HDC)
+Department of Student Services
+(DSS)
+Prefect of Discipline (POD)
+Office of the Student Services
+and Affairs (OSSA)
+
+Correlation Details
+Correlation Coefficient
+Sig. (2-tailed)
+Correlation Coefficient
+Sig. (2-tailed)
+Correlation Coefficient
+Sig. (2-tailed)
+Correlation Coefficient
+Sig. (2-tailed)
+Correlation Coefficient
+Sig. (2-tailed)
+
+Health-seeking Behavior
+.488*
+.000
+.526*
+.000
+.488*
+.000
+.283*
+.000
+.317*
+.000
+
+* Spearman’s rho Correlation is significant at <0.05..
+
+Table 13 presents the relationship between help-seeking behavior and the
+utilization of available support systems among respondents (N = 361) using Spearman’s
+rho correlation. The results indicate that all support systems have a statistically
+significant positive relationship with help-seeking behavior, as evidenced by p-values of
+.000 across all domains (p < .05). This means that higher levels of help-seeking behavior
+are consistently associated with greater utilization of institutional support services.
+Among the variables, the Health and Development Center (HDC) shows the
+strongest correlation with help-seeking behavior (r = .526, p = .000), followed by Faculty
+Support (r = .488, p = .000) and Department of Student Services (DSS) (r = .488, p =
+.000). These moderate positive correlations suggest that students who are more inclined
+to seek help are also more likely to access academic, health, and student-related
+support services. This highlights the central role of both academic and wellness-oriented
+services more closely associated with students’ help-seeking tendencies.
+
+74
+Meanwhile, the Prefect of Discipline (POD) (r = .283, p = .000) and the Office of
+the Student Services and Affairs (OSSA) (r = .317, p = .000) also show significant but
+weaker positive correlations. These results suggest that while disciplinary and
+administrative offices are still associated with help-seeking behavior, their influence is
+relatively lower compared to academic and health-related support systems. This may
+imply that students tend to seek these offices more for compliance, regulation, or specific
+concerns rather than as primary sources of support.
+Overall, the findings suggest a consistent and significant positive relationship
+between help-seeking behavior and engagement with all available support systems. This
+indicates that students who are more proactive in seeking help tend to interact more
+frequently with institutional services. It also implies that strengthening awareness,
+accessibility, and responsiveness of support systems may further enhance help-seeking
+behavior among students, contributing to improved student well-being and academic
+support.
+
+These findings are supported by Karyotaki et al. (2022), who reported that
+students with positive help-seeking attitudes are more likely to utilize health,
+counseling, and academic support services, resulting in greater engagement with
+institutional resources. Similarly, Nagai (2015) emphasized that help-seeking
+intentions, perceived needs, and social support significantly predict students'
+actual help-seeking behavior, indicating that students who recognize their need
+for assistance are more likely to seek available support. Segbenya and Bervell
+(2024) likewise found that actual help-seeking behavior serves as a key
+mechanism linking students' perceived needs, social support, and awareness of
+available services to the actual utilization of institutional support. Their findings
+
+75
+suggest that support services become effective only when students actively
+develop the behavior of seeking help. In addition, Martín-Arbós et al. (2021)
+concluded that students' recognition of their academic and personal needs,
+together with their perception of the usefulness of institutional services, increases
+the likelihood of seeking appropriate assistance. Collectively, these studies
+reinforce the present findings that students who demonstrate stronger
+help-seeking behavior are more likely to utilize the university's available support
+systems.
+
+SUMMARY, CONCLUSIONS AND RECOMMENDATIONS
+Summary of Findings
+The study found that the respondents were predominantly female, mostly junior
+students, and represented diverse academic departments, with the largest proportion
+coming from, CONPHM, CEA, and CMAMP. This balanced and heterogenous
+distribution provided a representative basis for examining help-seeking behavior and the
+utilization of university support systems. Overall, students demonstrated a moderate
+level of help seeking behavior, showing a greater tendency to seek assistance for
+academic concerns while remaining relatively self-reliant in addressing other concerns.
+The extent of support system utilization ranged from moderate to high, with the prefect of
+discipline(POD), and the Office of Student Services and Affairs(OSSA) being the most
+frequently utilized services.In contrast, Faculty Support, the Health and Development
+Center (HDC), and the Department of Student Services (DSS) were only moderately
+utilized, suggesting a gap between students' awareness of these services and their
+
+76
+actual use, particularly for academic and wellness-related support. Furthermore, no
+significant differences in help-seeking behavior and support system utilization were
+observed when respondents were grouped according to sex and year level. However,
+significant differences were found across departments, indicating that departmental
+culture and academic environment may influence students' help-seeking practices and
+engagement with institutional support services. Finally, the findings revealed a significant
+positive relationship between help-seeking behavior and the utilization of all support
+systems, suggesting that students who are more willing to seek help are also more likely
+to access available university support services.
+b. Faculty Members. Enhance mentoring roles and actively encourage students
+to seek academic guidance and personal support when needed.
+c. Student Services Offices (OSSA, DSS, HDC, POD). Improve coordination,
+visibility, and responsiveness of services, and implement proactive outreach
+programs to normalize help-seeking behavior among students.
+d. Students. Encourage active and timely help-seeking behavior and maximize
+the use of available support systems without hesitation or stigma.
+e. Future Researchers. They are encouraged to expand the study by including
+variables such as academic performance, psychological well-being, coping
+strategies, and institutional climate. A mixed-methods or qualitative approach
+may also be employed to explore deeper insights into students’ lived
+experiences, barriers to help-seeking, and motivations. Comparative studies
+across
+
+universities
+
+or
+
+regions
+
+are
+
+also
+
+recommended
+
+to
+
+generalizability and broader understanding of help-seeking behavior.
+
+enhance
+
+77
+Conclusions
+Based on the findings, the following conclusions were derived:
+1. The respondents are diverse in terms of sex, year level, and department, with a
+relatively balanced distribution across academic programs. This heterogeneity
+provides a strong and representative basis for analyzing help-seeking behavior
+and support system utilization.
+2. Students exhibit a moderate level of help-seeking behavior. They are more likely to
+seek help for academic concerns but tend to be self-reliant in handling personal
+and other issues, indicating that help-seeking is situational rather than habitual or
+proactive.
+3. Students moderately to highly utilize available support systems. POD and OSSA
+are frequently utilized, while Faculty Support, HDC, and DSS are only moderately
+used. This indicates that students tend to rely more on disciplinary and
+administrative services than on academic and wellness-oriented support services,
+and there is a gap between awareness and actual utilization, especially for HDC
+and DSS.
+4. There are no significant differences in help-seeking behavior and support system
+utilization when grouped according to sex and year level. However, significant
+differences exist across departments, indicating that academic environment and
+departmental culture influence students’ help-seeking behavior and engagement
+with support systems.
+
+5. There is a significant positive relationship between help-seeking behavior
+and the utilization of all available support systems. Students who are more
+
+78
+inclined to seek help are also more likely to engage with institutional support
+services, particularly academic and wellness-related support.
+
+Recommendations
+Base on the findings and conclusions, the following are highly recommended:
+1. The university may continue ensuring balanced representation of students in
+institutional studies, consultations, and programs to maintain inclusivity and
+strengthen the accuracy of student development initiatives.
+2. The university should strengthen programs that promote proactive help-seeking
+behavior among students. This includes mental health awareness campaigns,
+orientation programs, and classroom-based initiatives that reduce stigma and
+encourage students to seek help early and consistently.
+3. The university should further develop the visibility, accessibility, and effectiveness
+of Faculty Support, HDC, and DSS through strengthened information campaigns,
+mentoring programs, counseling outreach, and student engagement initiatives.
+Efforts should also focus on bridging the gap between awareness and actual
+utilization of support services, while maintaining the strong engagement observed
+in OSSA and POD.
+4. Department-based interventions should be implemented to address variations in
+help-seeking behavior and support utilization. Each college may develop tailored
+strategies to strengthen student engagement, improve awareness, and enhance
+utilization of support systems based on their specific needs and culture.
+
+79
+5. The university should strengthen the integration of support systems by improving
+coordination among OSSA, DSS, HDC, Faculty Support, and POD. A unified
+referral and support mechanism should be established to encourage continuous
+and seamless utilization of services among students who exhibit help-seeking
+behavior.
+6. Recommendations for Key Stakeholders
+Future Researchers. They are encouraged to expand the study by including
+variables such as academic performance, psychological well-being, coping
+strategies, and institutional climate. A mixed-methods or qualitative approach
+may also be employed to explore deeper insights into students’ lived
+experiences, barriers to help-seeking, and motivations. Comparative studies
+across universities or regions are also recommended to enhance generalizability
+and broader understanding of help-seeking behavior.
+
+80
+REFERENCES
+Anil, A., et al. (2023). Exploring the perceived social support among college students.
+ResearchGate.https://www.researchgate.net/publication/379730920_Exploring_The_Per
+ceived_Social_Support_Among_College_Students
+Bizuneh, S. (2022). Belief in counseling service effectiveness and academic self‑concept
+as correlates of academic help‑seeking behavior among college students. Frontiers in
+Education, 7, 834748. https://doi.org/10.3389/feduc.2022.834748
+Broglia, E., Millings, A., & Barkham, M. (2021). Student mental health profiles and
+barriers to help seeking: When and why students seek help for a mental health concern.
+Counselling
+
+and
+
+Psychotherapy
+
+Research,
+
+21(4),
+
+816–826.
+
+https://doi.org/10.1002/capr.12462
+Canda, A., Tan, A. B. G., Mutuc, R., Ongkengco, P. N. D., Reniva, D. C., Vergara, J., &
+Francisco, S. P. (2025). Self‑stigma and its predictive impact on students’ mental
+well‑being and help‑seeking behavior. Journal of Interdisciplinary Perspectives, 3(2),
+238–247. https://doi.org/10.69569/jip.2024.0680
+Cecchin, A., & Murta, F. (2026). Barriers and facilitators of professional help‑seeking
+among university students with suicidal ideation: A mixed‑methods study. Psicologia:
+Reflexão e Crítica, 39. https://link.springer.com/article/10.1186/s41155-025-00374-x
+Chen, X., Zhu, Y., & Xiao, H. (2025). Research on the relationship between social
+support and academic self‑efficacy among college students: A multivariate empirical
+analysis.
+
+Frontiers
+
+in
+
+Public
+
+https://doi.org/10.3389/fpubh.2025.1507075
+
+Health,
+
+13,
+
+1507075.
+
+81
+Espinoza, A. B. (2023). Help seeking behavior for mental health issues among college
+students
+
+at
+
+a
+
+southern
+
+university
+
+(Doctoral
+
+dissertation).
+
+Walden
+
+University.
+
+https://scholarworks.waldenu.edu/dissertations/14690/
+Fronda, M., Villegas, K. M., Bacani, M. A. L., Coronado, E. R., Rivera, C. D., Vergara, J.,
+Gaddi, J. A. B., & Popatco, E. B. (2025). Perceived social support and mental health
+among first‑year college students in Pampanga, Philippines. Journal of Interdisciplinary
+Perspectives, 3(3), 227–235. https://doi.org/10.69569/jip.2025.001
+​Han, R., Walter, Z. C., Maccallum, F., & Dingle, G. A. (2024). First-year domestic and
+international university students’ knowledge and use of mental health services and
+self-care practices in Australia. Australian Psychologist. Advance online publication.
+https://doi.org/10.1080/00050067.2024.2410195
+Johnson, F., Al‑Hamdani, M., & Qureshi, A. (2022). Help‑seeking behaviors and
+utilization of campus services among foundation and undergraduate students at Qatar
+University. Qatar Journal of Educational Research, 8(1), 33–47
+Li, R., Che Hassan, N., & Saharuddin, N. (2023). College students’ academic
+help-seeking behavior: A systematic literature review. Behavioral Sciences, 13(8), 637.
+https://doi.org/10.3390/bs13080637
+Martín‑Arbós, S., Castarlenas, E., & Dueñas, J.‑M. (2021). Help‑seeking in an academic
+context:
+
+A
+
+systematic
+
+review.
+
+Sustainability,
+
+13(8),
+
+4460.
+
+https://doi.org/10.3390/su13084460
+Min, J., Kim, H., & Park, S. (2022). The mediating role of non‑professional help‑seeking
+in the relationship between self‑compassion and mental health among postgraduate
+students. Journal of Graduate Student Well‑Being, 5(2), 89–105.
+
+82
+Nair, A. A. (2024). Exploring the perceived social support among college students.
+ResearchGate.https://www.researchgate.net/publication/379730920_Exploring_The_Per
+ceived_Social_Support_Among_College_Students
+Pantaleon, J. A. K., Uy, L. L., & Dino, E. V. (2022). Understanding help‑seeking behavior
+among Filipino university students. IAFOR ERI 2022 Conference Proceedings.
+https://papers.iafor.org/wp‑content/uploads/papers/eri2022/ERI2022_63295.pdf
+Punla, N. F. D. (2022). Self‑stigma of seeking help as a predictor of mental well‑being
+among
+
+Filipino
+
+college
+
+students.
+
+Globus
+
+Medical
+
+Journal.
+
+https://globusmedicaljournal.com/wp-content/uploads/2022/07/GMSET-111-JJ22-14-Nar
+a-Fe-D.-Punla.pdf
+Qiu, L., Wangzhou, K., Liu, Y., Ding, J., Li, H., & Ma, J. (2024). Status of professional
+mental health help-seeking intention and associated factors among medical students in
+China.
+
+Frontiers
+
+in
+
+Psychiatry,
+
+15,
+
+Article
+
+1376170.
+
+https://doi.org/10.3389/fpsyt.2024.1376170
+Li Ruihua, Che Hassan, N., Qiuxia, Z., Sha, O., & Dong, J. (2025). A systematic review
+on the impact of social support on college students’ wellbeing and mental health. PLOS
+ONE, 20(7), e0325212. https://doi.org/10.1371/journal.pone.0325212
+Sanghvi, P., Chandrashekhar, P., Mehrotra, S., & Sharma, M. K. (2025). Factors
+influencing help-seeking behavior for mental health among distressed young adults: A
+path analysis model. Indian Journal of Psychological Medicine. Advance online
+publication. https://doi.org/10.1177/02537176241312975
+Tan, A. B. G., Canda, A., Mutuc, R., Ongkengco, P. N. D., Reniva, D. C., Vergara, J., &
+Francisco, S. P. (2025). Self‑stigma of seeking help and its relationship with mental
+
+83
+well‑being among Filipino college students. Journal of Interdisciplinary Perspectives,
+3(2), 238–247. https://doi.org/10.69569/jip.2024.068
+Tickell, A. (2022). Help‑seeking in university students experiencing suicidal thoughts and
+self‑harm
+
+(Unpublished
+
+doctoral
+
+dissertation).
+
+University
+
+College
+
+London.
+
+https://discovery.ucl.ac.uk/id/eprint/10155946/
+Valenti, E., & Branham, M. (2024). Exploring social support barriers and stress in
+first‑year
+
+college
+
+students.
+
+Journal
+
+of
+
+Instructional
+
+Research,
+
+13,
+
+20–31.
+
+https://eric.ed.gov/?id=EJ1442061
+Vicary, E., Kapadia, D., Bee, P., Bennion, M., & Brooks, H. (2025). The impact of social
+support on university students living with mental illness: A systematic review and
+narrative
+
+synthesis.
+
+Journal
+
+of
+
+Mental
+
+Health,
+
+34(4),
+
+463–475.
+
+https://pubmed.ncbi.nlm.nih.gov/39375995/
+Zhao, R., Nguyen, T., & Patel, S. (2025). Research review: Help‑seeking intentions,
+behaviors, and barriers among college students – a systematic review and
+meta‑analysis.
+
+Journal
+
+of
+
+Child
+
+Psychology
+
+and
+
+Psychiatry.
+
+https://doi.org/10.1111/jcpp.14145
+Tanaka, A., Murakami, Y., Okuno, T., & Yamauchi, H. (2002). Achievement goals,
+attitudes toward help seeking, and help-seeking behavior in the classroom. Learning and
+Individual
+
+Differences,
+
+13(1),
+
+23-35.
+
+https://www.sciencedirect.com/science/article/pii/S1041608002000432
+Martin-Arbos, S., Castarlenas, E., & Duenas, J. M. (2021). Help-seeking in an academic
+context:
+
+A
+
+systematic
+
+review.
+
+4460.https://www.mdpi.com/2071-1050/13/8/4460
+
+Sustainability,
+
+13(8),
+
+84
+Li, R., Che Hassan, N., & Saharuddin, N. (2023). College student’s academic
+help-seeking behavior: A systematic literature review. Behavioral Sciences, 13(8), 637.
+https://www.mdpi.com/2076-328X/13/8/637
+*Martin-Arbos, S., Castarlenas, E., & Duenas, J. M. (2021). Help-seeking in an academic
+context:
+
+A
+
+systematic
+
+review.
+
+Sustainability,
+
+13(8),
+
+4460.https://www.mdpi.com/2071-1050/13/8/4460
+Li, R., Che Hassan, N., & Saharuddin, N. (2023). College student’s academic
+help-seeking behavior: A systematic literature review. Behavioral Sciences, 13(8),
+637.https://www.mdpi.com/2076-328X/13/8/637
+Zhao, R., Amanvermez, Y., Pei, J., Castro‐Ramirez, F., Rapsey, C., Garcia, C., ... &
+Cuijpers, P. (2025). Research Review: Help‐seeking intentions, behaviors, and barriers
+in college students–a systematic review and meta‐analysis. Journal of child psychology
+and
+
+psychiatry,
+
+66(10),
+
+1593-1605.https://acamh.onlinelibrary.wiley.com/doi/abs/10.1111/jcpp.14145
+Samuel, R., & Kamenetsky, S. B. (2022). Help-Seeking Preferences and Factors
+Associated with Attitudes Toward Seeking Mental Health Services Among First-Year
+Undergraduates.
+
+Canadian
+
+Journal
+
+of
+
+Higher
+
+Education,
+
+52(1),
+
+30–50.
+
+https://www.cjhe-rces.ca/cjhe/index.php/cjhe/article/view/189245
+Johnson, C., Gitay, R., Abdel‑Salam, A. G., BenSaid, A., Ismail, R., Al‑Tameemi, R. A.
+N., Romanowski, M. H., Al Fakih, B. M. K., & Al Hazaa, K. (2022). Student support in
+higher education: campus service utilization, impact, and challenges.
+Heliyon, 8(12), e12559.https://pmc.ncbi.nlm.nih.gov/articles/PMC9834745/
+
+85
+Martín‑Arbós, S., Castarlenas, E., & Dueñas, J. M. (2021). Help‑seeking in an academic
+context:
+
+A
+
+systematic
+
+review.
+
+Sustainability,
+
+13(8),
+
+4460.
+
+https://www.mdpi.com/2071‑1050/13/8/4460
+Segbenya, M., & Bervell, B. (2024). Antecedents of academic help‑seeking behaviour
+and
+
+support
+
+services
+
+utilisation.
+
+Frontiers
+
+in
+
+Psychology,
+
+15,
+
+1453321.https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.145
+3321/full
+Pinggolio, J. P. R., & Mateo, N. J. (2024). Help‑seeking behaviors of college students: A
+mixed‑methods study. Philippine Journal of Guidance & Counseling, 28(1), 19‑36.
+https://ejournals.ph/article.php?id=17312
+Gao, L., & Li, Y. (2024). Help‑seeking intentions, behaviors, and barriers in college
+students: A systematic review and meta‑analysis. Journal of American College Health,
+72(7), 1452‑1468.https://pmc.ncbi.nlm.nih.gov/articles/PMC12447698/
+Dela Torre, J. (2025). Shyness, self‑efficacy, and help‑seeking behavior among Filipino
+college students.Philippine Journal of Psychology & Education, 18(2), 51‑68.
+https://www.researchgate.net/publication/397136926_Examining_the_Mediating_Role_o
+f_Self-Efficacy_in_the_Relationship_Between_Shyness_and_Help-Seeking_Behavior_a
+mong_College_Students
+Dizon, A. A. C., Mandap, D. N. S., David, A. I. S., Intal, S. F. R., Moran, A. J. A., Vergara,
+J. Q., & Cantilero, K. A. S. (2025). A comparative study of self-stigma of seeking help
+among Filipino college students. International Journal of Multidisciplinary: Applied
+Business
+
+and
+
+Education
+
+Research,
+
+https://ijmaberjournal.org/index.php/ijmaber/article/view/2798
+
+6(9),
+
+4304–4311.
+
+86
+Pantaleon, J. A. K., Uy, L. L., & Dino, E. V. (2022). Understanding help-seeking behavior
+among Filipino university students. IAFOR Conference on Educational Research &
+Innovation
+
+Proceedings,
+
+14,
+
+167–177.
+
+https://papers.iafor.org/wp-content/uploads/papers/eri2022/ERI2022_63295.pdf
+Li, R., Che Hassan, N., & Saharuddin, N. (2023). College student's academic
+help-seeking behavior: A systematic literature review. Behavioral Sciences, 13(8), 637.
+https://pubmed.ncbi.nlm.nih.gov/37622777/
+Ryahin, A., Shariatpanahi, S., Javaheri Tehrani, F., Ghasemi, S., & Boozaripour, M.
+(2026). Investigating the relationship between perceived social support, self-esteem, and
+help-seeking behavior of nursing students. Journal of Education and Health Promotion,
+15, 25. https://pubmed.ncbi.nlm.nih.gov/41788966/
+McCabe, M., Byrne, M., Gullifer, J., & Cornish, K. (2024). The relationship between
+university student help-seeking intentions and well-being outcomes. Frontiers in
+Psychiatry, 15, https://pubmed.ncbi.nlm.nih.gov/39035604/
+Ruihua, L., Hassan, N. C., Qiuxia, Z., Sha, O., & Jingyi, D. (2025). A systematic review
+on the impact of social support on college students' wellbeing and mental health. PLOS
+ONE, 20(7), e0325212. https://pubmed.ncbi.nlm.nih.gov/40644433/⁠
+Cecchin, G., et al. (2026). Help‑seeking among students with distress: institutional and
+interpersonal
+
+facilitators.
+
+PMC, 14(4), e12824085.https://pmc.ncbi.nlm.nih.gov/articles/PMC12824085/
+Duffy, S., et al. (2025). Barriers to care and access: first‑year students and university
+support
+
+systems.
+
+Journal
+
+of
+
+American
+
+College
+
+87
+Health, 73(7), 2555594.https://www.tandfonline.com/doi/full/10.1080/07448481.2025.255
+5594
+Hughes, J.,
+
+et al.
+
+(2025).
+
+Mapping
+
+support
+
+systems:
+
+relationships
+
+between
+
+perceived/institutional support and help‑seeking patterns. BMC Public Health, 25, 246.
+https://link.springer.com/article/10.1186/s12889-025-24360-1
+Li, Y., et al. (2024 / updated 2026). Help‑seeking intentions, behaviors, and barriers in
+college students: systematic review and meta‑analysis. PMC, 15(3), e12447698.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC12447698/
+Onyenube, C. I., et al. (2024). Antecedents of academic actual help‑seeking behaviour
+and support services utilisation among distance education students. Frontiers in
+Psychology, 15, 1453321.https://www.frontiersin.org/articles/10.3389/fpsyg.2024.145332
+1/full
+Zhang, L., et al. (2024). Help‑seeking intentions and patterns across university support
+categories.
+
+Frontiers
+
+in
+
+Psychiatry,
+
+15,
+
+1407689.
+
+Review:
+
+Help‑seeking
+
+https://www.frontiersin.org/articles/10.3389/fpsyt.2024.1407689/full
+Zhao, R., Amanvermez, Y., Pei, J., et al. (2025).
+
+Research
+
+intentions, behaviors, and barriers in college students – a systematic review and
+meta‑analysis.
+
+Journal
+
+of
+
+Child
+
+Psychology
+
+and
+
+Psychiatry, 66(10), 1593‑1605.
+
+https://doi.org/10.1111/jcpp.14145
+Al‑Mutairi, M., & Al‑Muraikhi, N. (2021).
+
+University
+
+support services and academic
+
+help‑seeking behaviour among undergraduate students: the role of perceived support
+quality and institutional awareness.https://www.mdpi.com/2071-1050/13/8/4460
+
+88
+APPENDICES
+Appendix A. Approved letters
+
+89
+
+90
+
+91
+
+92
+
+93
+
+94
+
+95
+
+96
+
+97
+
+98
+
+99
+
+100
+
+101
+
+102
+
+103
+Appendix B. Questionnaire
+QUESTIONNAIRE
+Part I: Personal Details
+Instruction: Please fill out and put check on the needed information below
+A. Demographic Information
+Name(Optional): _______________________________________________________
+1. Sex:
+
+Male
+
+Female
+
+2. Year level:
+
+1st year
+
+2nd year
+
+3rd year
+
+4th year
+
+3. Department:
+
+CEA
+
+CMAMP
+
+CAS
+
+CCJE
+
+​
+
+COA
+
+CTE
+
+CIT
+
+CBE
+
+5th year
+CONPHM
+
+Part II. Questionnaire Proper
+
+1. Help-Seeking Behavior
+Direction: Below is a list of statements about the support systems available to Medical
+Technology students. Please check (✔) the box that corresponds to each statement
+honestly. Ensure that no statement is left blank.
+
+5 – Always ​ 4 – Often
+
+​ 3 – Sometimes ​
+
+Particulars
+1.​ I seek help when I experience academic
+difficulties.
+2.​ I seek help when I experience personal or
+emotional concerns.
+
+2 – Rarely ​ 1 – Never
+
+5
+
+4
+
+3
+
+2
+
+1
+
+104
+
+3.​ I talk to someone when I feel stressed due to
+academic requirements.
+4.​ I ask for guidance when I do not understand
+academic tasks or lessons.
+5.​ I seek help even if the concern is minor.
+6.​ I seek help immediately when I experience
+problems.
+7.​ I ask for help instead of handling my
+concerns on my own.
+8.​ I seek help only when my concerns affect my
+academic performance.
+
+9.​ I feel comfortable asking for help from others.
+10.​I seek help when I feel overwhelmed by
+school-related responsibilities.
+
+2. Utilization of Support Systems
+A. Faculty Support
+Direction: Below is a list of statements about the support provided by faculty members.
+Please check (✔) the box that corresponds to each statement honestly. Ensure that no
+statement is left blank.
+
+5 – Always ​ 4 – Often
+
+​ 3 – Sometimes ​
+
+Particulars
+1.​ I approach faculty members for academic
+concerns.
+2.​ I ask faculty members for clarification
+regarding lessons or requirements.
+
+2 – Rarely ​ 1 – Never
+
+5
+
+4
+
+3
+
+2
+
+1
+
+105
+
+3.​ I seek advice from faculty members
+regarding my academic decisions.
+4.​ I feel comfortable approaching
+members when I need assistance.
+5.​ Faculty members
+concerns.
+
+listen
+
+to
+
+faculty
+
+students’
+
+6.​ Faculty support helps me understand difficult
+lessons.
+7.​ Faculty members encourage students to ask
+questions.
+8.​ I feel respected by faculty members when I
+seek help.
+
+B. Human Development Center (HDC)
+Direction: Below is a list of statements about the support provided by faculty members.
+Please check (✔) the box that corresponds to each statement honestly. Ensure that no
+statement is left blank.
+
+5 – Always ​ 4 – Often
+
+​ 3 – Sometimes ​
+
+Particulars
+1.​ I am aware of the services offered by the
+Human Development Center.
+2.​ I visit the Human Development Center for
+guidance or counseling.
+3.​ The Human Development Center provides
+professional support for students.
+4.​ I receive support from the Human
+Development Center for personal concerns.
+5.​ The Human Development Center is
+accessible to students.
+
+2 – Rarely ​ 1 – Never
+
+5
+
+4
+
+3
+
+2
+
+1
+
+106
+
+6.​ The Human Development Center staff are
+approachable.
+7.​ I trust the confidentiality of the Human
+Development Center.
+8.​ The services of the Human Development
+Center help students manage stress and
+personal concerns
+9.​ Awareness of HDC services encourages me
+to seek help.
+
+C. Department of Student Services (DSS)
+Direction: Below is a list of statements about the support provided by faculty members.
+Please check (✔) the box that corresponds to each statement honestly. Ensure that no
+statement is left blank.
+
+5 – Always ​ 4 – Often
+
+​ 3 – Sometimes ​
+
+Particulars
+1.​ I am aware of the services offered by DSS.
+2.​ DSS
+provides
+support
+for students
+experiencing
+academic
+or
+personal
+difficulties.
+3.​ DSS provides guidance and assistance to
+students when needed.
+4.​ DSS is a reliable source of support for
+students.
+5.​ I feel comfortable approaching DSS for help.
+6.​ DSS encourages me to seek help when
+needed.
+7.​ DSS effectively addresses student-related
+concerns.
+8.​ I seek help from DSS whenever I experience
+difficulties within the university.
+
+2 – Rarely ​ 1 – Never
+
+5
+
+4
+
+3
+
+2
+
+1
+
+107
+
+D. Prefect of Discipline (POD)
+Direction: Below is a list of statements about the support provided by faculty members.
+Please check (✔) the box that corresponds to each statement honestly. Ensure that no
+statement is left blank.
+
+5 – Always ​ 4 – Often
+
+​ 3 – Sometimes ​
+
+Particulars
+
+2 – Rarely ​ 1 – Never​
+
+4
+
+3
+
+2
+
+1
+
+1.​ POD provides guidance regarding school’s
+rules and discipline.
+2.​ POD addresses concerns related to student
+conduct.
+3.​ POD provides clear information about school
+policies.
+4.​ POD is part of the university’s student
+support system.
+5.​ I
+feel
+comfortable
+discussing
+discipline-related concerns with POD.
+6.​ POD provides support when dealing with
+behavioral concerns.
+7.​ I consider POD as part of the university’s
+support system.
+
+E. Office of Student Services and Affairs (OSSA)
+Direction: Below is a list of statements about the support provided by faculty members.
+Please check (✔) the box that corresponds to each statement honestly. Ensure that no
+statement is left blank.
+
+5 – Always ​ 4 – Often
+
+​ 3 – Sometimes ​
+
+2 – Rarely ​ 1 – Never​
+
+108
+
+Particulars
+1.​ OSSA
+provides
+assistance
+for
+student-related concerns and activities.
+2.​ I am aware of the programs and services
+offered by OSSA.
+3.​ OSSA offers programs that support student
+engagement.
+4.​ OSSA provides support for students facing
+academic or personal challenges.
+5.​ OSSA is a reliable source of support for
+students.
+6.​ OSSA encourages students to engage in
+support programs.
+7.​ OSSA encourages guidance for student life
+and development.
+
+5
+
+4
+
+3
+
+2
+
+1
+
+109
+Appendix B. Cronbach Alpha
+
+110
+Appendix B. Survey Instrument Validation
+
+111
+
+112
+
+113
+Appendix B. Content Validity Index
+Formula Used
+Item-Level Content Validity Index (I-CVI):
+​ I-CVI = ne / N
+Where:​
+​
+​
+
+ne = number of experts who rated the item as 3 or 4​
+N = total number of experts
+
+Scale-Level Content Validity Index (S-CVI/Ave):
+​ S-CVI/Ave = Σ I-CVI / k
+Where:​
+​
+​
+
+Σ I-CVI = sum of all item-level CVIs​
+k = total number of items
+
+Table of Computation
+Item No.
+Experts Rating 3 or 4
+1
+3
+2
+3
+3
+3
+4
+3
+5
+3
+6
+3
+7
+3
+8
+3
+9
+3
+10
+3
+11
+3
+12
+3
+13
+3
+
+Total Experts
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+
+I-CVI
+1.00
+1.00
+1.00
+1.00
+1.00
+1.00
+1.00
+1.00
+1.00
+1.00
+1.00
+1.00
+1.00
+
+Computation of S-CVI/Ave:
+S-CVI/Ave = (1.00 + 1.00 + 1.00 + 1.00 + 1.00 + 1.00 + 1.00 + 1.00 + 1.00 + 1.00 + 1.00
++ 1.00 + 1.00) / 13
+S-CVI/Ave = 13 / 13
+S-CVI/Ave = 1.00
+
+114
+Appendix C. Documentation
+
+115
+
+116
+Appendix D. Curriculum Vitae
+
+EMMA JOY Z. BALAG
+Cubag, Cabagan, Isabela
+emmazbalag16@gmail.com
+0916-601-2311
+
+I.
+
+PERSONAL PROFILE:
+
+Age:
+
+22
+
+Gender:
+Date of Birth:
+
+Female
+May 9, 2004
+
+Place of Birth:
+Civil Status:
+Father’s Name:
+
+Tuguegarao City, Cagayan
+Single
+Edilon B. Balag
+
+Mother’s Name:
+
+Norma Z. Balag
+
+II.
+
+EDUCATIONAL BACKROUND:
+
+Elementary:
+
+Bungad Elementary School
+Bungad, San Pablo, Isabela
+2010 - 2016
+
+Junior High School:
+
+St. Ferdinand College
+Centro, Cabagan, Isabela
+2016 - 2020
+
+Senior High School:
+
+St. Ferdinand College
+Centro, Cabagan, Isabela
+2020 - 2022
+
+117
+
+MA. DANELLA A. MALATE
+Calao West, Santiago CIty, Isabela
+mmalatedaniella@gmail.com
+0975-233-8447
+
+I.
+
+PERSONAL PROFILE:
+
+Age:
+
+22
+
+Gender:
+Date of Birth:
+
+Female
+April 18, 2004
+
+Place of Birth:
+Civil Status:
+
+Santiago City, Isabela
+Single
+
+Mother’s Name:
+
+Raquel A. Malate
+
+II.
+
+EDUCATIONAL BACKROUND:
+
+Elementary:
+
+North Central School Sped Center
+Calao West, Santiago City, Isabela
+2010 - 2016
+
+Junior High School:
+
+University of La Salette, Inc.
+Malvar, Santiago City, Isabela
+2016 - 2020
+
+Senior High School:
+
+University of La Salette, Inc.
+Dubinan East, Santiago City
+2021 - 2023
+
+118
+
+CRESELLE ANN P. NODA
+Diffun, Quirino
+noda.ca@proton.me
+0997-308-5936
+
+I.
+
+PERSONAL PROFILE:
+
+Age:
+
+23
+
+Gender:
+Date of Birth:
+
+Female
+June 25, 2003
+
+Place of Birth:
+Civil Status:
+Father’s Name:
+Mother’s Name:
+
+Antipolo City
+Single
+Ruel Noda
+Cresencia Noda
+
+II.
+
+EDUCATIONAL BACKROUND:
+
+Elementary:
+
+North Central, Santiago City
+Santiago City, Isabela
+2010 - 2016
+
+Junior High School:
+
+Diffun National High School
+Diffun, Quirino
+2015 - 2019
+
+Senior High School:
+
+Diffun National High School
+Diffun, Quirino
+2019 - 2021
+
+119
+
+MABEL D. PURIFICACION
+San Antonio, Alicia, Isabela
+purificacionmabel30@gmail.com
+0966-659-0779
+
+I.
+
+PERSONAL PROFILE:
+
+Age:
+
+21
+
+Gender:
+Date of Birth:
+
+Female
+May 30, 2005
+
+Place of Birth:
+Civil Status:
+Father’s Name:
+
+Alicia, Isabela
+Single
+Danilo D. Purificacion
+
+Mother’s Name:
+
+Remedios D. Purificacion
+
+II.
+
+EDUCATIONAL BACKROUND:
+
+Elementary:
+
+San Antonio Elementary School
+San Antonio, Alicia, Isabela
+2010 - 2016
+
+Junior High School:
+
+School of Our Lady of Atocha
+Magsaysay, Alicia, Isabela
+2017 - 2021
+
+Senior High School:
+
+School of Our Lady of Atocha
+Magsaysay, Alicia, Isabela
+2021 - 2023
+
+120
+
+ASHLEY JYEAN M. TAMAYO
+Calaocan ,Santiago City
+ashleejyeanmtamayo@gmail.com
+0905-712-6531
+
+I.
+
+PERSONAL PROFILE:
+
+Age:
+
+20
+
+Gender:
+Date of Birth:
+
+Female
+July 23, 2005
+
+Place of Birth:
+Civil Status:
+Father’s Name:
+
+Echague, Isabela
+Single
+Syrell B. Tamayo
+
+Mother’s Name:
+
+Jenilyn M. Tamayo
+
+II.
+
+EDUCATIONAL BACKROUND:
+
+Elementary:
+
+Babaran Integrated School
+Babaran, Echague, Isabela
+2010 - 2016
+
+Junior High School:
+
+Ugad High School
+Sto. Domingo, Echague, Isabela
+2017 - 2021
+
+Senior High School:
+
+Ugad High School
+Sto. Domingo, Echague , Isabela
+2021 - 2023
+
+121
+
+JENNY L. VALDEZ
+Rosario, Santiago City
+jennyval26dez@gmail.com
+0995-886-6329
+
+I.
+
+PERSONAL PROFILE:
+
+Age:
+
+21
+
+Gender:
+Date of Birth:
+
+Female
+June 26, 2005
+
+Place of Birth:
+Civil Status:
+Father’s Name:
+
+San, Isabela
+Single
+Narciso O. Valdez
+
+Mother’s Name:
+
+Mary Jane L. Valdez
+
+II.
+
+EDUCATIONAL BACKROUND:
+
+Elementary:
+
+San Manuel Central School
+San Manuel ,Isabela
+2010 - 2016
+
+Junior High School:
+
+Callang National High School
+District 04,San Manuel , Isabela
+2017 - 2021
+
+Senior High School:
+
+School of Our Lady of Pillar College
+District 03,San Manuel Isabela
+2021 - 2023
+
+TITLE
+
+University of La. Salette Inc.
+Dubinan East, Santiago City, Isabela
+College of Medicine and Allied Medical Programs
+A.Y 2025-2026
+
+Interrelationship Between the Help-Seeking Behavior of Students and the Support
+Systems Within the University of La Salette, Inc.
+
+A Research Presented to :
+The faculty of Medical Laboratory Science
+University of La Salette Inc.
+Santiago City, Philippines
+
+In Partial Fulfillment
+Of the Requirements in
+Research 1
+
+BMLS
+
+Submitted By :
+
+Balag, Emma Joy Z.
+Malate, Ma. Danella A.
+Noda, Creselle Ann P.
+Purification, Mabel
+Tamayo, Ashley Jyean M.
+Valdez, Jenny L.
+Submitted to:
+BENDEDICT M. MARQUEZ, RMT, MSPH
+Clinical Instructor
+
+February 2026
+
+RESEARCH QUESTIONS
+
+Research Objectives
+This study aims to assess the interrelationship between the help-seeking behavior of the
+students and the support systems within the University of La Salette, Inc.
+​ Specifically, this study aims to answer the following questions:
+1.​ What is the demographic profile of the students in terms of:
+1.1 Age
+1.2 Sex
+1.3 Year level
+1.4 Department
+2.​ What types and sources of support systems are utilized by the students in terms of:
+2.1 Faculty
+2.2 Health and Development Center (HDC)
+2.3 Department of Student Services (DSS)
+2.4 Prefect of Discipline (POD)
+2.5 Office of the Student Services and Affairs (OSSA)
+3.​ What is the level of Help Seeking behavior among the respondents in terms of their
+help-seeking practices and the frequency with which they seek help?
+4.​ What is the extent of utilization of available support systems among students of the
+University of La Salette, Inc.?
+5.​ Is there a significant difference among the respondents based on their help-seeking
+behavior and support system engagement when grouped according to their profile
+variable?
+6.​ Is there a significant relationship between help-seeking behavior and the utilization of
+available support systems among the respondents
+
+METHODOLOGY
+
+METHODOLOGY
+Research Design
+The research will utilize a quantitative research design that is descriptive-correlational.
+The quantitative research design will be used to collect and analyze numerical data on students’
+help-seeking behavior and their engagement with support systems. This approach will allow
+objective measurement and comparison of responses, help identify patterns and trends and
+examine the relationship between variables providing evidence-based insights into how different
+support systems relate to students’ help-seeking practices and overall engagement.
+The descriptive part of the study will present an overview of the prevalence and patterns
+of help-seeking behavior among students, including the frequency of seeking assistance from
+peers, faculty, and institutional support services such as Human Development Center,
+Department of Student Services, Prefect of Discipline and Office of the Student Services and
+Affairs. It will also assess the extent of engagement with these support systems, highlighting
+which resources are most frequently used and identifying potential gaps in support utilization.
+Descriptive statistics, such as frequency counts, percentages, means, and standard deviations,
+will be employed to summarize these findings and present a clear profile of students’ behaviors
+and support system engagement.
+
+​
+
+The correlational component will examine the strength and direction of the relationship
+between students’ help-seeking behavior and their utilization of support systems. This analysis
+will determine whether students who frequently seek help also engage more with available
+support systems, and whether certain types of support are more strongly associated with
+proactive help-seeking. Pearson’s correlation coefficient will be used for continuous and
+normally distributed variables, while Spearman’s rho correlation will be applied for ordinal or
+
+non-normally distributed variables. This approach will provide a comprehensive analysis into
+how different support systems interact with students’ help-seeking practices, informing
+strategies to improve the accessibility, effectiveness, and utilization of support services in the
+University of La Salette, Inc.
+Research Respondents
+The respondents of this study will consist of freshman, sophomore and junior students
+enrolled at the University of La Salette, Inc., Santiago City during the 2nd semester of the
+academic year 2025-2026. The researchers will use a stratified random sampling technique to
+select participants. The total student population will first be grouped according to their
+respective academic programs or colleges, and respondents will then be randomly selected
+from each group to ensure representation from different fields of study within the university.
+Freshmen through juniors generally experience similar academic lives, such as
+structured class schedules, coursework requirements and periodic examinations, which provide
+relatively consistent learning environment. Seniors will be excluded from the study, as their
+academic experience differs from that of the lower year levels. Seniors are typically involved in
+internships, practicum, or off-campus training, which follow different schedules and learning
+environments compared to regular classroom-based activities. By excluding seniors, the study
+ensures that the participants have similar academic structures and schedules, providing more
+consistent data on their help-seeking behavior and utilization of support systems. .
+
+Locale of the study
+This study will be conducted at the University of La Salette, Inc., Santiago City, during
+the academic year 2025-2026. The participants of the study will be students enrolled in the
+different colleges and academic departments of the university .
+
+Research Instrument
+​
+
+This study will employ a quantitative method approach, utilizing quantitative data which
+
+will be collected through survey questionnaires employing a five-point Likert scale ranging from
+0-Never, 1-Rarely, 2- Sometimes, 3-Often, 4-Always . This scale will be used for data analysis.
+The questionnaire will be composed of two main parts: Part I (Personal Details) and Part II
+(Questionnaire Proper). Part I gathers basic information such as age, sex and year level. Part II
+consists of six section designed to assess different aspects of students’ help-seeking behavior
+and utilization of support services.
+The Help-seeking Behavior section focuses on students willingness, frequency and comfort
+in seeking assistance when faced with academic, emotional,or personal challenges.The Faculty
+Support section evaluates the accessibility, responsiveness and effectiveness of faculty
+members in providing academic guidance, clarification and emotional support to students. The
+Human Development Center section examines students’ awareness, utilization and perception
+of counseling and mental health services provided by the institution, including confidentiality,
+accessibility and its impact on student well-being. The Department of Student Services section
+assesses the extent to which students utilize institutional services for academic and personal
+concerns, as well as their level of trust, comfort and reliance on these services. The Prefect of
+Discipline section explores students’ engagement with disciplinary support systems, particularly
+in seeking guidance related to rules, behavior, and student conduct and how these interactions
+influence their help-seeking behavior. Lastly, the Office of Student Services and Affairs section
+measures students’ awareness, participation and reliance on student-centered programs and
+services that promote engagement, personal development, and overall support.
+
+Data Collection Procedure
+The researchers of the study will prepare a formal letter requesting permission to
+conduct the study at the University of La Salette, Inc.. The letter will be addressed to the
+University President and the respective College Deans to obtain approval for the conduct of the
+study and the participation of students from different academic programs.
+In gathering the data for the study, the researchers will create a printed survey
+questionnaire to collect data from Freshman, Sophomore, and Junior year students of the
+different colleges and program within the university. The questionnaire will consist of two parts:
+demographic profile and the questionnaire proper. The questionnaire proper will include items
+measuring students’ help-seeking behavior and their utilization of institutional support systems.
+These are organized into following sections: Help-Seeking Behavior, Faculty Support, Human
+Development Center (HDC), Department of Student Services (DSS), Prefect of Discipline (POD)
+and Office of Student Services and Affairs (OSSA).
+Before the full-scale data collection, a pilot test will be conducted with a small group of
+representative students. This practice run will help identify and correct any unclear, confusing,
+or biased items in the questionnaire, ensuring that the instrument is clear, reliable, and valid for
+the target population. Feedback from the pilot test will be used to revise the questionnaire as
+needed.
+Using a stratified random sampling technique, participants will be randomly selected
+from each year level to ensure proportional representation. Selected students will be invited to
+participate, and participation will be voluntary. The researchers will provide clear instructions,
+emphasizing that respondents can decline or withdraw at any time without any consequences.
+
+The finalized questionnaires will be personally distributed to the selected participants in
+classrooms or designated areas. Participants will be given approximately 3–5 minutes to
+complete the survey. Researchers will personally retrieve the completed questionnaires to
+ensure accuracy, completeness, and proper data handling.
+To maintain confidentiality, all responses will be anonymized prior to analysis, and any
+personal identifiers will be stored separately from the survey data. Completed questionnaires
+will be securely kept in locked storage or encrypted digital files, accessible only to the
+researchers.
+This comprehensive data collection procedure ensures the gathering of reliable and
+measurable data on the help-seeking behavior of students and the extent of their utilization with
+support systems, enabling the researchers to examine the interrelationship between these
+variables and provide evidence-based insights for improving student support services.
+Data Analysis Procedure
+The collected data will be organized, coded, and analyzed using both descriptive and
+inferential statistical methods. Descriptive statistics, such as frequency counts, percentages,
+means, and standard deviations, will be used to describe the respondents’ demographic profile,
+help-seeking behavior and the extent of utilization of support systems such as family, peers,
+faculty, human development and online platforms.
+To examine the interrelationships between the help-seeking and support systems among
+the university students, Pearson’s correlation coefficient will be employed for variables that are
+continuous and normally distributed based on the combined mean scores obtained from the
+Likert-scale items for each domain. For variables that are ordinal or not normally distributed,
+Spearman’s rho will be applied to assess the strength and direction of monotonic relationships.
+
+This approach will enable the researchers to assess help-seeking behavior and
+utilization with support systems among students, providing evidence-based insights to enhance
+student support services.
+Ethical Considerations
+​
+
+This study will adhere to establish ethical guidelines to ensure the protection of
+
+respondents’ rights, privacy, and well-being throughout the research process. Informed consent
+was obtained by providing respondents’ with clear, comprehensive , and detailed information
+regarding the study’s objectives , procedures, and
+
+potential risks. The information will be
+
+presented in a straightforward and comprehensible manner to ensure that respondents’ fully
+understand their involvement. Participation will be entirely voluntary, and respondents’ rights will
+be strictly respected , and they will be informed of the importance of their contributions to the
+research.
+​
+
+The study will utilize a face-to-face questionnaire to gather data. This approach will allow
+
+researchers to directly engage with the respondents’, providing opportunity for clarification and
+ensuring accurate data collection. Respondents were given the option to provide their names;
+however, this will not be mandatory. All responses, whether identifiable or anonymous , were
+securely stored, and access was limited exclusively to the researchers to ensure the
+confidentiality of the data. Respect respondents’ cultural, social, and personal differences,
+ensuring inclusivity and avoiding any form of bias or discrimination. By implementing these
+measures, the research upheld ethical standards while maintaining the validity and reliability of
+the data. Such considerations ensured the integrity of the study and the respectful treatment of
+all participants. The research will also undergo review and approval by the research adviser
+prior to data collection to ensure compliance with institutional and ethical standards.
+The study will adhere to the principles of beneficence, non-maleficence, justice, and
+respect for persons throughout the research process. Beneficence will be observed by
+
+emphasizing the potential benefits of the study for participants and other relevant stakeholders.
+Non-maleficence will guide the procedures to ensure that no harm will be inflicted upon the
+participants. The principle of justice will be upheld by ensuring fair and equal treatment of all
+participants, while respect for persons will be demonstrated by recognizing and upholding their
+autonomy, dignity, and fundamental rights.
+
+

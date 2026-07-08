@@ -1,0 +1,50 @@
+RESEARCH METHODOLOGY SUMMARY
+
+PROJECT:   Help-Seeking Behavior & Support Systems (ULS, Inc.)
+LOCALE:    University of La Salette, Inc., Santiago City
+TIMEFRAME: AY 2025-2026, 2nd Semester
+
+1. RESEARCH DESIGN & LOCALE
+   Design Type : Quantitative Descriptive-Correlational
+   Study Site  : University of La Salette, Inc. (ULS) main campus
+
+2. PARTICIPANTS & SAMPLING
+   Population (N) : 5,821 undergraduate students
+   Sample Size (n) : 361 respondents (determined via Raosoft calculator)
+   Sampling Method : Proportional Stratified Random Sampling
+   Year Level Distribution:
+     Freshmen   : 102 respondents (28.3%)
+     Sophomores :  99 respondents (27.4%)
+     Juniors    : 160 respondents (44.3%)
+   Note: Seniors were excluded due to off-campus internship/clinical schedules.
+
+3. RESEARCH INSTRUMENT
+   Structure: Two-part Survey Questionnaire
+     Part I  : Demographic Profile (Age, Sex, Year Level, Department)
+     Part II : Help-Seeking Behavior & 5 support units (Faculty, HDC, DSS, POD, OSSA)
+   Measurement Scale: 5-Point Likert Scale (1-Never, 2-Rarely, 3-Sometimes, 4-Often, 5-Always)
+   Reliability Index: Pilot testing Cronbach's Alpha = 0.953 (Excellent consistency)
+
+4. OPERATIONAL FLOW
+   Approval ──> Validation ──> Pilot Test ──> Survey ──> Data Encoding
+
+   Approval      : Institutional permissions secured from President & College Deans.
+   Validation    : Vetted by academic experts for relevance, clarity, and formatting.
+   Pilot Test    : Pre-tested on a small representative cohort to verify reliability.
+   Survey        : Personally distributed face-to-face; retrieved within 3–5 minutes.
+   Data Encoding : Checked for completion and compiled into Microsoft Excel.
+
+5. ETHICAL PROTOCOLS
+   Core Pillars : Beneficence, Non-Maleficence, Justice, Respect for Persons.
+   Authorization: Reviewed and approved by the Research Adviser prior to gathering.
+   Privacy      : Voluntary participation, optional anonymity, & encrypted database.
+
+6. STATISTICAL TREATMENT
+   Normality Vetting : Shapiro-Wilk Test (p < 0.05) ──> Confirmed non-normal dataset.
+   Statistical Path  : Nonparametric tests utilized for inferential analysis.
+   Applied Tools     :
+     Demographic Profile  : Frequency Counts & Percentages
+     Behavior/Usage Levels: Mean & Standard Deviation (SD)
+     Gender Differences   : Mann-Whitney U Test
+     Year/Dept Differences: Kruskal-Wallis H Test
+     Core Relationship    : Spearman’s rho correlation coefficient (sig. at 0.05)
