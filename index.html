@@ -307,9 +307,10 @@
         }
 
         /* ── CARDS ── */
+        /* ── CARDS ── */
         .grid { display: grid; gap: 1.5rem; }
-        .grid-2 { grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); }
-        .grid-3 { grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); }
+        .grid-2 { grid-template-columns: repeat(2, 1fr); }
+        .grid-3 { grid-template-columns: repeat(3, 1fr); }
 
         .card {
             background: var(--bg-card);
@@ -324,7 +325,13 @@
         }
         .card:hover { transform: translateY(-4px); border-color: var(--border-strong); }
 
-        .card-header { margin-bottom: 1.25rem; }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1.25rem;
+            gap: 1rem;
+        }
         .card-header h3 { font-size: 1.15rem; font-weight: 600; margin-bottom: 0.25rem; }
         .card-header p { color: var(--text-muted); font-size: 0.82rem; }
 
@@ -338,6 +345,8 @@
             position: relative;
         }
         .table-wrapper table { min-width: 500px; }
+        .table-wide { min-width: 950px !important; }
+        .table-mid { min-width: 700px !important; }
 
         table {
             width: 100%; border-collapse: collapse;
@@ -439,7 +448,6 @@
         /* Tablets & small laptops */
         @media (max-width: 1024px) {
             .container { padding: 0 1rem; }
-            .grid-2 { grid-template-columns: 1fr; }
             .section-title { font-size: 1.5rem; }
         }
 
@@ -487,6 +495,7 @@
 
             .card { padding: 1.25rem; border-radius: 14px; }
             .card:hover { transform: none; }
+            .card-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
             .card-header h3 { font-size: 1rem; }
             .card-header p { font-size: 0.78rem; }
 
@@ -1043,7 +1052,7 @@
         <div class="grid grid-2" style="align-items:center">
             <div class="chart-box" style="min-height:340px"><canvas id="chartSexDiff"></canvas></div>
             <div class="table-wrapper">
-                <table id="tableSexDiff">
+                <table id="tableSexDiff" class="table-mid">
                     <thead><tr><th>Domain</th><th>Sex</th><th>N</th><th>Mean</th><th>SD</th><th><span class="tooltip-trigger">Mann-Whitney U<span class="tooltip-box">A non-parametric test comparing differences between two independent groups (Male vs. Female).</span></span></th><th><span class="tooltip-trigger">p-value<span class="tooltip-box">Probability value. Statistically significant if p < 0.05. Here, all p > 0.05 (Not Significant).</span></span></th><th>Decision</th></tr></thead>
                     <tbody>
                         <tr><td class="td-bold" rowspan="2">HSB</td><td>Female</td><td>213</td><td>3.17</td><td>.74</td><td rowspan="2">14756.000</td><td rowspan="2">.302</td><td rowspan="2"><span class="badge badge-ns">Not Sig.</span></td></tr>
@@ -1078,7 +1087,7 @@
         </div>
         <div class="grid grid-2" style="align-items:center">
             <div class="table-wrapper">
-                <table id="tableYearDiff">
+                <table id="tableYearDiff" class="table-mid">
                     <thead><tr><th>Domain</th><th>Year Level</th><th>N</th><th>Mean</th><th>SD</th><th><span class="tooltip-trigger">Kruskal-Wallis<span class="tooltip-box">A non-parametric test comparing differences among three or more independent groups (Freshmen vs. Sophomore vs. Junior).</span></span></th><th><span class="tooltip-trigger">p-value<span class="tooltip-box">Probability value. Statistically significant if p < 0.05. Here, all p > 0.05 (Not Significant).</span></span></th><th>Decision</th></tr></thead>
                     <tbody>
                         <tr><td class="td-bold" rowspan="3">HSB</td><td>Freshmen</td><td>102</td><td>3.29</td><td>.73</td><td rowspan="3">1.626</td><td rowspan="3">.444</td><td rowspan="3"><span class="badge badge-ns">Not Sig.</span></td></tr>
@@ -1120,7 +1129,7 @@
         </div>
         <div class="chart-box tall" style="margin-bottom:1.5rem"><canvas id="chartDeptDiff"></canvas></div>
         <div class="table-wrapper">
-            <table id="tableDeptDiff">
+            <table id="tableDeptDiff" class="table-wide">
                 <thead>
                     <tr>
                         <th class="sortable" onclick="sortTable('tableDeptDiff', 0, false)">Domain</th>
