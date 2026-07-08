@@ -33,6 +33,21 @@
             --radius-sm: 10px;
         }
 
+        body.light-theme {
+            --bg-primary: #f8fafc;
+            --bg-secondary: #f1f5f9;
+            --bg-card: rgba(255, 255, 255, 0.9);
+            --bg-card-alt: rgba(241, 245, 249, 0.85);
+            --bg-table-row: rgba(0,0,0,0.02);
+            --bg-table-hover: rgba(56, 189, 248, 0.08);
+            --text-main: #0f172a;
+            --text-secondary: #334155;
+            --text-muted: #64748b;
+            --border: rgba(0,0,0,0.08);
+            --border-strong: rgba(0,0,0,0.14);
+            --shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         html { scroll-behavior: smooth; }
@@ -43,6 +58,134 @@
             color: var(--text-main);
             line-height: 1.7;
             -webkit-font-smoothing: antialiased;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        /* ── SCROLL PROGRESS BAR ── */
+        .progress-container {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 3px;
+            background: transparent;
+            z-index: 1000;
+        }
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
+            transition: width 0.1s ease;
+        }
+
+        /* ── GENERAL BUTTONS ── */
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            padding: 0.5rem 0.9rem; border-radius: 8px;
+            font-size: 0.75rem; font-weight: 600; cursor: pointer;
+            transition: all 0.2s ease; border: 1px solid transparent;
+            text-transform: uppercase; letter-spacing: 0.5px;
+            background: transparent; color: var(--text-main);
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+            gap: 0.25rem;
+        }
+        .btn-outline {
+            border-color: var(--border-strong);
+            background: rgba(255,255,255,0.02);
+        }
+        .btn-outline:hover {
+            border-color: var(--accent-blue);
+            background: rgba(56,189,248,0.06);
+            color: var(--accent-blue);
+        }
+        body.light-theme .btn-outline {
+            background: rgba(0,0,0,0.02);
+        }
+        body.light-theme .btn-outline:hover {
+            background: rgba(56,189,248,0.06);
+        }
+        .btn-sm {
+            padding: 0.3rem 0.6rem;
+            font-size: 0.68rem;
+            border-radius: 6px;
+        }
+
+        /* ── THEME TOGGLE BUTTON ── */
+        .theme-btn {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            width: 36px; height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            -webkit-tap-highlight-color: transparent;
+            flex-shrink: 0;
+        }
+        .theme-btn:hover {
+            background: rgba(255,255,255,0.08);
+            border-color: var(--border-strong);
+        }
+        body.light-theme .theme-btn {
+            background: rgba(0,0,0,0.04);
+        }
+        body.light-theme .theme-btn:hover {
+            background: rgba(0,0,0,0.08);
+        }
+
+        /* ── STATISTICAL GLOSSARY TOOLTIPS ── */
+        .tooltip-trigger {
+            border-bottom: 1px dotted var(--accent-blue);
+            cursor: help;
+            position: relative;
+            display: inline-block;
+        }
+        .tooltip-box {
+            visibility: hidden;
+            width: 240px;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-strong);
+            color: var(--text-main);
+            text-align: left;
+            border-radius: var(--radius-sm);
+            padding: 0.75rem;
+            position: absolute;
+            z-index: 999;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.2s, visibility 0.2s;
+            font-size: 0.75rem;
+            line-height: 1.4;
+            box-shadow: var(--shadow);
+            pointer-events: none;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            font-weight: normal;
+            text-transform: none;
+            letter-spacing: normal;
+        }
+        .tooltip-trigger:hover .tooltip-box, .tooltip-trigger:focus .tooltip-box {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* ── SORTABLE HEADERS ── */
+        th.sortable {
+            cursor: pointer;
+            user-select: none;
+            transition: color 0.2s ease;
+        }
+        th.sortable:hover {
+            color: var(--accent-blue);
+        }
+        th.sortable::after {
+            content: " ↕";
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            opacity: 0.6;
         }
 
         /* ── NAVIGATION ── */
@@ -498,6 +641,11 @@
 </head>
 <body>
 
+<!-- Scroll progress indicator -->
+<div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+</div>
+
 <!-- ═══════════════ NAVIGATION ═══════════════ -->
 <nav>
     <div class="nav-inner">
@@ -510,6 +658,7 @@
             <a href="#correlation">Correlation</a>
             <a href="#conclusions">Conclusions</a>
         </div>
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
     </div>
 </nav>
 
@@ -567,9 +716,14 @@
 
     <!-- Full Demographics Table -->
     <div class="card" style="margin-top:1.5rem; animation-delay:0.4s">
-        <div class="card-header"><h3>Table 2. Full Demographic Data</h3></div>
+        <div class="card-header">
+            <div class="card-header-text">
+                <h3>Table 2. Full Demographic Data</h3>
+            </div>
+            <button class="btn btn-outline btn-sm" onclick="exportTableToCSV('tableDemographics', 'ULS_Demographics_Data')">Export CSV</button>
+        </div>
         <div class="table-wrapper">
-            <table>
+            <table id="tableDemographics">
                 <thead><tr><th>Profile Variable</th><th>Category</th><th>Frequency</th><th>Percent</th></tr></thead>
                 <tbody>
                     <tr><td class="td-bold" rowspan="2">Sex</td><td>Female</td><td>213</td><td>59.0%</td></tr>
@@ -613,15 +767,26 @@
     <div class="grid grid-2">
         <!-- HSB Chart -->
         <div class="card" style="animation-delay:0.1s">
-            <div class="card-header"><h3>Indicator Mean Ratings</h3><p>Ranked from highest to lowest</p></div>
+            <div class="card-header">
+                <div class="card-header-text">
+                    <h3>Indicator Mean Ratings</h3>
+                    <p>Ranked from highest to lowest</p>
+                </div>
+                <button class="btn btn-outline btn-sm" onclick="exportChartAsPNG('chartHSB', 'ULS_HSB_Chart')">Export PNG</button>
+            </div>
             <div class="chart-box tall"><canvas id="chartHSB"></canvas></div>
         </div>
         <!-- HSB Table -->
         <div class="card" style="animation-delay:0.2s">
-            <div class="card-header"><h3>Table 3. Complete Help-Seeking Behavior Data</h3></div>
+            <div class="card-header">
+                <div class="card-header-text">
+                    <h3>Table 3. Complete Help-Seeking Behavior Data</h3>
+                </div>
+                <button class="btn btn-outline btn-sm" onclick="exportTableToCSV('tableHSB', 'ULS_HSB_Data')">Export CSV</button>
+            </div>
             <div class="table-wrapper">
-                <table>
-                    <thead><tr><th>#</th><th>Indicator</th><th>Mean</th><th>SD</th><th>Description</th></tr></thead>
+                <table id="tableHSB">
+                    <thead><tr><th>#</th><th>Indicator</th><th class="sortable" onclick="sortTable('tableHSB', 2, true)">Mean</th><th class="sortable" onclick="sortTable('tableHSB', 3, true)">SD</th><th>Description</th></tr></thead>
                     <tbody>
                         <tr><td>1</td><td>I seek help when I experience academic difficulties.</td><td class="td-accent">3.31</td><td>1.01</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
                         <tr><td>2</td><td>I seek help when I experience personal or emotional concerns.</td><td class="td-accent">3.06</td><td>1.04</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
@@ -678,13 +843,22 @@
 
     <!-- Overall Summary Chart -->
     <div class="card" style="margin-bottom:1.5rem">
-        <div class="card-header"><h3>Table 9. Overall Support System Comparison</h3><p>Mean utilization ratings across all 5 support systems</p></div>
+        <div class="card-header">
+            <div class="card-header-text">
+                <h3>Table 9. Overall Support System Comparison</h3>
+                <p>Mean utilization ratings across all 5 support systems</p>
+            </div>
+            <div style="display: flex; gap: 0.5rem;">
+                <button class="btn btn-outline btn-sm" onclick="exportChartAsPNG('chartOverall', 'ULS_Overall_Support_Chart')">Export PNG</button>
+                <button class="btn btn-outline btn-sm" onclick="exportTableToCSV('tableOverall', 'ULS_Overall_Support_Data')">Export CSV</button>
+            </div>
+        </div>
         <div class="grid grid-2" style="align-items:center">
             <div class="chart-box" style="min-height:280px"><canvas id="chartOverall"></canvas></div>
             <div>
                 <div class="table-wrapper">
-                    <table>
-                        <thead><tr><th>Support System</th><th>Mean</th><th>SD</th><th>Description</th></tr></thead>
+                    <table id="tableOverall">
+                        <thead><tr><th>Support System</th><th class="sortable" onclick="sortTable('tableOverall', 1, true)">Mean</th><th class="sortable" onclick="sortTable('tableOverall', 2, true)">SD</th><th>Description</th></tr></thead>
                         <tbody>
                             <tr><td class="td-bold">Faculty Support (FS)</td><td class="td-accent">3.12</td><td>.86</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
                             <tr><td class="td-bold">Health & Dev. Center (HDC)</td><td class="td-accent">3.29</td><td>.82</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
@@ -709,10 +883,16 @@
     <div class="grid grid-2">
         <!-- FS -->
         <div class="card" style="animation-delay:0.1s">
-            <div class="card-header"><h3>Table 4. Faculty Support (FS)</h3><p>Overall Mean = 3.12 (Sometimes)</p></div>
+            <div class="card-header">
+                <div class="card-header-text">
+                    <h3>Table 4. Faculty Support (FS)</h3>
+                    <p>Overall Mean = 3.12 (Sometimes)</p>
+                </div>
+                <button class="btn btn-outline btn-sm" onclick="exportTableToCSV('tableFaculty', 'ULS_Faculty_Support_Data')">Export CSV</button>
+            </div>
             <div class="table-wrapper">
-                <table>
-                    <thead><tr><th>#</th><th>Indicator</th><th>Mean</th><th>SD</th><th>Desc</th></tr></thead>
+                <table id="tableFaculty">
+                    <thead><tr><th>#</th><th>Indicator</th><th class="sortable" onclick="sortTable('tableFaculty', 2, true)">Mean</th><th class="sortable" onclick="sortTable('tableFaculty', 3, true)">SD</th><th>Desc</th></tr></thead>
                     <tbody>
                         <tr><td>1</td><td>I approach faculty for academic concerns.</td><td>2.81</td><td>1.08</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
                         <tr><td>2</td><td>I ask faculty for clarification regarding lessons.</td><td>3.07</td><td>1.03</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
@@ -729,10 +909,16 @@
 
         <!-- HDC -->
         <div class="card" style="animation-delay:0.2s">
-            <div class="card-header"><h3>Table 5. Health & Development Center (HDC)</h3><p>Overall Mean = 3.29 (Sometimes)</p></div>
+            <div class="card-header">
+                <div class="card-header-text">
+                    <h3>Table 5. Health & Development Center (HDC)</h3>
+                    <p>Overall Mean = 3.29 (Sometimes)</p>
+                </div>
+                <button class="btn btn-outline btn-sm" onclick="exportTableToCSV('tableHDC', 'ULS_HDC_Data')">Export CSV</button>
+            </div>
             <div class="table-wrapper">
-                <table>
-                    <thead><tr><th>#</th><th>Indicator</th><th>Mean</th><th>SD</th><th>Desc</th></tr></thead>
+                <table id="tableHDC">
+                    <thead><tr><th>#</th><th>Indicator</th><th class="sortable" onclick="sortTable('tableHDC', 2, true)">Mean</th><th class="sortable" onclick="sortTable('tableHDC', 3, true)">SD</th><th>Desc</th></tr></thead>
                     <tbody>
                         <tr><td>1</td><td>I am aware of the services offered by HDC.</td><td>3.49</td><td>1.04</td><td><span class="badge badge-often">Often</span></td></tr>
                         <tr><td>2</td><td>I visit HDC for guidance or counseling.</td><td>2.60</td><td>1.22</td><td><span class="badge badge-sometimes">Sometimes</span></td></tr>
@@ -750,10 +936,16 @@
 
         <!-- DSS -->
         <div class="card" style="animation-delay:0.3s">
-            <div class="card-header"><h3>Table 6. Dept. of Student Services (DSS)</h3><p>Overall Mean = 3.29 (Sometimes)</p></div>
+            <div class="card-header">
+                <div class="card-header-text">
+                    <h3>Table 6. Dept. of Student Services (DSS)</h3>
+                    <p>Overall Mean = 3.29 (Sometimes)</p>
+                </div>
+                <button class="btn btn-outline btn-sm" onclick="exportTableToCSV('tableDSS', 'ULS_DSS_Data')">Export CSV</button>
+            </div>
             <div class="table-wrapper">
-                <table>
-                    <thead><tr><th>#</th><th>Indicator</th><th>Mean</th><th>SD</th><th>Desc</th></tr></thead>
+                <table id="tableDSS">
+                    <thead><tr><th>#</th><th>Indicator</th><th class="sortable" onclick="sortTable('tableDSS', 2, true)">Mean</th><th class="sortable" onclick="sortTable('tableDSS', 3, true)">SD</th><th>Desc</th></tr></thead>
                     <tbody>
                         <tr><td>1</td><td>I am aware of the services offered by DSS.</td><td>3.42</td><td>1.13</td><td><span class="badge badge-often">Often</span></td></tr>
                         <tr><td>2</td><td>DSS provides support for academic/personal difficulties.</td><td>3.44</td><td>1.03</td><td><span class="badge badge-often">Often</span></td></tr>
@@ -770,10 +962,16 @@
 
         <!-- POD -->
         <div class="card" style="animation-delay:0.4s">
-            <div class="card-header"><h3>Table 7. Prefect of Discipline (POD)</h3><p>Overall Mean = 3.80 (Often) — Highest</p></div>
+            <div class="card-header">
+                <div class="card-header-text">
+                    <h3>Table 7. Prefect of Discipline (POD)</h3>
+                    <p>Overall Mean = 3.80 (Often) — Highest</p>
+                </div>
+                <button class="btn btn-outline btn-sm" onclick="exportTableToCSV('tablePOD', 'ULS_POD_Data')">Export CSV</button>
+            </div>
             <div class="table-wrapper">
-                <table>
-                    <thead><tr><th>#</th><th>Indicator</th><th>Mean</th><th>SD</th><th>Desc</th></tr></thead>
+                <table id="tablePOD">
+                    <thead><tr><th>#</th><th>Indicator</th><th class="sortable" onclick="sortTable('tablePOD', 2, true)">Mean</th><th class="sortable" onclick="sortTable('tablePOD', 3, true)">SD</th><th>Desc</th></tr></thead>
                     <tbody>
                         <tr><td>1</td><td>POD provides guidance regarding school rules.</td><td>3.91</td><td>1.02</td><td><span class="badge badge-often">Often</span></td></tr>
                         <tr><td>2</td><td>POD addresses concerns related to student conduct.</td><td>3.89</td><td>.95</td><td><span class="badge badge-often">Often</span></td></tr>
@@ -789,11 +987,20 @@
 
         <!-- OSSA -->
         <div class="card" style="animation-delay:0.5s; grid-column: 1 / -1;">
-            <div class="card-header"><h3>Table 8. Office of Student Services & Affairs (OSSA)</h3><p>Overall Mean = 3.67 (Often)</p></div>
+            <div class="card-header">
+                <div class="card-header-text">
+                    <h3>Table 8. Office of Student Services & Affairs (OSSA)</h3>
+                    <p>Overall Mean = 3.67 (Often)</p>
+                </div>
+                <div style="display: flex; gap: 0.5rem;">
+                    <button class="btn btn-outline btn-sm" onclick="exportChartAsPNG('chartOSSA', 'ULS_OSSA_Chart')">Export PNG</button>
+                    <button class="btn btn-outline btn-sm" onclick="exportTableToCSV('tableOSSA', 'ULS_OSSA_Data')">Export CSV</button>
+                </div>
+            </div>
             <div class="grid grid-2" style="align-items:start">
                 <div class="table-wrapper">
-                    <table>
-                        <thead><tr><th>#</th><th>Indicator</th><th>Mean</th><th>SD</th><th>Desc</th></tr></thead>
+                    <table id="tableOSSA">
+                        <thead><tr><th>#</th><th>Indicator</th><th class="sortable" onclick="sortTable('tableOSSA', 2, true)">Mean</th><th class="sortable" onclick="sortTable('tableOSSA', 3, true)">SD</th><th>Desc</th></tr></thead>
                         <tbody>
                             <tr><td>1</td><td>OSSA provides assistance for student-related concerns.</td><td>3.75</td><td>.95</td><td><span class="badge badge-often">Often</span></td></tr>
                             <tr><td>2</td><td>I am aware of the programs/services offered by OSSA.</td><td>3.65</td><td>1.02</td><td><span class="badge badge-often">Often</span></td></tr>
@@ -823,12 +1030,21 @@
 
     <!-- By Sex -->
     <div class="card" style="margin-bottom:1.5rem">
-        <div class="card-header"><h3>Table 10. Differences by Sex (Mann-Whitney U)</h3><p>No significant differences found across all domains (p > .05)</p></div>
+        <div class="card-header">
+            <div class="card-header-text">
+                <h3>Table 10. Differences by Sex (Mann-Whitney U)</h3>
+                <p>No significant differences found across all domains (p > .05)</p>
+            </div>
+            <div style="display: flex; gap: 0.5rem;">
+                <button class="btn btn-outline btn-sm" onclick="exportChartAsPNG('chartSexDiff', 'ULS_Sex_Differences_Chart')">Export PNG</button>
+                <button class="btn btn-outline btn-sm" onclick="exportTableToCSV('tableSexDiff', 'ULS_Sex_Differences_Data')">Export CSV</button>
+            </div>
+        </div>
         <div class="grid grid-2" style="align-items:center">
             <div class="chart-box" style="min-height:340px"><canvas id="chartSexDiff"></canvas></div>
             <div class="table-wrapper">
-                <table>
-                    <thead><tr><th>Domain</th><th>Sex</th><th>N</th><th>Mean</th><th>SD</th><th>Mann-Whitney U</th><th>p-value</th><th>Decision</th></tr></thead>
+                <table id="tableSexDiff">
+                    <thead><tr><th>Domain</th><th>Sex</th><th>N</th><th>Mean</th><th>SD</th><th><span class="tooltip-trigger">Mann-Whitney U<span class="tooltip-box">A non-parametric test comparing differences between two independent groups (Male vs. Female).</span></span></th><th><span class="tooltip-trigger">p-value<span class="tooltip-box">Probability value. Statistically significant if p < 0.05. Here, all p > 0.05 (Not Significant).</span></span></th><th>Decision</th></tr></thead>
                     <tbody>
                         <tr><td class="td-bold" rowspan="2">HSB</td><td>Female</td><td>213</td><td>3.17</td><td>.74</td><td rowspan="2">14756.000</td><td rowspan="2">.302</td><td rowspan="2"><span class="badge badge-ns">Not Sig.</span></td></tr>
                         <tr><td>Male</td><td>148</td><td>3.23</td><td>.80</td></tr>
@@ -850,11 +1066,20 @@
 
     <!-- By Year Level -->
     <div class="card" style="margin-bottom:1.5rem">
-        <div class="card-header"><h3>Table 11. Differences by Year Level (Kruskal-Wallis)</h3><p>No significant differences found across all domains (p > .05)</p></div>
+        <div class="card-header">
+            <div class="card-header-text">
+                <h3>Table 11. Differences by Year Level (Kruskal-Wallis)</h3>
+                <p>No significant differences found across all domains (p > .05)</p>
+            </div>
+            <div style="display: flex; gap: 0.5rem;">
+                <button class="btn btn-outline btn-sm" onclick="exportChartAsPNG('chartYearDiff', 'ULS_Year_Level_Differences_Chart')">Export PNG</button>
+                <button class="btn btn-outline btn-sm" onclick="exportTableToCSV('tableYearDiff', 'ULS_Year_Level_Differences_Data')">Export CSV</button>
+            </div>
+        </div>
         <div class="grid grid-2" style="align-items:center">
             <div class="table-wrapper">
-                <table>
-                    <thead><tr><th>Domain</th><th>Year Level</th><th>N</th><th>Mean</th><th>SD</th><th>Kruskal-Wallis</th><th>p-value</th><th>Decision</th></tr></thead>
+                <table id="tableYearDiff">
+                    <thead><tr><th>Domain</th><th>Year Level</th><th>N</th><th>Mean</th><th>SD</th><th><span class="tooltip-trigger">Kruskal-Wallis<span class="tooltip-box">A non-parametric test comparing differences among three or more independent groups (Freshmen vs. Sophomore vs. Junior).</span></span></th><th><span class="tooltip-trigger">p-value<span class="tooltip-box">Probability value. Statistically significant if p < 0.05. Here, all p > 0.05 (Not Significant).</span></span></th><th>Decision</th></tr></thead>
                     <tbody>
                         <tr><td class="td-bold" rowspan="3">HSB</td><td>Freshmen</td><td>102</td><td>3.29</td><td>.73</td><td rowspan="3">1.626</td><td rowspan="3">.444</td><td rowspan="3"><span class="badge badge-ns">Not Sig.</span></td></tr>
                         <tr><td>Sophomore</td><td>99</td><td>3.19</td><td>.74</td></tr>
@@ -883,13 +1108,22 @@
 
     <!-- By Department -->
     <div class="card">
-        <div class="card-header"><h3>Table 12. Differences by Department (Kruskal-Wallis)</h3><p>Significant differences found in HSB, HDC, DSS, POD, and OSSA (p < .05). Faculty Support showed no significant difference.</p></div>
+        <div class="card-header">
+            <div class="card-header-text">
+                <h3>Table 12. Differences by Department (Kruskal-Wallis)</h3>
+                <p>Significant differences found in HSB, HDC, DSS, POD, and OSSA (p < .05). Faculty Support showed no significant difference.</p>
+            </div>
+            <div style="display: flex; gap: 0.5rem;">
+                <button class="btn btn-outline btn-sm" onclick="exportChartAsPNG('chartDeptDiff', 'ULS_Department_Differences_Chart')">Export PNG</button>
+                <button class="btn btn-outline btn-sm" onclick="exportTableToCSV('tableDeptDiff', 'ULS_Department_Differences_Data')">Export CSV</button>
+            </div>
+        </div>
         <div class="chart-box tall" style="margin-bottom:1.5rem"><canvas id="chartDeptDiff"></canvas></div>
         <div class="table-wrapper">
-            <table>
+            <table id="tableDeptDiff">
                 <thead>
                     <tr>
-                        <th>Domain</th>
+                        <th class="sortable" onclick="sortTable('tableDeptDiff', 0, false)">Domain</th>
                         <th>CMAMP<br><small>(61)</small></th>
                         <th>CIT<br><small>(13)</small></th>
                         <th>CTE<br><small>(15)</small></th>
@@ -935,13 +1169,19 @@
     </div>
 
     <div class="card">
-        <div class="card-header"><h3>Table 13. Spearman's Rho Correlation Results</h3><p>All correlations significant at p &lt; .05</p></div>
+        <div class="card-header">
+            <div class="card-header-text">
+                <h3>Table 13. Spearman's Rho Correlation Results</h3>
+                <p>All correlations significant at p &lt; .05</p>
+            </div>
+            <button class="btn btn-outline btn-sm" onclick="exportTableToCSV('tableCorr', 'ULS_Spearman_Correlation_Data')">Export CSV</button>
+        </div>
         
         <div class="grid grid-2" style="align-items:start; gap:2rem">
             <div>
                 <div class="table-wrapper" style="margin-bottom:1.5rem">
-                    <table>
-                        <thead><tr><th>Support System</th><th>Correlation Coefficient (r)</th><th>Sig. (2-tailed)</th><th>Strength</th></tr></thead>
+                    <table id="tableCorr">
+                        <thead><tr><th>Support System</th><th class="sortable" onclick="sortTable('tableCorr', 1, true)">Correlation Coefficient (r)</th><th><span class="tooltip-trigger">Sig. (2-tailed)<span class="tooltip-box">The p-value of the correlation. Here, p = .000 (< 0.05) indicating a highly significant positive relationship.</span></span></th><th>Strength</th></tr></thead>
                         <tbody>
                             <tr><td class="td-bold">Faculty Support (FS)</td><td class="td-accent">.488*</td><td>.000</td><td><span class="badge badge-often">Moderate</span></td></tr>
                             <tr><td class="td-bold">Health & Dev. Center (HDC)</td><td class="td-accent">.526*</td><td>.000</td><td><span class="badge badge-often">Moderate</span></td></tr>
@@ -994,8 +1234,85 @@
     </div>
 
     <div class="card" style="margin-top:1.5rem">
-        <div class="card-header"><h3>Correlation Scatter Overview</h3><p>Comparative correlation coefficients across all support systems</p></div>
+        <div class="card-header">
+            <div class="card-header-text">
+                <h3>Correlation Coefficients Overview</h3>
+                <p>Comparative correlation coefficients across all support systems</p>
+            </div>
+            <button class="btn btn-outline btn-sm" onclick="exportChartAsPNG('chartCorr', 'ULS_Spearman_Correlation_Chart')">Export PNG</button>
+        </div>
         <div class="chart-box"><canvas id="chartCorr"></canvas></div>
+    </div>
+
+    <!-- Interactive Correlation Predictor Card -->
+    <div class="card" style="margin-top:1.5rem">
+        <div class="card-header">
+            <div class="card-header-text">
+                <h3>Support System Utilization Predictor</h3>
+                <p>Simulate how different levels of student Help-Seeking Behavior (HSB) correlate with predicted support system utilization scores.</p>
+            </div>
+        </div>
+        
+        <div style="margin-bottom: 1.5rem;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 600;">
+                <span>Help-Seeking Tendency (HSB):</span>
+                <span id="hsbVal" style="color: var(--accent-blue); font-weight: 700;">3.20 (Sometimes)</span>
+            </div>
+            <input type="range" id="hsbSlider" min="1.0" max="5.0" step="0.1" value="3.20" style="width: 100%; accent-color: var(--accent-blue); cursor: pointer; height: 6px; border-radius: 3px; background: rgba(255,255,255,0.1); outline: none;">
+        </div>
+        
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <!-- HDC -->
+            <div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.78rem; margin-bottom: 0.25rem;">
+                    <span>Health & Development Center (HDC) <span style="color: var(--text-muted); font-size: 0.7rem;">(r = .526 - Strongest)</span></span>
+                    <span id="predHDC" style="color: var(--accent-green); font-weight: 700;">3.29</span>
+                </div>
+                <div style="height: 8px; background: rgba(255,255,255,0.05); border-radius: 4px; overflow: hidden;">
+                    <div id="barHDC" style="height: 100%; width: 65.8%; background: var(--accent-green); transition: width 0.1s ease;"></div>
+                </div>
+            </div>
+            <!-- FS -->
+            <div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.78rem; margin-bottom: 0.25rem;">
+                    <span>Faculty Support (FS) <span style="color: var(--text-muted); font-size: 0.7rem;">(r = .488 - Moderate)</span></span>
+                    <span id="predFS" style="color: var(--accent-blue); font-weight: 700;">3.12</span>
+                </div>
+                <div style="height: 8px; background: rgba(255,255,255,0.05); border-radius: 4px; overflow: hidden;">
+                    <div id="barFS" style="height: 100%; width: 62.4%; background: var(--accent-blue); transition: width 0.1s ease;"></div>
+                </div>
+            </div>
+            <!-- DSS -->
+            <div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.78rem; margin-bottom: 0.25rem;">
+                    <span>Department of Student Services (DSS) <span style="color: var(--text-muted); font-size: 0.7rem;">(r = .488 - Moderate)</span></span>
+                    <span id="predDSS" style="color: var(--accent-yellow); font-weight: 700;">3.29</span>
+                </div>
+                <div style="height: 8px; background: rgba(255,255,255,0.05); border-radius: 4px; overflow: hidden;">
+                    <div id="barDSS" style="height: 100%; width: 65.8%; background: var(--accent-yellow); transition: width 0.1s ease;"></div>
+                </div>
+            </div>
+            <!-- OSSA -->
+            <div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.78rem; margin-bottom: 0.25rem;">
+                    <span>Office of Student Services & Affairs (OSSA) <span style="color: var(--text-muted); font-size: 0.7rem;">(r = .317 - Weak)</span></span>
+                    <span id="predOSSA" style="color: var(--accent-purple); font-weight: 700;">3.67</span>
+                </div>
+                <div style="height: 8px; background: rgba(255,255,255,0.05); border-radius: 4px; overflow: hidden;">
+                    <div id="barOSSA" style="height: 100%; width: 73.4%; background: var(--accent-purple); transition: width 0.1s ease;"></div>
+                </div>
+            </div>
+            <!-- POD -->
+            <div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.78rem; margin-bottom: 0.25rem;">
+                    <span>Prefect of Discipline (POD) <span style="color: var(--text-muted); font-size: 0.7rem;">(r = .283 - Weakest)</span></span>
+                    <span id="predPOD" style="color: var(--accent-pink); font-weight: 700;">3.80</span>
+                </div>
+                <div style="height: 8px; background: rgba(255,255,255,0.05); border-radius: 4px; overflow: hidden;">
+                    <div id="barPOD" style="height: 100%; width: 76.0%; background: var(--accent-pink); transition: width 0.1s ease;"></div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -1039,6 +1356,23 @@
             <div style="font-size:2rem; margin-bottom:0.5rem">💡</div>
             <h3 style="font-size:1rem; margin-bottom:0.5rem; color:var(--accent-blue)">Recommendations</h3>
             <p style="font-size:0.85rem; color:var(--text-secondary)">Strengthen proactive help-seeking initiatives, enhance visibility of underutilized services (FS, HDC, DSS), implement department-based interventions, and improve integration among all support systems.</p>
+        </div>
+    </div>
+    
+    <!-- APA/MLA Citation Card -->
+    <div class="card" style="margin-top:1.5rem; animation-delay:0.7s;">
+        <div class="card-header">
+            <div class="card-header-text">
+                <h3>Cite this Research</h3>
+                <p>Select a format and copy it for your reference list.</p>
+            </div>
+        </div>
+        <div class="citation-box" style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-strong); border-radius: 8px; padding: 1rem; margin-bottom: 1rem; font-family: monospace; font-size: 0.8rem; line-height: 1.5; overflow-x: auto; white-space: pre-wrap; color: var(--text-secondary);" id="citationText">Balag, E. J. Z., Malate, M. D. A., Noda, C. A. P., Purification, M., Tamayo, A. J. M., & Valdez, J. L. (2026). Interrelationship Between the Help-Seeking Behavior of Students and the Support Systems Within the University of La Salette, Inc. (Unpublished BMLS Research). University of La Salette, Inc.</div>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center;">
+            <button class="btn btn-outline btn-sm" onclick="copyCitation('APA')">APA Format</button>
+            <button class="btn btn-outline btn-sm" onclick="copyCitation('MLA')">MLA Format</button>
+            <button class="btn btn-outline btn-sm" onclick="copyCitation('CHICAGO')">Chicago Format</button>
+            <span id="copySuccess" style="color: var(--accent-green); font-size: 0.78rem; font-weight: 600; display: none; align-items: center; margin-left: 0.5rem;">✓ Copied to clipboard!</span>
         </div>
     </div>
 </section>
@@ -1290,6 +1624,198 @@ function checkWidth() {
 checkWidth();
 window.addEventListener('resize', checkWidth);
 
+// ── Progress Bar ──
+window.addEventListener('scroll', () => {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    document.getElementById('progressBar').style.width = scrolled + '%';
+}, { passive: true });
+
+// ── Theme Toggle ──
+const themeBtn = document.getElementById('themeToggle');
+themeBtn.addEventListener('click', () => {
+    const isLight = document.body.classList.toggle('light-theme');
+    themeBtn.innerText = isLight ? '☀️' : '🌙';
+    updateChartsTheme(isLight);
+});
+
+function updateChartsTheme(isLight) {
+    const textColor = isLight ? '#0f172a' : '#cbd5e1';
+    const gridColor = isLight ? 'rgba(0, 0, 0, 0.06)' : 'rgba(255, 255, 255, 0.04)';
+    
+    Chart.helpers.each(Chart.instances, function(chart) {
+        if (chart.options.scales) {
+            Object.keys(chart.options.scales).forEach(scaleKey => {
+                const scale = chart.options.scales[scaleKey];
+                if (scale.ticks) scale.ticks.color = textColor;
+                if (scale.grid) scale.grid.color = gridColor;
+                if (scale.title) scale.title.color = textColor;
+                if (scale.pointLabels) scale.pointLabels.color = textColor;
+                if (scale.angleLines) scale.angleLines.color = gridColor;
+            });
+        }
+        if (chart.options.plugins && chart.options.plugins.legend && chart.options.plugins.legend.labels) {
+            chart.options.plugins.legend.labels.color = textColor;
+        }
+        chart.update();
+    });
+}
+
+// ── Export Chart as PNG ──
+function exportChartAsPNG(chartId, fileName) {
+    const canvas = document.getElementById(chartId);
+    const tempCanvas = document.createElement("canvas");
+    tempCanvas.width = canvas.width;
+    tempCanvas.height = canvas.height;
+    const tempCtx = tempCanvas.getContext("2d");
+    
+    // Add solid background to output image based on theme
+    const isLight = document.body.classList.contains('light-theme');
+    tempCtx.fillStyle = isLight ? '#f8fafc' : '#0b0f1a';
+    tempCtx.fillRect(0, 0, tempCanvas.width, tempCanvas.height);
+    
+    tempCtx.drawImage(canvas, 0, 0);
+    
+    const imageURI = tempCanvas.toDataURL("image/png");
+    const link = document.createElement("a");
+    link.download = fileName + ".png";
+    link.href = imageURI;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+// ── Export Table as CSV ──
+function exportTableToCSV(tableId, filename) {
+    const table = document.getElementById(tableId);
+    let csv = [];
+    const rows = table.querySelectorAll("tr");
+    
+    for (let i = 0; i < rows.length; i++) {
+        let row = [], cols = rows[i].querySelectorAll("td, th");
+        for (let j = 0; j < cols.length; j++) {
+            let text = cols[j].innerText.trim().replace(/"/g, '""');
+            row.push('"' + text + '"');
+        }
+        csv.push(row.join(","));
+    }
+    
+    const csvContent = "data:text/csv;charset=utf-8," + csv.join("\n");
+    const encodedUri = encodeURI(csvContent);
+    const link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", filename + ".csv");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+// ── Citation Generator ──
+const citations = {
+    APA: "Balag, E. J. Z., Malate, M. D. A., Noda, C. A. P., Purification, M., Tamayo, A. J. M., & Valdez, J. L. (2026). Interrelationship Between the Help-Seeking Behavior of Students and the Support Systems Within the University of La Salette, Inc. (Unpublished BMLS Research). University of La Salette, Inc.",
+    MLA: "Balag, E. J. Z., et al. \"Interrelationship Between the Help-Seeking Behavior of Students and the Support Systems Within the University of La Salette, Inc.\" Unpublished BMLS Research, University of La Salette, Inc., 2026.",
+    CHICAGO: "Balag, E. J. Z., M. D. A. Malate, C. A. P. Noda, M. Purification, A. J. M. Tamayo, and J. L. Valdez. \"Interrelationship Between the Help-Seeking Behavior of Students and the Support Systems Within the University of La Salette, Inc.\" Unpublished BMLS Research, University of La Salette, Inc., 2026."
+};
+
+function copyCitation(format) {
+    const box = document.getElementById("citationText");
+    box.innerText = citations[format];
+    
+    navigator.clipboard.writeText(citations[format]).then(() => {
+        const successSpan = document.getElementById("copySuccess");
+        successSpan.style.display = "inline-flex";
+        setTimeout(() => {
+            successSpan.style.display = "none";
+        }, 2000);
+    });
+}
+
+// ── Table Sorting ──
+function sortTable(tableId, colIndex, isNum) {
+    const table = document.getElementById(tableId);
+    const tbody = table.querySelector("tbody");
+    let rows = Array.from(tbody.querySelectorAll("tr"));
+    
+    // Check if last row is a summary/overall row to keep at bottom
+    let summaryRow = null;
+    if (rows.length > 0) {
+        const lastRowText = rows[rows.length - 1].innerText.toLowerCase();
+        if (lastRowText.includes("overall") || lastRowText.includes("total")) {
+            summaryRow = rows.pop();
+        }
+    }
+    
+    const currentOrder = table.getAttribute("data-sort-order-" + colIndex) || "none";
+    const newOrder = currentOrder === "asc" ? "desc" : "asc";
+    
+    // Clear previous sort classes
+    const headers = table.querySelectorAll("th");
+    headers.forEach(th => th.removeAttribute("data-sort-active"));
+    
+    // Reset sort states on other columns
+    for (let i = 0; i < headers.length; i++) {
+        if (i !== colIndex) table.removeAttribute("data-sort-order-" + i);
+    }
+    
+    table.setAttribute("data-sort-order-" + colIndex, newOrder);
+    
+    rows.sort((rowA, rowB) => {
+        let cellA = rowA.cells[colIndex].innerText.trim();
+        let cellB = rowB.cells[colIndex].innerText.trim();
+        
+        if (isNum) {
+            let valA = parseFloat(cellA.replace(/[^\d.-]/g, '')) || 0;
+            let valB = parseFloat(cellB.replace(/[^\d.-]/g, '')) || 0;
+            return newOrder === "asc" ? valA - valB : valB - valA;
+        } else {
+            return newOrder === "asc" ? cellA.localeCompare(cellB) : cellB.localeCompare(cellA);
+        }
+    });
+    
+    tbody.innerHTML = "";
+    rows.forEach(row => tbody.appendChild(row));
+    if (summaryRow) tbody.appendChild(summaryRow);
+}
+
+// ── Correlation Predictor Slider ──
+const hsbSlider = document.getElementById("hsbSlider");
+if (hsbSlider) {
+    hsbSlider.addEventListener("input", (e) => {
+        updatePredictor(e.target.value);
+    });
+    // Init
+    updatePredictor(3.20);
+}
+
+function updatePredictor(hsb) {
+    const hsbVal = document.getElementById("hsbVal");
+    hsbVal.innerText = parseFloat(hsb).toFixed(2) + " (" + getHSBDesc(hsb) + ")";
+    
+    const systems = [
+        { id: "HDC", base: 3.29, rho: 0.526 },
+        { id: "FS", base: 3.12, rho: 0.488 },
+        { id: "DSS", base: 3.29, rho: 0.488 },
+        { id: "OSSA", base: 3.67, rho: 0.317 },
+        { id: "POD", base: 3.80, rho: 0.283 }
+    ];
+    
+    systems.forEach(sys => {
+        let pred = sys.base + (hsb - 3.20) * sys.rho;
+        pred = Math.max(1.0, Math.min(5.0, pred));
+        
+        document.getElementById("pred" + sys.id).innerText = pred.toFixed(2);
+        document.getElementById("bar" + sys.id).style.width = (pred / 5.0) * 100 + "%";
+    });
+}
+
+function getHSBDesc(val) {
+    if (val <= 1.80) return "Never";
+    if (val <= 2.60) return "Rarely";
+    if (val <= 3.40) return "Sometimes";
+    if (val <= 4.20) return "Often";
+    return "Always";
+}
 </script>
 
 <!-- Back to top button -->
